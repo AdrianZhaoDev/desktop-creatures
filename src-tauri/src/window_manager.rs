@@ -139,7 +139,7 @@ fn sync_passives(
             let label = format!("{prefix}{incarnation}");
             let url = WebviewUrl::App(format!("index.html?display={id}").into());
             let window = WebviewWindowBuilder::new(app, &label, url)
-                .title("全面蟑螂模拟器")
+                .title("桌面生物")
                 .transparent(true)
                 .decorations(false)
                 .always_on_top(true)

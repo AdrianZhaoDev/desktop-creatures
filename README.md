@@ -4,17 +4,17 @@
 
 Windows 透明桌面 3D 生物游戏的公开源码快照，基于 r21 全屏菜单版代码。人偶与青蛙会清洁桌面、捕虫、守护房屋；玩家可以使用工具、升级并保存本地进度。此快照只包含当前生产候选所需源码与运行素材，不包含历史角色、非商用 R19 模型、参考图或开发压缩包。
 
-> **状态**：这是本地试玩源码，不是已通过 Steam 或完整原生人工验收的发行版。代码为 [MIT](LICENSE)；项目原创素材按 [CC BY 4.0](ASSETS-LICENSE.md) 发布，原已标 CC0 的素材继续按 CC0，第三方组件依各自许可。详情见 [许可说明](docs/licenses.md)。
+> **状态**：已提供 Windows 预览下载，但尚未通过完整原生人工验收，也不是 Steam 发行版。代码为 [MIT](LICENSE)；项目原创素材按 [CC BY 4.0](ASSETS-LICENSE.md) 发布，原已标 CC0 的素材继续按 CC0，第三方组件依各自许可。详情见 [许可说明](docs/licenses.md)。
 
-## 示例图
+## Windows 下载
 
-| r21 全屏菜单 | 200% 缩放 |
-| --- | --- |
-| ![r21 菜单桌面视口](docs/screenshots/r21-menu-desktop.png) | ![r21 菜单 200% 缩放](docs/screenshots/r21-menu-200-percent.png) |
+在 [Releases 页面](https://github.com/AdrianZhaoDev/desktop-creatures/releases/tag/v1.1.0-preview.1) 下载 `Desktop-Creatures-v1.1.0-preview.1-Windows-x64.zip`，完整解压后双击 `desktop-creatures.exe`。需要 Windows 11 x64 与 WebView2 Runtime；此预览版未签名，可能出现 Windows SmartScreen 提示。按 `F12` 可紧急隐藏覆盖层。压缩包包含许可证和第三方组件声明。
 
-![r21 菜单窄视口布局](docs/screenshots/r21-menu-narrow.png)
+## 实际画面
 
-图像来自 r21 浏览器菜单验证。公开快照已把运行时 R19 角色替换成原有 S06 模型，因此截图只用于展示未改动的菜单，不展示当前角色外观。
+![桌面生物密集场景：虫群、垃圾、人偶、青蛙与房屋](docs/screenshots/gameplay-dense.gif)
+
+GIF 使用公开版真实游戏渲染器与素材录制，展示 72 只虫、28 份垃圾、两名角色和两座房屋的密集演示状态；为便于展示，场景使用预置状态并加速回放，不代表默认开局。画面没有打开菜单，背景为中性演示底色。
 
 ## 构建并运行
 
@@ -26,7 +26,7 @@ npm run check
 npm run steam:candidate -- --output .steam-candidate-public
 ```
 
-原生受控构建需要本机已缓存的锁定 Rust 依赖，且输出目录必须尚不存在。具体参数和环境要求见 [原生候选说明](release/steam/NATIVE-CANDIDATE.md)：
+如需自行构建，原生受控构建需要本机已缓存的锁定 Rust 依赖，且输出目录必须尚不存在。具体参数和环境要求见 [原生候选说明](release/steam/NATIVE-CANDIDATE.md)：
 
 ```powershell
 $candidate = (Resolve-Path .steam-candidate-public).Path

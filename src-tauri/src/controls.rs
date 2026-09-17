@@ -95,7 +95,7 @@ pub async fn confirm_replace(action: String) -> bool {
         } else {
             w!("即将替换当前桌面进度，原存档会保留一份备份。是否继续？")
         };
-        MessageBoxW(None, text, w!("全面蟑螂模拟器"), MB_YESNO | MB_ICONQUESTION) == IDYES
+        MessageBoxW(None, text, w!("桌面生物"), MB_YESNO | MB_ICONQUESTION) == IDYES
     })
     .await
     .unwrap_or(false)
@@ -191,7 +191,7 @@ pub fn create(app: &tauri::App, unavailable: &[String]) -> tauri::Result<()> {
     )?;
     let mut tray = TrayIconBuilder::with_id("desktop-creatures")
         .menu(&menu)
-        .tooltip("全面蟑螂模拟器")
+        .tooltip("桌面生物")
         .show_menu_on_left_click(true)
         .on_menu_event(|app, event| match event.id().as_ref() {
             "show" => super::window_manager::show_overlay(app),

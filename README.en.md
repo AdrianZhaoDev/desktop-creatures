@@ -4,17 +4,17 @@
 
 A public source snapshot of the Windows transparent 3D desktop game, based on the r21 full-screen-menu code. A cleaner and a frog clear litter, catch insects, and defend their homes while the player uses tools, upgrades, and local saves. This snapshot contains only current production candidate source and runtime assets. Historical characters, the noncommercial R19 model, reference art, and development archives are excluded.
 
-> **Status:** local playtest source, not a Steam release or a fully accepted native build. Code is [MIT licensed](LICENSE). Project-created original assets are [CC BY 4.0](ASSETS-LICENSE.md), existing CC0 assets remain CC0, and third-party components keep their own licenses. See the [license notes](docs/licenses.md).
+> **Status:** a Windows preview download is available; native manual acceptance remains incomplete, and this is not a Steam release. Code is [MIT licensed](LICENSE). Project-created original assets are [CC BY 4.0](ASSETS-LICENSE.md), existing CC0 assets remain CC0, and third-party components keep their own licenses. See the [license notes](docs/licenses.md).
 
-## Screenshots
+## Download for Windows
 
-| r21 full-screen menu | 200% scaling |
-| --- | --- |
-| ![r21 desktop menu](docs/screenshots/r21-menu-desktop.png) | ![r21 menu at 200% scale](docs/screenshots/r21-menu-200-percent.png) |
+Download `Desktop-Creatures-v1.1.0-preview.1-Windows-x64.zip` from the [Releases page](https://github.com/AdrianZhaoDev/desktop-creatures/releases/tag/v1.1.0-preview.1), extract the entire archive, and double-click `desktop-creatures.exe`. Windows 11 x64 and WebView2 Runtime are required. This preview is unsigned and may trigger Windows SmartScreen. Press `F12` to hide the overlay immediately. The archive includes license and third-party notices.
 
-![r21 menu in a narrow viewport](docs/screenshots/r21-menu-narrow.png)
+## Actual gameplay visuals
 
-These are r21 browser menu verification captures. The public snapshot replaces the R19 runtime character with the original S06 model, so the images show only the unchanged menu, not the current character appearance.
+![Dense Desktop Creatures scene with insects, litter, cleaner, frog, and houses](docs/screenshots/gameplay-dense.gif)
+
+Recorded from the public game's real renderer and assets. This dense demonstration state has 72 insects, 28 pieces of litter, two characters, and two houses. It uses a prepared state and sped-up playback for presentation, so it is not the default opening scene. The menu is closed and the background is a neutral demonstration color.
 
 ## Build and run
 
@@ -26,7 +26,7 @@ npm run check
 npm run steam:candidate -- --output .steam-candidate-public
 ```
 
-The controlled native build needs cached locked Rust dependencies and a new output path. See the [native candidate guide](release/steam/NATIVE-CANDIDATE.md) for requirements and parameters:
+To build it yourself, the controlled native build needs cached locked Rust dependencies and a new output path. See the [native candidate guide](release/steam/NATIVE-CANDIDATE.md) for requirements and parameters:
 
 ```powershell
 $candidate = (Resolve-Path .steam-candidate-public).Path

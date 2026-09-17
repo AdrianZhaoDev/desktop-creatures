@@ -11,6 +11,7 @@ node_modules
 dist
 dist-ssr
 .steam-candidate-*/
+.steam-release-*/
 .steam-content-*/
 coverage
 /.art-build/

@@ -102,7 +102,7 @@ pub fn create(app: &tauri::App) -> tauri::Result<WebviewWindow> {
         })
         .unwrap_or(fallback);
     let window = WebviewWindowBuilder::new(app, BIN_LABEL, WebviewUrl::App("trash.html".into()))
-        .title("全面蟑螂模拟器 回收站")
+        .title("桌面生物 回收站")
         // Hover is not a browser user activation. This local-only companion needs
         // autoplay for its opt-out sound cues, without taking desktop focus.
         // Different WebView2 arguments require a distinct data directory.

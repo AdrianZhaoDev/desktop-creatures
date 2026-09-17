@@ -217,7 +217,7 @@ pub fn open(app: &AppHandle) -> Result<(), String> {
         "shortcut-settings",
         WebviewUrl::App("shortcuts.html".into()),
     )
-    .title("快捷键设置 · 全面蟑螂模拟器")
+    .title("快捷键设置 · 桌面生物")
     .always_on_top(true)
     .inner_size(620.0, 620.0)
     .min_inner_size(550.0, 580.0)

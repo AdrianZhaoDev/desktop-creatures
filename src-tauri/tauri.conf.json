@@ -1,6 +1,6 @@
 {
   "$schema": "https://schema.tauri.app/config/2",
-  "productName": "全面蟑螂模拟器",
+  "productName": "桌面生物",
   "version": "1.1.0",
   "identifier": "com.desktopcreatures.desktop",
   "build": {
@@ -14,7 +14,7 @@
     "windows": [
       {
         "label": "overlay-primary",
-        "title": "全面蟑螂模拟器",
+        "title": "桌面生物",
         "url": "index.html",
         "width": 1280,
         "height": 720,
