@@ -1,0 +1,158 @@
+{
+  "schemaVersion": 1,
+  "id": "steam-v1.s07-s08-props",
+  "quality": "procedural-development-pending-human-art-review",
+  "assetCount": 9,
+  "assets": [
+    {
+      "id": "home.cleaner",
+      "slug": "cleaner-home",
+      "manifest": "cleaner-home/manifest.json",
+      "model": "cleaner-home/model.glb",
+      "source": "cleaner-home/source.blend",
+      "triangles": 14188,
+      "materials": 3,
+      "primitives": 8,
+      "glbBytes": 1424256,
+      "sha256": {
+        "model": "c510d41af0b022ff5b11790f8764e30608beeef72db3b1c28c6f350a8eb923f6",
+        "source": "60faebd0e82cf504a52242a86b587030da87cd128629e480b2663e2ac761a37d"
+      },
+      "artApproved": false
+    },
+    {
+      "id": "home.frog",
+      "slug": "frog-home",
+      "manifest": "frog-home/manifest.json",
+      "model": "frog-home/model.glb",
+      "source": "frog-home/source.blend",
+      "triangles": 15133,
+      "materials": 2,
+      "primitives": 4,
+      "glbBytes": 1128916,
+      "sha256": {
+        "model": "f53eab8eef55a0ba3fbf58d0bcd1ebf58a078c01d347e3afd5080ebae6cdd8f1",
+        "source": "5cc33ceeb3931aad43be2b06ba5820912e8e5f420bae824700c51e527c6ea5ab"
+      },
+      "artApproved": false
+    },
+    {
+      "id": "tool.bag",
+      "slug": "collection-bag",
+      "manifest": "collection-bag/manifest.json",
+      "model": "collection-bag/model.glb",
+      "source": "collection-bag/source.blend",
+      "triangles": 8564,
+      "materials": 1,
+      "primitives": 1,
+      "glbBytes": 562268,
+      "sha256": {
+        "model": "308512a43b05bb91dd7a0a32e68128a2f6f687da151b7dcbe53165386f3b3302",
+        "source": "fa402ebbe1daedf937b861e02647d4095f1755eac29c1e64afff29b5187f0e1c"
+      },
+      "artApproved": false
+    },
+    {
+      "id": "tool.swatter",
+      "slug": "electric-swatter",
+      "manifest": "electric-swatter/manifest.json",
+      "model": "electric-swatter/model.glb",
+      "source": "electric-swatter/source.blend",
+      "triangles": 5172,
+      "materials": 3,
+      "primitives": 4,
+      "glbBytes": 215620,
+      "sha256": {
+        "model": "c9b1661ba799e1f87f8ece61762478f935e55fa25e6a246cc64aa821564bc060",
+        "source": "b0f1e8ba6dc165cf4393aeda289313b8b98c3002ecd177f9d79aab38b851aa15"
+      },
+      "artApproved": false
+    },
+    {
+      "id": "trap.bait",
+      "slug": "bait-station",
+      "manifest": "bait-station/manifest.json",
+      "model": "bait-station/model.glb",
+      "source": "bait-station/source.blend",
+      "triangles": 5084,
+      "materials": 1,
+      "primitives": 3,
+      "glbBytes": 162300,
+      "sha256": {
+        "model": "811174ef572357d0756e0440968b7a4237b8b438c7161b5db65c7b96d79a83c5",
+        "source": "fb8fd89b33c8efbbaccec6994c88b66263da4e8bf71731dc421c5b595ae6a859"
+      },
+      "artApproved": false
+    },
+    {
+      "id": "trap.glue",
+      "slug": "glue-pad",
+      "manifest": "glue-pad/manifest.json",
+      "model": "glue-pad/model.glb",
+      "source": "glue-pad/source.blend",
+      "triangles": 1488,
+      "materials": 2,
+      "primitives": 3,
+      "glbBytes": 46156,
+      "sha256": {
+        "model": "58610b7a389c998b28c3e854fa1b6a3cc0f9acb4b0c7429a8655dcf59b7357df",
+        "source": "7c941394c5f668cc5bf91bf95cd182343120386fdc63f37fdfc3a1e5fa347828"
+      },
+      "artApproved": false
+    },
+    {
+      "id": "trap.catcher",
+      "slug": "bug-catcher",
+      "manifest": "bug-catcher/manifest.json",
+      "model": "bug-catcher/model.glb",
+      "source": "bug-catcher/source.blend",
+      "triangles": 9348,
+      "materials": 3,
+      "primitives": 8,
+      "glbBytes": 359000,
+      "sha256": {
+        "model": "de81b44f08d57ac5630cbe46eec118af18fc2070ecc7e6705509d1590e3a1aaa",
+        "source": "ac9573a564d68abc9d4186917759eb8e98d83c24a45e8800f1827387b8163a81"
+      },
+      "artApproved": false
+    },
+    {
+      "id": "aid.ladder",
+      "slug": "folding-ladder",
+      "manifest": "folding-ladder/manifest.json",
+      "model": "folding-ladder/model.glb",
+      "source": "folding-ladder/source.blend",
+      "triangles": 6200,
+      "materials": 2,
+      "primitives": 14,
+      "glbBytes": 689004,
+      "sha256": {
+        "model": "6f901f1678a25c776d69f4d19ff8ebbf11873be27ca31e617a6889977818d31d",
+        "source": "f33fca56267efb55a9c62887167972db1a51fc4f26a190c7b63f15d7d19cddc7"
+      },
+      "artApproved": false
+    },
+    {
+      "id": "aid.repair",
+      "slug": "repair-kit",
+      "manifest": "repair-kit/manifest.json",
+      "model": "repair-kit/model.glb",
+      "source": "repair-kit/source.blend",
+      "triangles": 8544,
+      "materials": 2,
+      "primitives": 6,
+      "glbBytes": 640888,
+      "sha256": {
+        "model": "95e929c3f2eb6d015789c47ef0ba79f10f6820c85f279b7886b1fd34ce4576dc",
+        "source": "4333df3d5aa4b90cb3b0eefc03ed79c01e3d98937c9a5be954969ab87fce93ae"
+      },
+      "artApproved": false
+    }
+  ],
+  "totals": {
+    "triangles": 73721,
+    "glbBytes": 5228408
+  },
+  "sourceTool": "Blender 5.2.1 LTS + Python",
+  "nativeGameplayIntegrated": false
+}

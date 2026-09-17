@@ -1,0 +1,28 @@
+{
+  "name": "desktop-creatures",
+  "private": true,
+  "version": "1.1.0",
+  "type": "module",
+  "scripts": {
+    "check": "tsc --noEmit && npm run steam:candidate:test && npm run steam:native:policy",
+    "test": "npm run steam:candidate:test",
+    "steam:candidate": "node release/steam/build-candidate.mjs",
+    "steam:candidate:test": "node --test release/steam/candidate.node-check.mjs",
+    "steam:native:policy": "node release/steam/build-native-candidate.mjs --check-policy",
+    "steam:native:candidate": "node release/steam/build-native-candidate.mjs"
+  },
+  "engines": {
+    "node": ">=24.0.0 <25"
+  },
+  "dependencies": {
+    "@tauri-apps/api": "2.11.1",
+    "three": "0.186.0"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "2.11.4",
+    "@types/three": "0.185.4",
+    "typescript": "7.0.2",
+    "vite": "8.2.2",
+    "vitest": "5.0.0"
+  }
+}

@@ -1,0 +1,242 @@
+{
+  "contractVersion": 2,
+  "status": "local-safe-projection-implemented-steam-blocked",
+  "platform": "windows",
+  "storageImplementation": "src-tauri/src/campaign_storage.rs",
+  "applicationIdentifier": "com.desktopcreatures.desktop",
+  "rootProvider": "Tauri app_local_data_dir",
+  "runtimeNamespaces": {
+    "normal": "",
+    "steamPreview": "steam-preview",
+    "validation": "validation-v2",
+    "whenBothFlagsPresent": "steam-preview"
+  },
+  "authority": {
+    "display": "overlay-primary",
+    "profile": "local",
+    "localOnly": true,
+    "steamIdentityAccepted": false,
+    "rendererMayChooseSteamIdentity": false
+  },
+  "relativeDirectory": {
+    "local": "campaign-v4/local",
+    "steam": "campaign-v4/steam-{64BitSteamID}"
+  },
+  "identity": {
+    "currentlyAuthorizedProfiles": [
+      "local"
+    ],
+    "persistedProfileSyntax": "^(local|steam:[0-9]{1,20})$",
+    "syntaxIsAuthentication": false,
+    "cloudProfileSyntax": "^(local|steam:[1-9][0-9]{0,19})$ with the steam value also required to parse as an unsigned 64-bit integer",
+    "cloudCommandsCurrentlyAuthorizedProfiles": [
+      "local"
+    ],
+    "futureSteamProfile": "steam:{64BitSteamID}",
+    "futureSource": "Native SteamUser()->GetSteamID().ConvertToUint64() after successful Steam API initialization",
+    "futureDecimalEncoding": "canonical positive unsigned 64-bit decimal without leading zeros",
+    "rendererMayChooseSteamIdentity": false,
+    "accountSwitchPolicy": "End and flush the current session before opening the native-resolved account; never relabel, copy, merge, or fall back into another Steam profile automatically"
+  },
+  "files": {
+    "main": "campaign-session.json",
+    "previousMain": "campaign-session.bak",
+    "legacyOriginal": "campaign-legacy.bak",
+    "cycleV1Original": "campaign-cycle-v1.bak",
+    "cloudMain": "campaign-cloud-v1.json",
+    "cloudBackup": "campaign-cloud-v1.bak",
+    "lock": "campaign.lock",
+    "transactionTemporary": "campaign-<pid>-<counter>.tmp"
+  },
+  "document": {
+    "sessionVersion": 1,
+    "campaignSaveVersion": 4,
+    "maxUtf8Bytes": 16777216,
+    "legacyCompanionMayContainOriginalSource": true,
+    "canonicalFilesRemain": [
+      "campaign-session.json",
+      "campaign-session.bak"
+    ],
+    "legacyOriginalRemainsVerbatim": "campaign-legacy.bak",
+    "cycleV1OriginalRemainsVerbatim": "campaign-cycle-v1.bak"
+  },
+  "cloudDocument": {
+    "cloudVersion": 1,
+    "maxUtf8Bytes": 16777216,
+    "exactTopLevelFields": [
+      "cloudVersion",
+      "session"
+    ],
+    "exactSessionFields": [
+      "sessionVersion",
+      "campaign",
+      "s07Homes"
+    ],
+    "sessionVersion": 1,
+    "campaignSaveVersion": 4,
+    "campaignLegacyCompanion": null,
+    "schema": {
+      "cloudVersion": 1,
+      "session": {
+        "sessionVersion": 1,
+        "campaign": "validated exact-field GameSaveV4 with legacyCompanion set to null and runtime gesture state sanitized",
+        "s07Homes": "validated S07HomeProgress or null"
+      }
+    },
+    "projectionRules": {
+      "sourceMustPassRustExactFieldV4Validation": true,
+      "sourceLegacyCompanionIsRemovedFromProjectionOnly": true,
+      "canonicalAndLegacyFilesAreNeverRewrittenByProjection": true,
+      "pauseReasons": "retain only the literal user reason; output is [] or [\"user\"]",
+      "swatter": {
+        "active": false,
+        "gestureId": "",
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 0,
+          "y": 0
+        },
+        "path": [],
+        "hitIds": [],
+        "cooldownHeatAndOverheatedRemainValidatedGameplayState": true
+      },
+      "tokenLexicalGuard": {
+        "enabled": true,
+        "asciiTokenPattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,511}$",
+        "rejectsDoubleDot": true,
+        "rejectsSlashBackslashControlWhitespaceAndNonAsciiFreeText": true,
+        "rejectsDriveRelativePrefix": true,
+        "rejectedUriPrefixes": [
+          "http:",
+          "https:",
+          "file:",
+          "data:",
+          "smb:",
+          "ssh:"
+        ],
+        "allowsValidatedJsonArrayTuplesWithNormalizedPointObjects": true,
+        "doesNotTreatPassingSyntaxAsSteamAuthentication": true
+      },
+      "typescriptMustPerformFullSemanticValidationBeforeUseOrRestore": true
+    },
+    "versionPolicy": {
+      "acceptedCloudVersions": [
+        1
+      ],
+      "olderVersions": "reject-preserve",
+      "futureVersions": "reject-preserve",
+      "automaticBackupFallback": false
+    }
+  },
+  "commands": {
+    "read_campaign_cloud": {
+      "authority": "overlay-primary",
+      "profile": "local",
+      "mode": "local-only",
+      "reads": "campaign-cloud-v1.json",
+      "backupFallback": false,
+      "result": "the exact validated cloud file text or null"
+    },
+    "refresh_campaign_cloud": {
+      "authority": "overlay-primary",
+      "profile": "local",
+      "mode": "local-only",
+      "source": "validated canonical campaign-session.json supplied through the canonical write path or reread explicitly",
+      "writes": "campaign-cloud-v1.json",
+      "backup": "campaign-cloud-v1.bak",
+      "existingProjectionPolicy": "If an existing cloud main or cloud backup is unknown, corrupt, unsupported, or fails validation, preserve it and block refresh.",
+      "backupPolicy": "A cloud backup may contain only a previously validated cloud projection.",
+      "result": "current or error"
+    },
+    "restore_campaign_cloud": {
+      "authority": "overlay-primary",
+      "profile": "local",
+      "mode": "local-only",
+      "precondition": "campaign-session.json, campaign-session.bak, campaign-legacy.bak, and campaign-cycle-v1.bak are all absent",
+      "localPresentResult": "local-present",
+      "source": "reread campaign-cloud-v1.json from its fixed profile path after the caller has completed TypeScript semantic validation",
+      "rawEquality": "the reread file text must exactly equal the caller-supplied, TypeScript-validated raw text",
+      "backupFallback": false,
+      "writes": "campaign-session.json through the canonical atomic write path",
+      "merge": false,
+      "resettle": false,
+      "timestampRecencyComparison": false
+    }
+  },
+  "writeSemantics": {
+    "receiptOwner": "write_campaign_session_atomic",
+    "canonicalCommitIsPrimary": true,
+    "projectionRefreshAfterCanonicalCommit": "best-effort",
+    "successReceipt": {
+      "canonicalCommitted": true,
+      "cloudProjection": "current|pending"
+    },
+    "canonicalAndProjectionJointAtomicityClaimed": false,
+    "projectionFailureRollsBackCanonical": false,
+    "explicitRefreshRepairsPendingProjection": true
+  },
+  "autoCloud": {
+    "enabled": false,
+    "backendConfigured": false,
+    "template": "autocloud.template.json",
+    "root": "WinAppDataLocal",
+    "subdirectory": "com.desktopcreatures.desktop/campaign-v4/steam-{64BitSteamID}",
+    "pattern": "campaign-cloud-v1.json",
+    "recursive": false,
+    "os": "Windows",
+    "synchronizeOnlyNormalNamespace": true,
+    "generatedMarkerFile": "steam_autocloud.vdf",
+    "generatedMarkerOwnedBySteamClient": true,
+    "exclude": [
+      "campaign-session.json",
+      "campaign-session.bak",
+      "campaign-legacy.bak",
+      "campaign-cycle-v1.bak",
+      "campaign-cloud-v1.bak",
+      "campaign.lock",
+      "*.tmp",
+      "campaign-v4/local/**",
+      "steam-preview/**",
+      "validation-v2/**",
+      "game-save.json",
+      "game-save.bak",
+      "machine settings, logs, captures, desktop geometry and all unrelated files"
+    ],
+    "enablementRequiresNativeResolvedSteamIdentity": true,
+    "externalGateD": {
+      "blocked": true,
+      "requiresSteamworksAccount": true,
+      "requiresRealBackendConfiguration": true,
+      "requiresRealSteamClientVerification": true
+    },
+    "gameDemoProgressPolicy": {
+      "decision": "undecided",
+      "sharedOrIsolated": null,
+      "mustNotBeInferredFromMatchingLocalPaths": true
+    },
+    "readinessBlockers": [
+      "real Steamworks game and Demo AppIDs, account permissions and published backend path configuration",
+      "native Steam API initialization and canonical unsigned-64 SteamID resolution",
+      "account switching, two-machine conflict, corruption and recovery evidence",
+      "an explicit game/Demo progress-sharing decision and real-client verification"
+    ]
+  },
+  "migration": {
+    "existingCanonicalPathsChanged": false,
+    "automaticLocalToSteamCopy": false,
+    "oldWorldFilesReadOrModifiedByV4Commands": false,
+    "mainReadFallback": "none",
+    "cloudReadBackupFallback": "none",
+    "cloudRestoreWhenAnyLocalFileExists": "local-present; no overwrite and no merge",
+    "cloudRestoreRecalculatesSettlement": false,
+    "cloudRestoreUsesTimestamps": false
+  },
+  "references": [
+    "https://partner.steamgames.com/doc/features/cloud",
+    "https://partner.steamgames.com/doc/api/ISteamUser#GetSteamID",
+    "https://partner.steamgames.com/doc/store/application/demos"
+  ]
+}

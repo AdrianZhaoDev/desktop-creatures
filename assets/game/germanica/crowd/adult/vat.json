@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "generatedBy": "bake-game-vat.mjs v2 / Three.js 0.186.0",
+  "textureEncoding": "float32-rgba-le",
+  "resourceId": "roach.germanica",
+  "form": "adult",
+  "lods": [
+    {
+      "id": "lod1",
+      "sourceModel": "../../adult/lod1.glb",
+      "mesh": "lod1/mesh.json",
+      "vat": "lod1/vat.json",
+      "vertexCount": 1038,
+      "triangleCount": 1444,
+      "meshHash": "ad5d44a5317e7b8f1969e5b5d64856474803513c1c61a53eae0267760ca8bef3",
+      "sourceModelHash": "73145911488fc8946ea905cc4d16bce70aff1191407acaff060d78bf7f44df2a"
+    },
+    {
+      "id": "lod2",
+      "sourceModel": "../../adult/lod2.glb",
+      "mesh": "lod2/mesh.json",
+      "vat": "lod2/vat.json",
+      "vertexCount": 504,
+      "triangleCount": 604,
+      "meshHash": "1e7645defed8f5e56e839c2680195b033727c3e191a0bacad8701d5f8ea2a6b4",
+      "sourceModelHash": "190b3941be9fc0a66bde7071c658d3079f8d8b59a33c5268283596c536a1acad"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "source": "Exported GLB + Three.js 0.186.0",
+  "triangles": 5084,
+  "vertices": 2896,
+  "meshCount": 3,
+  "primitives": 3,
+  "materialCount": 1,
+  "materials": [
+    {
+      "name": "pbr_matte",
+      "alphaMode": "OPAQUE"
+    }
+  ],
+  "textureCount": 0,
+  "glbBytes": 162300,
+  "dimensionsGLTF": {
+    "unit": "metre",
+    "size": [
+      0.12000000476837158,
+      0.04875846765935421,
+      0.12033860199153423
+    ],
+    "min": [
+      -0.06000000238418579,
+      0,
+      -0.06000000052154064
+    ],
+    "max": [
+      0.06000000238418579,
+      0.04875846765935421,
+      0.06033860146999359
+    ]
+  },
+  "animations": [
+    {
+      "name": "open_close",
+      "duration": 2,
+      "tracks": 1
+    }
+  ],
+  "sha256": {
+    "model": "811174ef572357d0756e0440968b7a4237b8b438c7161b5db65c7b96d79a83c5",
+    "source": "fb8fd89b33c8efbbaccec6994c88b66263da4e8bf71731dc421c5b595ae6a859"
+  }
+}

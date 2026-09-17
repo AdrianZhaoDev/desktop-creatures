@@ -1,0 +1,30 @@
+.campaign-runtime > canvas { position: fixed; inset: 0; background: transparent; }
+.campaign-runtime__messages { position: fixed; right: 12px; bottom: 12px; z-index: 1100; width: min(440px, calc(100vw - 76px)); max-height: 32dvh; overflow: auto; display: flex; flex-wrap: wrap; gap: 8px; align-content: flex-start; align-items: center; padding: 10px; border: 1px solid #789d8f; border-radius: 14px; background: rgb(19 31 29 / 96%); box-shadow: 0 14px 46px rgb(0 0 0 / 46%); color: #fff; font: 13px/1.5 "Segoe UI", sans-serif; opacity: 0; visibility: hidden; transform: translateX(calc(100% + 32px)); pointer-events: none; transition: transform 260ms ease-out, opacity 180ms ease-out, visibility 0s linear 260ms; }
+.campaign-runtime:has(.campaign-ui[data-dock-open="true"]) .campaign-runtime__messages,
+.campaign-runtime:has(> .campaign-ui--lobby) .campaign-runtime__messages { opacity: 1; visibility: visible; transform: translateX(0); pointer-events: auto; transition: transform 260ms ease-out, opacity 180ms ease-out; }
+.campaign-runtime:has(.campaign-ui[data-dock-open="true"]) .campaign-runtime__messages { display: none; }
+.campaign-runtime__messages output:not(:empty) { flex: 1 1 100%; }
+.campaign-runtime__messages output:not(:empty), .campaign-runtime__messages button { background: #182c28; color: #fff; border: 1px solid #789d8f; border-radius: 6px; padding: 8px; }
+.campaign-runtime__messages button { pointer-events: auto; cursor: pointer; }
+.campaign-runtime__messages button:focus-visible { outline: 3px solid #ffe092; }
+.campaign-runtime__messages [hidden] { display: none; }
+.campaign-runtime__support { flex-basis: 100%; pointer-events: auto; }
+.campaign-support { max-width: min(680px, calc(100vw - 24px)); padding: 8px 10px; border: 1px solid #789d8f; border-radius: 8px; background: #182c28; }
+.campaign-support summary { cursor: pointer; font-weight: 700; }
+.campaign-support p { margin: 7px 0; color: #d6e4de; }
+.campaign-support output { display: block; min-height: 1.5em; margin-top: 6px; }
+.campaign-support output[data-kind="error"] { color: #ffb1aa; }
+.campaign-support output[data-kind="success"] { color: #a9ecc5; }
+.campaign-runtime:has(> .campaign-ui--lobby) .campaign-runtime__messages { width: min(440px, calc(100vw - 24px)); max-height: min(28dvh, 260px); }
+.campaign-runtime:has(> .campaign-ui--lobby) .campaign-runtime__support { min-width: 0; }
+.campaign-runtime:has(> .campaign-ui--lobby) .campaign-support { max-width: 100%; }
+.campaign-runtime:has(> .campaign-ui--lobby) .campaign-support[open] { max-height: min(20dvh, 180px); overflow: auto; }
+.campaign-runtime__practice-bin { position: fixed; right: 24px; bottom: 24px; width: 80px; height: 80px; display: grid; place-items: center; text-align: center; border-radius: 50%; border: 2px dashed #74d09d; background: #182c28; font: 12px/1.5 "Segoe UI", sans-serif; }
+
+@media (prefers-reduced-motion: reduce) {
+  .campaign-runtime__messages { transition-duration: .01ms; }
+}
+
+@media (max-width: 560px) {
+  .campaign-runtime__messages { width: calc(100vw - 64px); }
+}

@@ -1,0 +1,184 @@
+{
+  "schemaVersion": 1,
+  "kind": "steam-native-source-policy",
+  "target": "x86_64-pc-windows-msvc",
+  "features": [
+    "tauri/custom-protocol"
+  ],
+  "releaseReady": false,
+  "files": [
+    "LICENSE",
+    "assets/config/game-balance.legacy.json",
+    "docs/steam-v1/evidence/v4-native-storage/ts-active.json",
+    "docs/steam-v1/evidence/v4-native-storage/ts-empty.json",
+    "docs/steam-v1/evidence/v4-native-storage/ts-homes.json",
+    "docs/steam-v1/evidence/v4-native-storage/ts-steam.json",
+    "package-lock.json",
+    "package.json",
+    "release/steam/build-candidate.mjs",
+    "release/steam/build-native-candidate.mjs",
+    "release/steam/candidate-policy.json",
+    "release/steam/candidate-safety.mjs",
+    "release/steam/cloud-save-contract.json",
+    "release/steam/native-before-build.mjs",
+    "release/steam/native-candidate.schema.json",
+    "release/steam/native-embedding.mjs",
+    "release/steam/native-embedding.node-check.mjs",
+    "release/steam/native-msvc-environment.ps1",
+    "release/steam/native-notices.mjs",
+    "release/steam/native-notices/Microsoft.Web.WebView2-1.0.3650.58-LICENSE.txt",
+    "release/steam/native-notices/Microsoft.Web.WebView2-1.0.3650.58-Microsoft.Web.WebView2.nuspec",
+    "release/steam/native-notices/Microsoft.Web.WebView2-1.0.3650.58-NOTICE.txt",
+    "release/steam/native-notices/alloc-stdlib-0.2.4-LICENSE.txt",
+    "release/steam/native-notices/selectors-0.36.1-MPL-2.0.txt",
+    "release/steam/native-notices/siphasher-1.0.3-LICENSE-APACHE.txt",
+    "release/steam/native-notices/tauri-plugin-2.6.3-LICENSE-MIT.txt",
+    "release/steam/native-notices/unic-0.9.0-COPYRIGHT.md",
+    "release/steam/native-notices/unic-0.9.0-LICENSE-MIT.txt",
+    "release/steam/native-notices/unic-ucd-ident-0.9.0-COPYRIGHT.md",
+    "release/steam/native-notices/unic-ucd-ident-0.9.0-LICENSE-MIT.txt",
+    "release/steam/native-notices/webview2-com-0.38.2-LICENSE-MIT.txt",
+    "release/steam/native-notices/webview2-com-macros-0.8.1-LICENSE-MIT.txt",
+    "release/steam/native-pe.mjs",
+    "release/steam/native-policy.mjs",
+    "release/steam/native-safety.mjs",
+    "release/steam/native-third-party-policy.json",
+    "release/steam/native-toolchain.mjs",
+    "release/steam/prepare-build.mjs",
+    "release/steam/vite.candidate.mjs",
+    "rust-toolchain.toml",
+    "src-tauri/Cargo.lock",
+    "src-tauri/Cargo.toml",
+    "src-tauri/build.rs",
+    "src-tauri/capabilities/default.json",
+    "src-tauri/examples/native_embedding_probe.rs",
+    "src-tauri/examples/probe_geometry_roi.rs",
+    "src-tauri/icons/icon.ico",
+    "src-tauri/src/bin_window.rs",
+    "src-tauri/src/campaign_cloud.rs",
+    "src-tauri/src/campaign_cloud_tests.rs",
+    "src-tauri/src/campaign_display.rs",
+    "src-tauri/src/campaign_interface.rs",
+    "src-tauri/src/campaign_storage.rs",
+    "src-tauri/src/campaign_storage_tests.rs",
+    "src-tauri/src/campaign_storage_validation.rs",
+    "src-tauri/src/controls.rs",
+    "src-tauri/src/desktop_geometry.rs",
+    "src-tauri/src/desktop_surface.rs",
+    "src-tauri/src/desktop_surface_native_tests.rs",
+    "src-tauri/src/desktop_surface_v2_native_tests.rs",
+    "src-tauri/src/health.rs",
+    "src-tauri/src/interaction.rs",
+    "src-tauri/src/lib.rs",
+    "src-tauri/src/main.rs",
+    "src-tauri/src/recycle_bin.rs",
+    "src-tauri/src/safety.rs",
+    "src-tauri/src/save_dialog.rs",
+    "src-tauri/src/shortcuts.rs",
+    "src-tauri/src/storage.rs",
+    "src-tauri/src/support_bundle.rs",
+    "src-tauri/src/window_manager.rs",
+    "src-tauri/tauri.conf.json",
+    "src-tauri/tests/cloud-float-exchange.mjs"
+  ],
+  "completeTrees": [
+    "src-tauri/src",
+    "src-tauri/examples",
+    "src-tauri/capabilities"
+  ],
+  "embeddedInputs": [
+    "assets/config/game-balance.legacy.json",
+    "src-tauri/icons/icon.ico"
+  ],
+  "npmToolingPackages": [
+    {
+      "name": "@tauri-apps/api",
+      "version": "2.11.1"
+    },
+    {
+      "name": "three",
+      "version": "0.186.0"
+    },
+    {
+      "name": "@oxc-project/types",
+      "version": "0.149.0"
+    },
+    {
+      "name": "@rolldown/binding-win32-x64-msvc",
+      "version": "1.2.8"
+    },
+    {
+      "name": "@rolldown/pluginutils",
+      "version": "1.0.1"
+    },
+    {
+      "name": "@tauri-apps/cli",
+      "version": "2.11.4"
+    },
+    {
+      "name": "@tauri-apps/cli-win32-x64-msvc",
+      "version": "2.11.4"
+    },
+    {
+      "name": "detect-libc",
+      "version": "2.1.2"
+    },
+    {
+      "name": "fdir",
+      "version": "6.5.0"
+    },
+    {
+      "name": "lightningcss",
+      "version": "1.33.0"
+    },
+    {
+      "name": "lightningcss-win32-x64-msvc",
+      "version": "1.33.0"
+    },
+    {
+      "name": "nanoid",
+      "version": "3.3.18"
+    },
+    {
+      "name": "picocolors",
+      "version": "1.1.1"
+    },
+    {
+      "name": "picomatch",
+      "version": "4.0.7"
+    },
+    {
+      "name": "postcss",
+      "version": "8.5.28"
+    },
+    {
+      "name": "rolldown",
+      "version": "1.2.8"
+    },
+    {
+      "name": "source-map-js",
+      "version": "1.2.1"
+    },
+    {
+      "name": "tinyglobby",
+      "version": "0.2.17"
+    },
+    {
+      "name": "vite",
+      "version": "8.2.2"
+    }
+  ],
+  "rules": {
+    "newOutputOnly": true,
+    "locked": true,
+    "offline": true,
+    "noBundle": true,
+    "noSign": true,
+    "ci": true,
+    "bundleActive": false,
+    "arbitraryExecutableAllowed": false,
+    "ambientCargoConfigAllowed": false,
+    "contentHashesCollectedAtBuild": true,
+    "mutableProductionSourceNotPinnedInPolicy": true
+  }
+}

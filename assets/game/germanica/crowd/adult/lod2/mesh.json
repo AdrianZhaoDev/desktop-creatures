@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "lod2",
+  "coordinateSpace": "gltf-scene",
+  "meshHash": "1e7645defed8f5e56e839c2680195b033727c3e191a0bacad8701d5f8ea2a6b4",
+  "sourceModelHash": "190b3941be9fc0a66bde7071c658d3079f8d8b59a33c5268283596c536a1acad",
+  "sourceModel": "../../../adult/lod2.glb",
+  "data": "mesh.bin",
+  "byteLength": 29424,
+  "vertexCount": 504,
+  "triangleCount": 604,
+  "attributes": {
+    "position": {
+      "byteOffset": 0,
+      "byteLength": 6048,
+      "componentType": "float32",
+      "itemSize": 3,
+      "count": 504
+    },
+    "normal": {
+      "byteOffset": 6048,
+      "byteLength": 6048,
+      "componentType": "float32",
+      "itemSize": 3,
+      "count": 504
+    },
+    "color": {
+      "byteOffset": 12096,
+      "byteLength": 6048,
+      "componentType": "float32",
+      "itemSize": 3,
+      "count": 504
+    },
+    "uv": {
+      "byteOffset": 18144,
+      "byteLength": 4032,
+      "componentType": "float32",
+      "itemSize": 2,
+      "count": 504
+    }
+  },
+  "index": {
+    "byteOffset": 22176,
+    "byteLength": 7248,
+    "componentType": "uint32",
+    "itemSize": 1,
+    "count": 1812
+  },
+  "material": {
+    "sourceMaterialIndex": 0,
+    "vertexColors": true,
+    "roughnessFactor": 0.39,
+    "metallicFactor": 0,
+    "baseColorFactor": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "side": "double",
+    "policy": "Reuse source GLB PBR material; vertex colors embedded in mesh.bin"
+  }
+}

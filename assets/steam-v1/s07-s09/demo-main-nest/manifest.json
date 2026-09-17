@@ -1,0 +1,203 @@
+{
+  "schemaVersion": 1,
+  "id": "nest.demo",
+  "slug": "demo-main-nest",
+  "quality": "reused-original-geometry-development-pending-human-art-review",
+  "artApproved": false,
+  "developmentPlaceholder": false,
+  "model": "model.glb",
+  "source": "source.blend",
+  "rootNode": "asset_root",
+  "dimensions": {
+    "unit": "metre",
+    "up": "+Y",
+    "forward": "+Z",
+    "sourceUp": "+Z",
+    "sourceForward": "-Y",
+    "origin": "ground placement at 0,0,0",
+    "boundsBlender": {
+      "min": [
+        -0.10762792080640793,
+        -0.09004279226064682,
+        0
+      ],
+      "max": [
+        0.10762792080640793,
+        0.11404279619455338,
+        0.11989372968673706
+      ]
+    },
+    "sizeBlender": [
+      0.21525584161281586,
+      0.2040855884552002,
+      0.11989372968673706
+    ],
+    "boundsGLTF": {
+      "min": [
+        -0.10762792080640793,
+        0,
+        -0.11404279619455338
+      ],
+      "max": [
+        0.10762792080640793,
+        0.11989372968673706,
+        0.09004279226064682
+      ]
+    }
+  },
+  "reference": {
+    "kind": "project-original-reuse-prototype",
+    "sourceInputs": "source-inputs.json",
+    "conceptApproval": "Not requested for this authorized development reuse prototype; final appearance not human-approved",
+    "priorReferenceRecord": "docs/steam-v1/reference/s07-s08/SOURCE-RECORD.md"
+  },
+  "materials": {
+    "method": "Original imported PBR / COLOR_0 and original embedded 256px grain/normal textures",
+    "externalTexturesRequired": false
+  },
+  "anchors": {
+    "placement": "anchor_placement",
+    "spawn": "spawn_point",
+    "hit": "hit_point",
+    "interaction": "hit_point",
+    "collision": "collision_selection"
+  },
+  "collision": {
+    "selectionProxy": "collision_selection",
+    "solidProxies": [],
+    "usage": "Picking only; no implicit navigation obstacle",
+    "sourceCoordinates": "Blender metres Z-up. Resolve exported node world matrices for glTF Y-up."
+  },
+  "stateRig": {
+    "defaultState": "active",
+    "states": [
+      "active",
+      "destroyed"
+    ],
+    "core": "nest_core",
+    "pulseRoot": "pulse_root",
+    "movableNodes": [
+      "nest_core",
+      "pulse_root",
+      "core_shell_left",
+      "core_shell_right"
+    ],
+    "motions": [
+      {
+        "node": "pulse_root",
+        "purpose": "visual breathing only"
+      },
+      {
+        "node": "core_shell_left",
+        "purpose": "open and settle at destruction"
+      },
+      {
+        "node": "core_shell_right",
+        "purpose": "open and settle at destruction"
+      }
+    ],
+    "frameRate": 30,
+    "clips": {
+      "idle": {
+        "name": "idle",
+        "durationSeconds": 2,
+        "loop": true,
+        "clampWhenFinished": false
+      },
+      "pulse": {
+        "name": "pulse",
+        "durationSeconds": 1.2,
+        "loop": true,
+        "clampWhenFinished": false
+      },
+      "destroy": {
+        "name": "destroy",
+        "durationSeconds": 1.5,
+        "loop": false,
+        "clampWhenFinished": true
+      }
+    },
+    "sourceCoordinates": "Blender; runtime reads exported node matrices"
+  },
+  "actions": {
+    "idle": {
+      "clip": "idle",
+      "loop": true,
+      "clampWhenFinished": false,
+      "playbackRateRange": [
+        1,
+        1
+      ]
+    },
+    "pulse": {
+      "clip": "pulse",
+      "loop": true,
+      "clampWhenFinished": false,
+      "playbackRateRange": [
+        1,
+        1
+      ]
+    },
+    "destroy": {
+      "clip": "destroy",
+      "loop": false,
+      "clampWhenFinished": true,
+      "playbackRateRange": [
+        1,
+        1
+      ]
+    }
+  },
+  "gameplay": {
+    "stage": "S09",
+    "mechanism": "ovipositing-main-nest",
+    "scope": "First Demo level single nest only",
+    "authoritativeState": "domain ledger owns spawn/hp/death; asset animation emits no gameplay timer or extra entities",
+    "pulse": "visual-only: must not spawn on animation loop boundary",
+    "destroy": "Stop idle/pulse; play once and clamp. Domain death independently stops future nest waves; existing insects/garbage remain.",
+    "particles": "No particles, timer, extra roaches, reward entities or full-screen stain included"
+  },
+  "preview": {
+    "reviewDIP": [
+      96,
+      120,
+      160
+    ],
+    "scaleBasis": "Longest projected alpha silhouette; labels and card padding excluded. Exact DIP at DPR=1 / 100% only.",
+    "exactDIPFiles": [
+      "preview/readable-96dip-light.png",
+      "preview/readable-96dip-dark.png",
+      "preview/readable-120dip-light.png",
+      "preview/readable-120dip-dark.png",
+      "preview/readable-160dip-light.png",
+      "preview/readable-160dip-dark.png"
+    ],
+    "contactSheet": "preview/contact-sheet.jpg",
+    "inspection": "preview/inspection.gif",
+    "artApproved": false
+  },
+  "budget": {
+    "maxTriangles": 20000,
+    "maxMaterials": 3
+  },
+  "integration": {
+    "status": "Production visual-state integration; development art pending human review",
+    "runtimeScale": "Use metre bounds to adapt display width; no change to logical difficulty or old actor units",
+    "renderOnlyChildren": "Mesh nodes; collision_selection is a non-rendering empty",
+    "browserWebGLVerified": true,
+    "nativeGameplayVerified": false,
+    "artApproved": false,
+    "animationRuntime": "Production CampaignRenderer owns an animated model instance. idle/pulse loops advance in render; destroy stops them, plays once, then hands the same corpse ID to the existing crowd/cleanup path.",
+    "stateSource": "Existing live nest ledger object and ecology.spawnRemaining <= authored pulse duration select pulse. Authoritative corpse transition/new nest-kill receipt selects destroy. Earlier collection removes the visual immediately. Initial saved corpses do not replay destruction.",
+    "evidence": "docs/steam-v1/evidence/s08-nest-visual-states/README.md"
+  },
+  "sourceInputs": "source-inputs.json",
+  "licenseFile": "license.txt",
+  "generationRecord": "generation-record.json",
+  "technicalValidation": "validation.json",
+  "runtimeStats": "runtime-stats.json",
+  "sha256": {
+    "model": "aa3921424ea84be86102e00277f7e6e08c18bb7f0b746e1cbe1db6574483dcd4",
+    "source": "da2d6dcd010eaadf92c42aefd2a85f33c96b6d13e1e0f2e7ab2ae403d509b66b"
+  }
+}

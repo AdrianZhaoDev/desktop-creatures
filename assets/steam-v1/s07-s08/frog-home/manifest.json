@@ -1,0 +1,531 @@
+{
+  "schemaVersion": 1,
+  "id": "home.frog",
+  "slug": "frog-home",
+  "quality": "procedural-development-pending-human-art-review",
+  "artApproved": false,
+  "model": "model.glb",
+  "source": "source.blend",
+  "rootNode": "asset_root",
+  "dimensions": {
+    "unit": "metre",
+    "up": "+Y",
+    "forward": "+Z",
+    "sourceUp": "+Z",
+    "sourceForward": "-Y",
+    "origin": "ground placement at 0,0,0",
+    "boundsBlender": {
+      "min": [
+        -0.1365676373243332,
+        -0.1324300318956375,
+        0
+      ],
+      "max": [
+        0.17385999858379364,
+        0.13086146116256714,
+        0.2264586240053177
+      ]
+    },
+    "sizeBlender": [
+      0.31042763590812683,
+      0.26329149305820465,
+      0.2264586240053177
+    ],
+    "boundsGLTF": {
+      "min": [
+        -0.1365676373243332,
+        0,
+        -0.13086146116256714
+      ],
+      "max": [
+        0.17385999858379364,
+        0.2264586240053177,
+        0.1324300318956375
+      ]
+    }
+  },
+  "reference": {
+    "path": "reference/frog-home-v1.png",
+    "sha256": "aaab3fe39a1fde66ba91de84e4dfd7dd791b3e0acc67fac3902176e15753f972",
+    "frozenSource": "docs/steam-v1/reference/s07-s08/SOURCE-RECORD.md"
+  },
+  "materials": {
+    "method": "PBR with linear Tint vertex colors; real volume meshes",
+    "externalTexturesRequired": false
+  },
+  "anchors": {
+    "entry": "entry_point",
+    "entry_inside": "entry_inside",
+    "sleep": "sleep_point",
+    "repair": "repair_point",
+    "water": "water_point",
+    "placement": "anchor_placement"
+  },
+  "collision": {
+    "selectionProxy": "collision_selection",
+    "usage": "Non-rendering box is for picking only. Do not use for navigation or block doorway.",
+    "solidProxies": [
+      {
+        "node": "collision_floor",
+        "shape": "box",
+        "center": [
+          0,
+          0.005,
+          0.018
+        ],
+        "size": [
+          0.211,
+          0.153,
+          0.018
+        ]
+      },
+      {
+        "node": "collision_left_wall",
+        "shape": "box",
+        "center": [
+          -0.112,
+          0.005,
+          0.065
+        ],
+        "size": [
+          0.025,
+          0.162,
+          0.102
+        ]
+      },
+      {
+        "node": "collision_right_wall",
+        "shape": "box",
+        "center": [
+          0.112,
+          0.005,
+          0.065
+        ],
+        "size": [
+          0.025,
+          0.162,
+          0.102
+        ]
+      },
+      {
+        "node": "collision_back_wall",
+        "shape": "box",
+        "center": [
+          0,
+          0.084,
+          0.075
+        ],
+        "size": [
+          0.216,
+          0.014,
+          0.121
+        ]
+      },
+      {
+        "node": "collision_front_left",
+        "shape": "box",
+        "center": [
+          -0.095,
+          -0.077,
+          0.066
+        ],
+        "size": [
+          0.037,
+          0.016,
+          0.1
+        ]
+      },
+      {
+        "node": "collision_front_right",
+        "shape": "box",
+        "center": [
+          0.095,
+          -0.077,
+          0.066
+        ],
+        "size": [
+          0.037,
+          0.016,
+          0.1
+        ]
+      },
+      {
+        "node": "collision_front_header",
+        "shape": "box",
+        "center": [
+          0,
+          -0.077,
+          0.151
+        ],
+        "size": [
+          0.143,
+          0.016,
+          0.029
+        ]
+      }
+    ],
+    "sourceCoordinates": "Blender metres Z-up. Use exported node world matrix for runtime; source extents reorder [x,z,y] for glTF Y-up.",
+    "additionalVolumes": [
+      {
+        "node": "collision_back_wall",
+        "parameters": {
+          "role": "collision_proxy",
+          "shape": "box",
+          "size_m": [
+            0.216,
+            0.014,
+            0.121
+          ],
+          "dimensions_m": [
+            0.216,
+            0.014,
+            0.121
+          ]
+        }
+      },
+      {
+        "node": "collision_floor",
+        "parameters": {
+          "role": "collision_proxy",
+          "shape": "box",
+          "size_m": [
+            0.211,
+            0.153,
+            0.018
+          ],
+          "dimensions_m": [
+            0.211,
+            0.153,
+            0.018
+          ]
+        }
+      },
+      {
+        "node": "collision_front_header",
+        "parameters": {
+          "role": "collision_proxy",
+          "shape": "box",
+          "size_m": [
+            0.143,
+            0.016,
+            0.029
+          ],
+          "dimensions_m": [
+            0.143,
+            0.016,
+            0.029
+          ]
+        }
+      },
+      {
+        "node": "collision_front_left",
+        "parameters": {
+          "role": "collision_proxy",
+          "shape": "box",
+          "size_m": [
+            0.037,
+            0.016,
+            0.1
+          ],
+          "dimensions_m": [
+            0.037,
+            0.016,
+            0.1
+          ]
+        }
+      },
+      {
+        "node": "collision_front_right",
+        "parameters": {
+          "role": "collision_proxy",
+          "shape": "box",
+          "size_m": [
+            0.037,
+            0.016,
+            0.1
+          ],
+          "dimensions_m": [
+            0.037,
+            0.016,
+            0.1
+          ]
+        }
+      },
+      {
+        "node": "collision_left_wall",
+        "parameters": {
+          "role": "collision_proxy",
+          "shape": "box",
+          "size_m": [
+            0.025,
+            0.162,
+            0.102
+          ],
+          "dimensions_m": [
+            0.025,
+            0.162,
+            0.102
+          ]
+        }
+      },
+      {
+        "node": "collision_right_wall",
+        "parameters": {
+          "role": "collision_proxy",
+          "shape": "box",
+          "size_m": [
+            0.025,
+            0.162,
+            0.102
+          ],
+          "dimensions_m": [
+            0.025,
+            0.162,
+            0.102
+          ]
+        }
+      }
+    ]
+  },
+  "stateRig": {
+    "defaultState": "normal_door_closed",
+    "motions": [
+      {
+        "node": "door_hinge",
+        "path": "rotation_euler",
+        "axis": 2,
+        "closed": 0.0,
+        "open": -1.9198621771937625
+      },
+      {
+        "node": "roof_root",
+        "path": "location",
+        "axis": 2,
+        "closed": 0.0,
+        "open": 0.1
+      }
+    ],
+    "sourceCoordinates": "Blender; resolve exported nodes for runtime glTF axes",
+    "clip": "open_close",
+    "durationSeconds": 2,
+    "states": [
+      "closed",
+      "open"
+    ],
+    "frameRate": 30,
+    "closedFrame": 1,
+    "openFrame": 31,
+    "returnFrame": 61,
+    "clipPurpose": "Inspection cycle: opens door, lifts removable roof, and moves window shutter when present. Drive individual nodes for gameplay."
+  },
+  "preview": {
+    "reviewDIP": [
+      96,
+      120,
+      160
+    ],
+    "scaleBasis": "longest screen-projected dimension at devicePixelRatio=1; use HTML gallery for exact CSS DIP",
+    "exactDIPFiles": [
+      "preview/readable-96dip.png",
+      "preview/readable-120dip.png",
+      "preview/readable-160dip.png"
+    ],
+    "contactSheet": "preview/contact-sheet.jpg",
+    "readabilitySheet": "preview/readability.jpg"
+  },
+  "budget": {
+    "maxTriangles": 20000,
+    "maxMaterials": 3
+  },
+  "integration": {
+    "status": "asset-only; not loaded by gameplay",
+    "runtimeScale": "Adapt metre bounds to display size; existing S06 actors use arbitrary units.",
+    "renderOnlyChildren": "Mesh nodes; empties named collision_* are proxies/metadata."
+  },
+  "authoring": {
+    "id": "home.frog",
+    "name": "Frog leaf home",
+    "description": "Terracotta vaulted cave, cream arch, thick olive leaf canopy with curled stem, green door and side stone water bowl; frozen frog-home-v1.png.",
+    "anchors": {
+      "entry": "entry_point",
+      "entry_inside": "entry_inside",
+      "sleep": "sleep_point",
+      "repair": "repair_point",
+      "water": "water_point",
+      "placement": "anchor_placement"
+    },
+    "motions": [
+      {
+        "node": "door_hinge",
+        "path": "rotation_euler",
+        "axis": 2,
+        "closed": 0.0,
+        "open": -1.9198621771937625
+      },
+      {
+        "node": "roof_root",
+        "path": "location",
+        "axis": 2,
+        "closed": 0.0,
+        "open": 0.1
+      }
+    ],
+    "notes": [
+      "Frozen PNGs were opened using view_image before modelling.",
+      "Only normal state is authored; light/heavy/breached damage meshes are deferred.",
+      "Original deterministic, vertex-painted 3D geometry; no reference image planes or image materials."
+    ],
+    "asset_id": "frog-home",
+    "runtime_id": "home.frog",
+    "category": "home",
+    "root_node": "asset_root",
+    "units": "meters",
+    "up_axis": "+Z",
+    "forward_axis": "-Y",
+    "state": "normal",
+    "authored_states": [
+      "normal"
+    ],
+    "deferred_states": [
+      "light_damage",
+      "heavy_damage",
+      "breached"
+    ],
+    "triangle_budget": 20000,
+    "material_budget": 3,
+    "entrance_clearance_m": {
+      "width": 0.138,
+      "height": 0.108
+    },
+    "interaction_nodes": [
+      "entry_point",
+      "entry_inside",
+      "sleep_point",
+      "repair_point"
+    ],
+    "movable_nodes": [
+      "door_hinge",
+      "roof_root"
+    ],
+    "collisions": [
+      {
+        "node": "collision_floor",
+        "shape": "box",
+        "center": [
+          0,
+          0.005,
+          0.018
+        ],
+        "size": [
+          0.211,
+          0.153,
+          0.018
+        ]
+      },
+      {
+        "node": "collision_left_wall",
+        "shape": "box",
+        "center": [
+          -0.112,
+          0.005,
+          0.065
+        ],
+        "size": [
+          0.025,
+          0.162,
+          0.102
+        ]
+      },
+      {
+        "node": "collision_right_wall",
+        "shape": "box",
+        "center": [
+          0.112,
+          0.005,
+          0.065
+        ],
+        "size": [
+          0.025,
+          0.162,
+          0.102
+        ]
+      },
+      {
+        "node": "collision_back_wall",
+        "shape": "box",
+        "center": [
+          0,
+          0.084,
+          0.075
+        ],
+        "size": [
+          0.216,
+          0.014,
+          0.121
+        ]
+      },
+      {
+        "node": "collision_front_left",
+        "shape": "box",
+        "center": [
+          -0.095,
+          -0.077,
+          0.066
+        ],
+        "size": [
+          0.037,
+          0.016,
+          0.1
+        ]
+      },
+      {
+        "node": "collision_front_right",
+        "shape": "box",
+        "center": [
+          0.095,
+          -0.077,
+          0.066
+        ],
+        "size": [
+          0.037,
+          0.016,
+          0.1
+        ]
+      },
+      {
+        "node": "collision_front_header",
+        "shape": "box",
+        "center": [
+          0,
+          -0.077,
+          0.151
+        ],
+        "size": [
+          0.143,
+          0.016,
+          0.029
+        ]
+      }
+    ],
+    "door": {
+      "pivot": "door_hinge",
+      "axis": "z",
+      "closed_degrees": 0,
+      "open_degrees": -110,
+      "default_degrees": 0
+    },
+    "visual_basis": "Terracotta vaulted cave, cream arch, thick olive leaf canopy with curled stem, green door and side stone water bowl; frozen frog-home-v1.png.",
+    "reference": "docs/steam-v1/reference/s07-s08/frog-home-v1.png",
+    "limitations": [
+      "Only the undamaged state is authored; damage meshes remain a later production step.",
+      "Rigid pivots are authored; runtime door animation and gameplay entry integration require engine validation.",
+      "Vertex-painted original development geometry; final release art approval is pending."
+    ]
+  },
+  "sha256": {
+    "model": "f53eab8eef55a0ba3fbf58d0bcd1ebf58a078c01d347e3afd5080ebae6cdd8f1",
+    "source": "5cc33ceeb3931aad43be2b06ba5820912e8e5f420bae824700c51e527c6ea5ab"
+  },
+  "technicalValidation": "validation.json",
+  "runtimeStats": "runtime-stats.json"
+}

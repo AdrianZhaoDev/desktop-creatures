@@ -1,0 +1,943 @@
+{
+  "schemaVersion": 2,
+  "assetKind": "species",
+  "id": "roach.hissing",
+  "speciesId": "hissing",
+  "name": "马达加斯加发声蜚蠊 · 紫晶王冠",
+  "scientificName": "Gromphadorhina portentosa",
+  "model": "adult/model.glb",
+  "preview": "adult/preview.png",
+  "licenseFile": "license.txt",
+  "rigVersion": "roachRig.v2",
+  "sex": "female",
+  "coordinates": {
+    "upAxis": "+Y",
+    "forwardAxis": "-Z",
+    "groundY": 0
+  },
+  "display": {
+    "bodyLengthDip": 92,
+    "bodyLengthModel": 2.16,
+    "collisionRadiusDip": 23.92,
+    "shadowScale": 0.82
+  },
+  "forms": {
+    "ootheca": {
+      "model": "egg/model.glb",
+      "preview": "egg/preview.png",
+      "bodyLengthModel": 0.76,
+      "rig": "eggCase.v1",
+      "lods": {
+        "lod1": "egg/lod1.glb"
+      },
+      "clips": {
+        "Idle": {
+          "name": "Idle",
+          "duration": 1,
+          "loop": true,
+          "clampWhenFinished": false
+        },
+        "Hatch": {
+          "name": "Hatch",
+          "duration": 1,
+          "loop": false,
+          "clampWhenFinished": true
+        }
+      },
+      "statistics": [
+        {
+          "id": "lod0",
+          "model": "egg/model.glb",
+          "vertices": 630,
+          "triangles": 1020
+        },
+        {
+          "id": "lod1",
+          "model": "egg/lod1.glb",
+          "vertices": 272,
+          "triangles": 376
+        }
+      ],
+      "display": {
+        "bodyLengthModel": 0.76
+      },
+      "materialVariants": [
+        "default",
+        "newborn-pale"
+      ]
+    },
+    "nymph-early": {
+      "model": "early/model.glb",
+      "preview": "early/preview.png",
+      "bodyLengthModel": 2.16,
+      "rig": "roachRig.v2",
+      "lods": {
+        "lod1": "early/lod1.glb",
+        "lod2": "early/lod2.glb"
+      },
+      "clips": {
+        "Idle": {
+          "name": "Idle",
+          "duration": 2,
+          "loop": true,
+          "clampWhenFinished": false
+        },
+        "Walk": {
+          "name": "Walk",
+          "duration": 0.7916666666666666,
+          "loop": true,
+          "clampWhenFinished": false
+        },
+        "WalkSlow": {
+          "name": "WalkSlow",
+          "duration": 1.2083333333333333,
+          "loop": true,
+          "clampWhenFinished": false
+        },
+        "Run": {
+          "name": "Run",
+          "duration": 0.4166666666666667,
+          "loop": true,
+          "clampWhenFinished": false
+        },
+        "HideEnter": {
+          "name": "HideEnter",
+          "duration": 0.2916666666666667,
+          "loop": false,
+          "clampWhenFinished": true
+        },
+        "HideLoop": {
+          "name": "HideLoop",
+          "duration": 1,
+          "loop": true,
+          "clampWhenFinished": false
+        },
+        "HideExit": {
+          "name": "HideExit",
+          "duration": 0.2916666666666667,
+          "loop": false,
+          "clampWhenFinished": true
+        },
+        "FeedLoop": {
+          "name": "FeedLoop",
+          "duration": 1,
+          "loop": true,
+          "clampWhenFinished": false
+        },
+        "SleepEnter": {
+          "name": "SleepEnter",
+          "duration": 0.4166666666666667,
+          "loop": false,
+          "clampWhenFinished": true
+        },
+        "SleepLoop": {
+          "name": "SleepLoop",
+          "duration": 2,
+          "loop": true,
+          "clampWhenFinished": false
+        },
+        "SleepExit": {
+          "name": "SleepExit",
+          "duration": 0.4166666666666667,
+          "loop": false,
+          "clampWhenFinished": true
+        },
+        "GrabbedLoop": {
+          "name": "GrabbedLoop",
+          "duration": 0.6666666666666666,
+          "loop": true,
+          "clampWhenFinished": false
+        },
+        "ReleaseRecover": {
+          "name": "ReleaseRecover",
+          "duration": 0.4166666666666667,
+          "loop": false,
+          "clampWhenFinished": true
+        }
+      },
+      "statistics": [
+        {
+          "id": "lod0",
+          "model": "early/model.glb",
+          "vertices": 2976,
+          "triangles": 4804
+        },
+        {
+          "id": "lod1",
+          "model": "early/lod1.glb",
+          "vertices": 1080,
+          "triangles": 1524
+        },
+        {
+          "id": "lod2",
+          "model": "early/lod2.glb",
+          "vertices": 586,
+          "triangles": 740
+        }
+      ],
+      "display": {
+        "bodyLengthModel": 2.16
+      },
+      "materialVariants": [
+        "default",
+        "newborn-pale"
+      ],
+      "crowd": {
+        "enabled": true,
+        "metadata": "crowd/nymph-early/vat.json"
+      }
+    },
+    "nymph-late": {
+      "model": "late/model.glb",
+      "preview": "late/preview.png",
+      "bodyLengthModel": 2.16,
+      "rig": "roachRig.v2",
+      "lods": {
+        "lod1": "late/lod1.glb",
+        "lod2": "late/lod2.glb"
+      },
+      "clips": {
+        "Idle": {
+          "name": "Idle",
+          "duration": 2,
+          "loop": true,
+          "clampWhenFinished": false
+        },
+        "Walk": {
+          "name": "Walk",
+          "duration": 0.7916666666666666,
+          "loop": true,
+          "clampWhenFinished": false
+        },
+        "WalkSlow": {
+          "name": "WalkSlow",
+          "duration": 1.2083333333333333,
+          "loop": true,
+          "clampWhenFinished": false
+        },
+        "Run": {
+          "name": "Run",
+          "duration": 0.4166666666666667,
+          "loop": true,
+          "clampWhenFinished": false
+        },
+        "HideEnter": {
+          "name": "HideEnter",
+          "duration": 0.2916666666666667,
+          "loop": false,
+          "clampWhenFinished": true
+        },
+        "HideLoop": {
+          "name": "HideLoop",
+          "duration": 1,
+          "loop": true,
+          "clampWhenFinished": false
+        },
+        "HideExit": {
+          "name": "HideExit",
+          "duration": 0.2916666666666667,
+          "loop": false,
+          "clampWhenFinished": true
+        },
+        "FeedLoop": {
+          "name": "FeedLoop",
+          "duration": 1,
+          "loop": true,
+          "clampWhenFinished": false
+        },
+        "SleepEnter": {
+          "name": "SleepEnter",
+          "duration": 0.4166666666666667,
+          "loop": false,
+          "clampWhenFinished": true
+        },
+        "SleepLoop": {
+          "name": "SleepLoop",
+          "duration": 2,
+          "loop": true,
+          "clampWhenFinished": false
+        },
+        "SleepExit": {
+          "name": "SleepExit",
+          "duration": 0.4166666666666667,
+          "loop": false,
+          "clampWhenFinished": true
+        },
+        "GrabbedLoop": {
+          "name": "GrabbedLoop",
+          "duration": 0.6666666666666666,
+          "loop": true,
+          "clampWhenFinished": false
+        },
+        "ReleaseRecover": {
+          "name": "ReleaseRecover",
+          "duration": 0.4166666666666667,
+          "loop": false,
+          "clampWhenFinished": true
+        }
+      },
+      "statistics": [
+        {
+          "id": "lod0",
+          "model": "late/model.glb",
+          "vertices": 2976,
+          "triangles": 4804
+        },
+        {
+          "id": "lod1",
+          "model": "late/lod1.glb",
+          "vertices": 1080,
+          "triangles": 1524
+        },
+        {
+          "id": "lod2",
+          "model": "late/lod2.glb",
+          "vertices": 586,
+          "triangles": 740
+        }
+      ],
+      "display": {
+        "bodyLengthModel": 2.16
+      },
+      "materialVariants": [
+        "default",
+        "newborn-pale"
+      ],
+      "crowd": {
+        "enabled": true,
+        "metadata": "crowd/nymph-late/vat.json"
+      }
+    },
+    "adult": {
+      "model": "adult/model.glb",
+      "preview": "adult/preview.png",
+      "bodyLengthModel": 2.16,
+      "rig": "roachRig.v2",
+      "lods": {
+        "lod1": "adult/lod1.glb",
+        "lod2": "adult/lod2.glb"
+      },
+      "clips": {
+        "Idle": {
+          "name": "Idle",
+          "duration": 2,
+          "loop": true,
+          "clampWhenFinished": false
+        },
+        "Walk": {
+          "name": "Walk",
+          "duration": 0.7916666666666666,
+          "loop": true,
+          "clampWhenFinished": false
+        },
+        "WalkSlow": {
+          "name": "WalkSlow",
+          "duration": 1.2083333333333333,
+          "loop": true,
+          "clampWhenFinished": false
+        },
+        "Run": {
+          "name": "Run",
+          "duration": 0.4166666666666667,
+          "loop": true,
+          "clampWhenFinished": false
+        },
+        "HideEnter": {
+          "name": "HideEnter",
+          "duration": 0.2916666666666667,
+          "loop": false,
+          "clampWhenFinished": true
+        },
+        "HideLoop": {
+          "name": "HideLoop",
+          "duration": 1,
+          "loop": true,
+          "clampWhenFinished": false
+        },
+        "HideExit": {
+          "name": "HideExit",
+          "duration": 0.2916666666666667,
+          "loop": false,
+          "clampWhenFinished": true
+        },
+        "LiveBirth": {
+          "name": "LiveBirth",
+          "duration": 3,
+          "loop": false,
+          "clampWhenFinished": true
+        },
+        "FeedLoop": {
+          "name": "FeedLoop",
+          "duration": 1,
+          "loop": true,
+          "clampWhenFinished": false
+        },
+        "SleepEnter": {
+          "name": "SleepEnter",
+          "duration": 0.4166666666666667,
+          "loop": false,
+          "clampWhenFinished": true
+        },
+        "SleepLoop": {
+          "name": "SleepLoop",
+          "duration": 2,
+          "loop": true,
+          "clampWhenFinished": false
+        },
+        "SleepExit": {
+          "name": "SleepExit",
+          "duration": 0.4166666666666667,
+          "loop": false,
+          "clampWhenFinished": true
+        },
+        "GrabbedLoop": {
+          "name": "GrabbedLoop",
+          "duration": 0.6666666666666666,
+          "loop": true,
+          "clampWhenFinished": false
+        },
+        "ReleaseRecover": {
+          "name": "ReleaseRecover",
+          "duration": 0.4166666666666667,
+          "loop": false,
+          "clampWhenFinished": true
+        }
+      },
+      "statistics": [
+        {
+          "id": "lod0",
+          "model": "adult/model.glb",
+          "vertices": 2976,
+          "triangles": 4804
+        },
+        {
+          "id": "lod1",
+          "model": "adult/lod1.glb",
+          "vertices": 1080,
+          "triangles": 1524
+        },
+        {
+          "id": "lod2",
+          "model": "adult/lod2.glb",
+          "vertices": 586,
+          "triangles": 740
+        }
+      ],
+      "display": {
+        "bodyLengthModel": 2.16
+      },
+      "materialVariants": [
+        "default",
+        "newborn-pale"
+      ],
+      "crowd": {
+        "enabled": true,
+        "metadata": "crowd/adult/vat.json"
+      }
+    }
+  },
+  "stages": {
+    "egg": {
+      "form": "ootheca",
+      "scale": 0.3
+    },
+    "newborn": {
+      "form": "nymph-early",
+      "scale": 0.24,
+      "tint": [
+        1.45,
+        1.35,
+        1.2
+      ]
+    },
+    "small": {
+      "form": "nymph-early",
+      "scale": 0.43
+    },
+    "medium": {
+      "form": "nymph-late",
+      "scale": 0.7
+    },
+    "large": {
+      "form": "adult",
+      "scale": 1
+    },
+    "giant": {
+      "form": "adult",
+      "scale": 2.1
+    }
+  },
+  "animation": {
+    "mode": "skeletal",
+    "rootMotion": false,
+    "clips": {
+      "idle": "Idle",
+      "walk": "Walk",
+      "slowWalk": "WalkSlow",
+      "run": "Run",
+      "hide": "HideLoop",
+      "hideEnter": "HideEnter",
+      "hideExit": "HideExit",
+      "oviposit": "LiveBirth",
+      "feed": "FeedLoop",
+      "sleep": "SleepLoop",
+      "sleepEnter": "SleepEnter",
+      "sleepExit": "SleepExit",
+      "grabbed": "GrabbedLoop",
+      "release": "ReleaseRecover"
+    },
+    "required": [
+      "idle",
+      "walk",
+      "run",
+      "feed",
+      "sleep",
+      "grabbed"
+    ],
+    "fallbacks": {
+      "turn": "walk"
+    },
+    "events": {
+      "LiveBirth": [
+        {
+          "time": 2.35,
+          "name": "birthRelease"
+        }
+      ],
+      "Hatch": [
+        {
+          "time": 0.65,
+          "name": "hatchRelease"
+        }
+      ]
+    }
+  },
+  "sockets": {
+    "mouth": {
+      "bone": "Head",
+      "position": [
+        0,
+        0.4,
+        -0.05
+      ]
+    },
+    "ootheca": {
+      "bone": "Abdomen02",
+      "position": [
+        0,
+        0.54,
+        -0.02
+      ]
+    },
+    "gripBody": {
+      "bone": "Body",
+      "position": [
+        0,
+        0.15,
+        0
+      ]
+    },
+    "gripHindL": {
+      "bone": "L3_Tarsus",
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    "gripHindR": {
+      "bone": "R3_Tarsus",
+      "position": [
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "reproduction": {
+    "mode": "deposited",
+    "eggForm": "egg",
+    "allowedStages": [
+      "large",
+      "giant"
+    ],
+    "gameplayDisclosure": "Egg case supplied for all species; hissing species retains it internally in nature."
+  },
+  "behavior": {
+    "preset": "ground-wander",
+    "speedDipPerSecond": [
+      25,
+      95
+    ],
+    "idleSeconds": [
+      0.7,
+      3.5
+    ],
+    "maxTurnDegreesPerSecond": 220
+  },
+  "provenance": {
+    "license": "CC0-1.0",
+    "generator": "generate-game-assets.py / Blender 5.2.1 LTS",
+    "qualityStatus": "Original fantasy creatures and procedural food remnants, revision 2; see ASSET-NOTES.md for review scope"
+  },
+  "audio": {
+    "hiss": {
+      "file": "hiss.wav",
+      "gain": 0.18,
+      "cooldownSeconds": 8,
+      "maxVoices": 2,
+      "trigger": "grabbed"
+    }
+  },
+  "species": {
+    "scientificName": "Gromphadorhina portentosa",
+    "reproduction": "ootheca"
+  },
+  "rig": {
+    "id": "roachRig.v2",
+    "bones": [
+      "Root",
+      "Body",
+      "Head",
+      "Abdomen01",
+      "Abdomen02",
+      "Mandible_L",
+      "Wing_L",
+      "Mandible_R",
+      "Wing_R",
+      "L1_Femur",
+      "L1_Tibia",
+      "L1_Tarsus",
+      "L2_Femur",
+      "L2_Tibia",
+      "L2_Tarsus",
+      "L3_Femur",
+      "L3_Tibia",
+      "L3_Tarsus",
+      "L_Antenna1",
+      "L_Antenna2",
+      "L_Antenna3",
+      "L_Antenna4",
+      "L_Antenna5",
+      "R1_Femur",
+      "R1_Tibia",
+      "R1_Tarsus",
+      "R2_Femur",
+      "R2_Tibia",
+      "R2_Tarsus",
+      "R3_Femur",
+      "R3_Tibia",
+      "R3_Tarsus",
+      "R_Antenna1",
+      "R_Antenna2",
+      "R_Antenna3",
+      "R_Antenna4",
+      "R_Antenna5"
+    ],
+    "sockets": {
+      "mouth": {
+        "bone": "Head",
+        "position": [
+          0,
+          0.4,
+          -0.05
+        ]
+      },
+      "ootheca": {
+        "bone": "Abdomen02",
+        "position": [
+          0,
+          0.54,
+          -0.02
+        ]
+      },
+      "gripBody": {
+        "bone": "Body",
+        "position": [
+          0,
+          0.15,
+          0
+        ]
+      },
+      "gripHindL": {
+        "bone": "L3_Tarsus",
+        "position": [
+          0,
+          0,
+          0
+        ]
+      },
+      "gripHindR": {
+        "bone": "R3_Tarsus",
+        "position": [
+          0,
+          0,
+          0
+        ]
+      }
+    }
+  },
+  "actions": {
+    "idle": {
+      "clip": "Idle",
+      "loop": true,
+      "clampWhenFinished": false,
+      "playbackRateRange": [
+        0.8,
+        1.2
+      ],
+      "allowedForms": [
+        "nymph-early",
+        "nymph-late",
+        "adult"
+      ],
+      "crowdEligible": true
+    },
+    "walk": {
+      "clip": "Walk",
+      "loop": true,
+      "clampWhenFinished": false,
+      "playbackRateRange": [
+        0.8,
+        1.2
+      ],
+      "allowedForms": [
+        "nymph-early",
+        "nymph-late",
+        "adult"
+      ],
+      "crowdEligible": true
+    },
+    "slowWalk": {
+      "clip": "WalkSlow",
+      "loop": true,
+      "clampWhenFinished": false,
+      "playbackRateRange": [
+        0.8,
+        1.2
+      ],
+      "allowedForms": [
+        "nymph-early",
+        "nymph-late",
+        "adult"
+      ],
+      "crowdEligible": true
+    },
+    "run": {
+      "clip": "Run",
+      "loop": true,
+      "clampWhenFinished": false,
+      "playbackRateRange": [
+        0.8,
+        1.2
+      ],
+      "allowedForms": [
+        "nymph-early",
+        "nymph-late",
+        "adult"
+      ],
+      "crowdEligible": true
+    },
+    "hide": {
+      "clip": "HideLoop",
+      "loop": true,
+      "clampWhenFinished": false,
+      "playbackRateRange": [
+        0.8,
+        1.2
+      ],
+      "allowedForms": [
+        "nymph-early",
+        "nymph-late",
+        "adult"
+      ],
+      "crowdEligible": true
+    },
+    "hideEnter": {
+      "clip": "HideEnter",
+      "loop": false,
+      "clampWhenFinished": true,
+      "playbackRateRange": [
+        0.8,
+        1.2
+      ],
+      "allowedForms": [
+        "nymph-early",
+        "nymph-late",
+        "adult"
+      ],
+      "crowdEligible": false
+    },
+    "hideExit": {
+      "clip": "HideExit",
+      "loop": false,
+      "clampWhenFinished": true,
+      "playbackRateRange": [
+        0.8,
+        1.2
+      ],
+      "allowedForms": [
+        "nymph-early",
+        "nymph-late",
+        "adult"
+      ],
+      "crowdEligible": false
+    },
+    "oviposit": {
+      "clip": "LiveBirth",
+      "loop": false,
+      "clampWhenFinished": true,
+      "playbackRateRange": [
+        0.8,
+        1.2
+      ],
+      "allowedForms": [
+        "adult"
+      ],
+      "crowdEligible": false,
+      "events": [
+        {
+          "name": "eggRelease",
+          "timeNormalized": 0.7833333333333333
+        }
+      ]
+    },
+    "feed": {
+      "clip": "FeedLoop",
+      "loop": true,
+      "clampWhenFinished": false,
+      "playbackRateRange": [
+        0.8,
+        1.2
+      ],
+      "allowedForms": [
+        "nymph-early",
+        "nymph-late",
+        "adult"
+      ],
+      "crowdEligible": true
+    },
+    "sleep": {
+      "clip": "SleepLoop",
+      "loop": true,
+      "clampWhenFinished": false,
+      "playbackRateRange": [
+        0.8,
+        1.2
+      ],
+      "allowedForms": [
+        "nymph-early",
+        "nymph-late",
+        "adult"
+      ],
+      "crowdEligible": true
+    },
+    "sleepEnter": {
+      "clip": "SleepEnter",
+      "loop": false,
+      "clampWhenFinished": true,
+      "playbackRateRange": [
+        0.8,
+        1.2
+      ],
+      "allowedForms": [
+        "nymph-early",
+        "nymph-late",
+        "adult"
+      ],
+      "crowdEligible": false
+    },
+    "sleepExit": {
+      "clip": "SleepExit",
+      "loop": false,
+      "clampWhenFinished": true,
+      "playbackRateRange": [
+        0.8,
+        1.2
+      ],
+      "allowedForms": [
+        "nymph-early",
+        "nymph-late",
+        "adult"
+      ],
+      "crowdEligible": false
+    },
+    "grabbed": {
+      "clip": "GrabbedLoop",
+      "loop": true,
+      "clampWhenFinished": false,
+      "playbackRateRange": [
+        0.8,
+        1.2
+      ],
+      "allowedForms": [
+        "nymph-early",
+        "nymph-late",
+        "adult"
+      ],
+      "crowdEligible": false
+    },
+    "release": {
+      "clip": "ReleaseRecover",
+      "loop": false,
+      "clampWhenFinished": true,
+      "playbackRateRange": [
+        0.8,
+        1.2
+      ],
+      "allowedForms": [
+        "nymph-early",
+        "nymph-late",
+        "adult"
+      ],
+      "crowdEligible": false
+    },
+    "hatch": {
+      "clip": "Hatch",
+      "loop": false,
+      "clampWhenFinished": true,
+      "playbackRateRange": [
+        1,
+        1
+      ],
+      "allowedForms": [
+        "ootheca"
+      ],
+      "crowdEligible": false,
+      "events": [
+        {
+          "name": "hatchRelease",
+          "timeNormalized": 0.65
+        }
+      ]
+    },
+    "eggIdle": {
+      "clip": "Idle",
+      "loop": true,
+      "playbackRateRange": [
+        1,
+        1
+      ],
+      "allowedForms": [
+        "ootheca"
+      ],
+      "crowdEligible": false
+    }
+  },
+  "variantName": "紫晶王冠",
+  "appearance": {
+    "bodyColor": [
+      0.16,
+      0.018,
+      0.28
+    ],
+    "accentColor": [
+      0.95,
+      0.52,
+      0.05
+    ],
+    "eggSizeDip": 38,
+    "particleCount": 9,
+    "style": "fantasy-mutation"
+  }
+}

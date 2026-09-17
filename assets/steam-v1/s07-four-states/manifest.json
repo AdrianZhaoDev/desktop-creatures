@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 1,
+  "id": "steam-v1.s07-four-state-houses",
+  "quality": "development-pending-human-art-review",
+  "assetCount": 4,
+  "assets": [
+    {
+      "id": "home.cleaner.light-damaged",
+      "slug": "cleaner-home-light-damaged",
+      "manifest": "cleaner-home-light-damaged/manifest.json",
+      "model": "cleaner-home-light-damaged/model.glb",
+      "source": "cleaner-home-light-damaged/source.blend",
+      "triangles": 14378,
+      "materials": 3,
+      "primitives": 10,
+      "glbBytes": 1199764,
+      "sha256": {
+        "model": "132e521cc2a725dcccc04d5e78da6d288084fed35ec59b42641802f9501c1bdc",
+        "source": "e7bb612cfd53473a0c34bae485019b0dfa6b155578db7d5e29e8e6f51b063d9a"
+      },
+      "artApproved": false,
+      "developmentPlaceholder": false
+    },
+    {
+      "id": "home.cleaner.heavy-damaged",
+      "slug": "cleaner-home-heavy-damaged",
+      "manifest": "cleaner-home-heavy-damaged/manifest.json",
+      "model": "cleaner-home-heavy-damaged/model.glb",
+      "source": "cleaner-home-heavy-damaged/source.blend",
+      "triangles": 15728,
+      "materials": 3,
+      "primitives": 12,
+      "glbBytes": 1295552,
+      "sha256": {
+        "model": "5040af36549d1ecca0f75c143a9a252047335d8952c172a14e89b41daddc6529",
+        "source": "9a669a5f9b0b7ee2446e460e0c8628ffb4f35b2c2f21b2036373d41dc8505c9f"
+      },
+      "artApproved": false,
+      "developmentPlaceholder": false
+    },
+    {
+      "id": "home.frog.light-damaged",
+      "slug": "frog-home-light-damaged",
+      "manifest": "frog-home-light-damaged/manifest.json",
+      "model": "frog-home-light-damaged/model.glb",
+      "source": "frog-home-light-damaged/source.blend",
+      "triangles": 15534,
+      "materials": 2,
+      "primitives": 6,
+      "glbBytes": 1016016,
+      "sha256": {
+        "model": "dfefbf20a7483424e4813f4c5bbe67009693bf708672b329cceba0775655a403",
+        "source": "a1c6fdf3753e1b92eaf23e9ca1682e3eb9a895eca90d3af861fda472229249fb"
+      },
+      "artApproved": false,
+      "developmentPlaceholder": false
+    },
+    {
+      "id": "home.frog.heavy-damaged",
+      "slug": "frog-home-heavy-damaged",
+      "manifest": "frog-home-heavy-damaged/manifest.json",
+      "model": "frog-home-heavy-damaged/model.glb",
+      "source": "frog-home-heavy-damaged/source.blend",
+      "triangles": 17161,
+      "materials": 2,
+      "primitives": 7,
+      "glbBytes": 1117764,
+      "sha256": {
+        "model": "7b85f807d78841d3e7789ed3329c484a6762f790e4547113140d9972d946f74a",
+        "source": "46221c9a78f39c821296e1e95227b7fa228d54bd6cf2b9c36dcf0f7598ddd403"
+      },
+      "artApproved": false,
+      "developmentPlaceholder": false
+    }
+  ],
+  "stateMapping": {
+    "cleaner": {
+      "normal": {
+        "id": "home.cleaner",
+        "manifest": "../s07-s08/cleaner-home/manifest.json",
+        "model": "../s07-s08/cleaner-home/model.glb",
+        "source": "../s07-s08/cleaner-home/source.blend"
+      },
+      "destroyed": {
+        "id": "home.cleaner.destroyed",
+        "manifest": "../s07-s09/cleaner-home-destroyed/manifest.json",
+        "model": "../s07-s09/cleaner-home-destroyed/model.glb",
+        "source": "../s07-s09/cleaner-home-destroyed/source.blend"
+      },
+      "light-damaged": {
+        "id": "home.cleaner.light-damaged",
+        "manifest": "cleaner-home-light-damaged/manifest.json",
+        "model": "cleaner-home-light-damaged/model.glb",
+        "source": "cleaner-home-light-damaged/source.blend"
+      },
+      "heavy-damaged": {
+        "id": "home.cleaner.heavy-damaged",
+        "manifest": "cleaner-home-heavy-damaged/manifest.json",
+        "model": "cleaner-home-heavy-damaged/model.glb",
+        "source": "cleaner-home-heavy-damaged/source.blend"
+      }
+    },
+    "frog": {
+      "normal": {
+        "id": "home.frog",
+        "manifest": "../s07-s08/frog-home/manifest.json",
+        "model": "../s07-s08/frog-home/model.glb",
+        "source": "../s07-s08/frog-home/source.blend"
+      },
+      "destroyed": {
+        "id": "home.frog.destroyed",
+        "manifest": "../s07-s09/frog-home-destroyed/manifest.json",
+        "model": "../s07-s09/frog-home-destroyed/model.glb",
+        "source": "../s07-s09/frog-home-destroyed/source.blend"
+      },
+      "light-damaged": {
+        "id": "home.frog.light-damaged",
+        "manifest": "frog-home-light-damaged/manifest.json",
+        "model": "frog-home-light-damaged/model.glb",
+        "source": "frog-home-light-damaged/source.blend"
+      },
+      "heavy-damaged": {
+        "id": "home.frog.heavy-damaged",
+        "manifest": "frog-home-heavy-damaged/manifest.json",
+        "model": "frog-home-heavy-damaged/model.glb",
+        "source": "frog-home-heavy-damaged/source.blend"
+      }
+    }
+  },
+  "stateSemantics": {
+    "normal": "hpPercent >= 70",
+    "light-damaged": "40 <= hpPercent < 70",
+    "heavy-damaged": "0 < hpPercent < 40",
+    "destroyed": "hpPercent <= 0"
+  },
+  "saveSchemaChange": false,
+  "artApproved": false,
+  "nativeGameplayVerified": false,
+  "modelConfiguration": {
+    "assetAuthoring": "gpt-6-astra",
+    "reasoningEffort": "xhigh"
+  },
+  "sourceTool": "Blender 5.2.1 LTS; Three.js GLTFLoader",
+  "scope": "Two newly authored independent light-damaged meshes plus two explicitly named byte-preserving heavy copies from the legacy damaged package; normal/destroyed reused read-only by path. No S14 expansion."
+}

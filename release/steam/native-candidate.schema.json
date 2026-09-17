@@ -1,0 +1,312 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:desktop-creatures:steam-controlled-native-candidate:2",
+  "title": "Independent controlled local native candidate; not Steam release approval",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "kind",
+    "nativeExecutableBound",
+    "bindingAssurance",
+    "releaseReady",
+    "steamSdkConnected",
+    "steamCmdInvoked",
+    "uploaded",
+    "codeSigned",
+    "rightsComplete",
+    "source",
+    "build",
+    "executable",
+    "notices",
+    "contentFiles",
+    "contentTreeSha256",
+    "evidenceFiles",
+    "assuranceLimits"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 2
+    },
+    "kind": {
+      "const": "steam-controlled-native-candidate"
+    },
+    "nativeExecutableBound": {
+      "const": true
+    },
+    "bindingAssurance": {
+      "const": "controlled-local-build"
+    },
+    "releaseReady": {
+      "const": false
+    },
+    "steamSdkConnected": {
+      "const": false
+    },
+    "steamCmdInvoked": {
+      "const": false
+    },
+    "uploaded": {
+      "const": false
+    },
+    "codeSigned": {
+      "const": false
+    },
+    "rightsComplete": {
+      "const": false
+    },
+    "source": {
+      "type": "object",
+      "required": [
+        "root",
+        "candidate",
+        "candidateManifestSha256",
+        "frontendPolicySha256",
+        "frontendTreeSha256",
+        "frontendFiles",
+        "candidateFiles",
+        "nativePolicySha256",
+        "nativeInputs",
+        "npmTooling"
+      ],
+      "properties": {
+        "root": {
+          "type": "string"
+        },
+        "candidate": {
+          "type": "string"
+        },
+        "candidateManifestSha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "frontendPolicySha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "frontendTreeSha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "frontendFiles": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/file"
+          }
+        },
+        "candidateFiles": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/file"
+          }
+        },
+        "nativePolicySha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "nativeInputs": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/file"
+          }
+        },
+        "npmTooling": {
+          "type": "array",
+          "minItems": 1
+        }
+      }
+    },
+    "build": {
+      "type": "object",
+      "required": [
+        "output",
+        "project",
+        "profile",
+        "target",
+        "features",
+        "contextSha256",
+        "configuration",
+        "command",
+        "metadataCommands",
+        "cargoGraphSha256",
+        "toolchain",
+        "rejectedCargoConfigProbes",
+        "generatedBuildMetadata",
+        "nativeOutputs",
+        "frontendEmbedding"
+      ],
+      "properties": {
+        "profile": {
+          "const": "release"
+        },
+        "target": {
+          "const": "x86_64-pc-windows-msvc"
+        },
+        "features": {
+          "const": [
+            "tauri/custom-protocol"
+          ]
+        },
+        "contextSha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "cargoGraphSha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "configuration": {
+          "type": "object",
+          "required": [
+            "defaults",
+            "override",
+            "effective",
+            "defaultSha256",
+            "overrideSha256",
+            "effectiveSha256",
+            "beforeBuildWrapper",
+            "mergeSemantics"
+          ]
+        },
+        "toolchain": {
+          "type": "object",
+          "required": [
+            "node",
+            "tauri",
+            "rustc",
+            "cargo",
+            "target",
+            "bootstrap",
+            "files",
+            "directories",
+            "rustRoot",
+            "rustLibraries",
+            "environment",
+            "commands"
+          ]
+        },
+        "frontendEmbedding": {
+          "type": "object",
+          "required": [
+            "schemaVersion",
+            "kind",
+            "verified",
+            "frontendDistKind",
+            "assetCount",
+            "cacheCount",
+            "frontendTreeSha256",
+            "assets",
+            "compilerDepInfo",
+            "cacheFiles",
+            "probe",
+            "executableSha256"
+          ],
+          "properties": {
+            "schemaVersion": {
+              "const": 1
+            },
+            "kind": {
+              "const": "steam-native-frontend-embedding"
+            },
+            "verified": {
+              "const": true
+            },
+            "frontendDistKind": {
+              "const": "Directory"
+            },
+            "assetCount": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "cacheCount": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "assets": {
+              "type": "array",
+              "minItems": 1
+            },
+            "cacheFiles": {
+              "type": "array",
+              "minItems": 1
+            }
+          }
+        }
+      }
+    },
+    "executable": {
+      "type": "object",
+      "required": [
+        "path",
+        "bytes",
+        "sha256",
+        "pe",
+        "imports",
+        "importPolicy"
+      ]
+    },
+    "notices": {
+      "type": "object",
+      "required": [
+        "manifestSha256",
+        "noticesSha256",
+        "closure",
+        "nativeLibraries",
+        "rightsLimits"
+      ]
+    },
+    "contentFiles": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/file"
+      }
+    },
+    "contentTreeSha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "evidenceFiles": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/file"
+      }
+    },
+    "assuranceLimits": {
+      "type": "array",
+      "minItems": 4,
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "$defs": {
+    "file": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "path",
+        "bytes",
+        "sha256"
+      ],
+      "properties": {
+        "path": {
+          "type": "string",
+          "minLength": 1
+        },
+        "bytes": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        }
+      }
+    }
+  }
+}

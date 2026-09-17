@@ -1,0 +1,184 @@
+{
+  "schemaVersion": 1,
+  "id": "aid.repair",
+  "slug": "repair-kit",
+  "quality": "procedural-development-pending-human-art-review",
+  "artApproved": false,
+  "model": "model.glb",
+  "source": "source.blend",
+  "rootNode": "asset_root",
+  "dimensions": {
+    "unit": "metre",
+    "up": "+Y",
+    "forward": "+Z",
+    "sourceUp": "+Z",
+    "sourceForward": "-Y",
+    "origin": "ground placement at 0,0,0",
+    "boundsBlender": {
+      "min": [
+        -0.07223999500274658,
+        -0.04690000042319298,
+        0
+      ],
+      "max": [
+        0.07223999500274658,
+        0.04270000010728836,
+        0.09715999662876129
+      ]
+    },
+    "sizeBlender": [
+      0.14447999000549316,
+      0.08960000053048134,
+      0.09715999662876129
+    ],
+    "boundsGLTF": {
+      "min": [
+        -0.07223999500274658,
+        0,
+        -0.04270000010728836
+      ],
+      "max": [
+        0.07223999500274658,
+        0.09715999662876129,
+        0.04690000042319298
+      ]
+    }
+  },
+  "reference": {
+    "path": "reference/repair-kit-v1.png",
+    "sha256": "f3928f0da20eb7c48d12e1be7348c239214395526ec3866b72ace19b4656ff5d",
+    "frozenSource": "docs/steam-v1/reference/s07-s08/SOURCE-RECORD.md"
+  },
+  "materials": {
+    "method": "PBR with linear Tint vertex colors; real volume meshes",
+    "externalTexturesRequired": false
+  },
+  "anchors": {
+    "grip": "repair_grip",
+    "tray": "repair_tool_tray",
+    "effect": "repair_effect_origin",
+    "lid": "repair_lid_hinge",
+    "placement": "anchor_placement"
+  },
+  "collision": {
+    "selectionProxy": "collision_selection",
+    "usage": "Non-rendering box is for picking only. Do not use for navigation or block doorway.",
+    "solidProxies": [],
+    "additionalVolumes": [],
+    "sourceCoordinates": "Blender metres Z-up. Use exported node world matrix for runtime; source extents reorder [x,z,y] for glTF Y-up."
+  },
+  "stateRig": {
+    "defaultState": "normal",
+    "motions": [
+      {
+        "node": "repair_lid_hinge",
+        "path": "rotation_euler",
+        "axis": 0,
+        "closed": 0,
+        "open": -1.92
+      },
+      {
+        "node": "repair_latch_left",
+        "path": "rotation_euler",
+        "axis": 0,
+        "closed": 0,
+        "open": -0.75
+      },
+      {
+        "node": "repair_latch_right",
+        "path": "rotation_euler",
+        "axis": 0,
+        "closed": 0,
+        "open": -0.75
+      }
+    ],
+    "sourceCoordinates": "Blender; resolve exported nodes for runtime glTF axes",
+    "clip": "open_close",
+    "durationSeconds": 2,
+    "states": [
+      "closed",
+      "open"
+    ],
+    "frameRate": 30,
+    "closedFrame": 1,
+    "openFrame": 31,
+    "returnFrame": 61
+  },
+  "preview": {
+    "reviewDIP": [
+      96,
+      120,
+      160
+    ],
+    "scaleBasis": "longest screen-projected dimension at devicePixelRatio=1; use HTML gallery for exact CSS DIP",
+    "exactDIPFiles": [
+      "preview/readable-96dip.png",
+      "preview/readable-120dip.png",
+      "preview/readable-160dip.png"
+    ],
+    "contactSheet": "preview/contact-sheet.jpg",
+    "readabilitySheet": "preview/readability.jpg"
+  },
+  "budget": {
+    "maxTriangles": 10000,
+    "maxMaterials": 3
+  },
+  "integration": {
+    "status": "Production visual-state integration; development art pending human review",
+    "runtimeScale": "Adapt metre bounds to display size; existing S06 actors use arbitrary units.",
+    "renderOnlyChildren": "Mesh nodes; empties named collision_* are proxies/metadata.",
+    "animationRuntime": "Production open_close plays once on the observed house.repaired false-to-true edge, then releases the temporary visual. Development marks use repair_effect_origin and the house repair anchor.",
+    "stateSource": "Existing one-use house repair flag, including coalesced damage and paused repairs. No persistent repair-kit inventory is created; historic repairs are not replayed.",
+    "artApproved": false,
+    "nativeGameplayVerified": false,
+    "evidence": "docs/steam-v1/evidence/s08-nest-visual-states/README.md"
+  },
+  "authoring": {
+    "id": "aid.repair",
+    "name": "Repair Kit",
+    "description": "Orange rigid repair case with dark corner guards, two metal latches, hinged lid and five fitted tool compartments.",
+    "anchors": {
+      "grip": "repair_grip",
+      "tray": "repair_tool_tray",
+      "effect": "repair_effect_origin",
+      "lid": "repair_lid_hinge",
+      "placement": "anchor_placement"
+    },
+    "motions": [
+      {
+        "node": "repair_lid_hinge",
+        "path": "rotation_euler",
+        "axis": 0,
+        "closed": 0,
+        "open": -1.92
+      },
+      {
+        "node": "repair_latch_left",
+        "path": "rotation_euler",
+        "axis": 0,
+        "closed": 0,
+        "open": -0.75
+      },
+      {
+        "node": "repair_latch_right",
+        "path": "rotation_euler",
+        "axis": 0,
+        "closed": 0,
+        "open": -0.75
+      }
+    ],
+    "notes": [
+      "Reference: repair-kit-v1.png; the frozen orange hard case overrides the historical mint soft-bag prompt. S=.28 miniature metre scale.",
+      "Front is -Y, the back hinge runs along X. Open the lid to -1.92 radians about X, and release the two separate latches first.",
+      "The body has a real rounded tub, floor and walls, and the lid is a distinct rigid node with carry handle and latch children.",
+      "Five tray compartments hold simplified wrench, screwdriver, hollow tape roll, coiled cable and folded mint cloth. All are closed 3D components with physical depth.",
+      "Tools are merged static accessories for the current one-use repair behavior; no additional pickup gameplay is implied."
+    ]
+  },
+  "sha256": {
+    "model": "95e929c3f2eb6d015789c47ef0ba79f10f6820c85f279b7886b1fd34ce4576dc",
+    "source": "4333df3d5aa4b90cb3b0eefc03ed79c01e3d98937c9a5be954969ab87fce93ae"
+  },
+  "technicalValidation": "validation.json",
+  "runtimeStats": "runtime-stats.json"
+}

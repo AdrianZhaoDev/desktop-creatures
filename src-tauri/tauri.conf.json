@@ -1,0 +1,56 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "全面蟑螂模拟器",
+  "version": "1.1.0",
+  "identifier": "com.desktopcreatures.desktop",
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "devUrl": "http://localhost:1420",
+    "beforeBuildCommand": "npm run build",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "withGlobalTauri": true,
+    "windows": [
+      {
+        "label": "overlay-primary",
+        "title": "全面蟑螂模拟器",
+        "url": "index.html",
+        "width": 1280,
+        "height": 720,
+        "transparent": true,
+        "decorations": false,
+        "alwaysOnTop": true,
+        "focus": false,
+        "focusable": false,
+        "skipTaskbar": true,
+        "shadow": false,
+        "resizable": false,
+        "fullscreen": false,
+        "visible": false
+      }
+    ],
+    "security": {
+      "csp": "default-src 'self' customprotocol: asset:; connect-src 'self' blob: ipc: http://ipc.localhost http://localhost:1420 ws://localhost:1421; img-src 'self' asset: http://asset.localhost blob: data:; style-src 'self' 'unsafe-inline'; script-src 'self'"
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": ["nsis", "msi"],
+    "publisher": "Desktop Creatures contributors",
+    "copyright": "Copyright © 2026 Desktop Creatures contributors",
+    "shortDescription": "Transparent 3D creatures for the Windows desktop",
+    "longDescription": "A local, click-through Windows overlay with animated 3D creatures, lifecycle simulation, multi-display support and GPU crowd rendering.",
+    "licenseFile": "../LICENSE",
+    "windows": {
+      "webviewInstallMode": { "type": "embedBootstrapper", "silent": true }
+    },
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ]
+  }
+}

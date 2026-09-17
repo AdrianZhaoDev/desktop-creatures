@@ -1,0 +1,42 @@
+{
+  "source": "Actual GLB buffer decode + Three.js GLTFLoader/AnimationMixer",
+  "triangles": 15534,
+  "vertices": 25346,
+  "primitives": 6,
+  "meshCount": 5,
+  "materialCount": 2,
+  "glbBytes": 1016016,
+  "textureCount": 0,
+  "dimensionsGLTF": {
+    "unit": "metre",
+    "size": [
+      0.31042763590812683,
+      0.2264586240053177,
+      0.26329149305820465
+    ],
+    "min": [
+      -0.1365676373243332,
+      0,
+      -0.13086146116256714
+    ],
+    "max": [
+      0.17385999858379364,
+      0.2264586240053177,
+      0.1324300318956375
+    ]
+  },
+  "animations": [
+    {
+      "name": "inspection",
+      "duration": 2,
+      "tracks": 1,
+      "loop": true,
+      "continuous": true
+    }
+  ],
+  "sha256": {
+    "model": "dfefbf20a7483424e4813f4c5bbe67009693bf708672b329cceba0775655a403",
+    "source": "a1c6fdf3753e1b92eaf23e9ca1682e3eb9a895eca90d3af861fda472229249fb"
+  },
+  "geometrySha256": "82b09dcbf8f9d075e5582d92e0adff9d955223bba910e81a8342b46a6bf9cbde"
+}

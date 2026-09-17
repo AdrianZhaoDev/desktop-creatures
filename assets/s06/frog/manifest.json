@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 1,
+  "id": "actor.frog",
+  "quality": "procedural-development-pending-art-review",
+  "model": "model.glb",
+  "source": "source.blend",
+  "rootNode": "FrogAssetRoot",
+  "heightDIP": 60,
+  "units": {
+    "modelUnit": "arbitrary",
+    "DIPPerModelUnit": 39.6256543098561,
+    "up": "Y",
+    "forward": "+Z",
+    "anatomicalLeft": "+X",
+    "origin": "foot plane; static asset root at 0,0,0"
+  },
+  "dimensions": {
+    "height": 1.5141705807764083,
+    "width": 1.804585039615631,
+    "depth": 1.7091920375823975,
+    "restBoundsBlender": {
+      "min": [
+        -0.9022924900054932,
+        -0.9541611075401306,
+        0.001588052837178111
+      ],
+      "max": [
+        0.9022925496101379,
+        0.7550309300422668,
+        1.5157586336135864
+      ]
+    }
+  },
+  "animations": {
+    "idle": {
+      "clip": "idle",
+      "duration": 2.4,
+      "loop": true
+    },
+    "hop_start": {
+      "clip": "hop_start",
+      "duration": 0.5,
+      "loop": false
+    },
+    "hop_air": {
+      "clip": "hop_air",
+      "duration": 0.7,
+      "loop": false
+    },
+    "land": {
+      "clip": "land",
+      "duration": 0.466667,
+      "loop": false
+    },
+    "tongue_aim": {
+      "clip": "tongue_aim",
+      "duration": 0.533333,
+      "loop": false
+    },
+    "tongue_fire": {
+      "clip": "tongue_fire",
+      "duration": 0.3,
+      "loop": false
+    },
+    "tongue_retract": {
+      "clip": "tongue_retract",
+      "duration": 0.4,
+      "loop": false
+    },
+    "catch": {
+      "clip": "catch",
+      "duration": 0.7,
+      "loop": false
+    },
+    "eject": {
+      "clip": "eject",
+      "duration": 0.866667,
+      "loop": false
+    },
+    "enter_home": {
+      "clip": "enter_home",
+      "duration": 1.0,
+      "loop": false
+    }
+  },
+  "sockets": {
+    "mouth": "Socket_Mouth",
+    "tongueRoot": "Socket_TongueRoot",
+    "tongueTip": "Socket_TongueTip",
+    "capturePouch": "Socket_CapturePouch_Left",
+    "eject": "Socket_Eject",
+    "frontFootLeft": "Socket_armFoot_L",
+    "hindFootLeft": "Socket_legFoot_L",
+    "frontFootRight": "Socket_armFoot_R",
+    "hindFootRight": "Socket_legFoot_R"
+  },
+  "reference": {
+    "path": "../../../docs/steam-v1/reference/frog-v2.png",
+    "sha256": "6637e70317b8a6395a926185676d1137f5adbab3e56641ac97e7b9b5ba800df4"
+  },
+  "review": {
+    "stage": "S06 development asset",
+    "artApproved": false,
+    "engineApproved": false,
+    "rootMotion": "in-place; runtime owns navigation trajectory",
+    "limitations": [
+      "Procedural retopology and skin weighting require artist review.",
+      "Mouth, toes, limb contact and pouch clipping need in-engine motion review.",
+      "60 DIP preview validates raster readability only, not Windows overlay behavior."
+    ]
+  }
+}

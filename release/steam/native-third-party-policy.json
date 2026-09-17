@@ -1,0 +1,756 @@
+{
+  "kind": "desktop-creatures-native-third-party-policy",
+  "schemaVersion": 1,
+  "target": "x86_64-pc-windows-msvc",
+  "releaseReady": false,
+  "reviewScope": "Local dependency notice/source inventory. This policy is reviewed build input, never a signature or final rights approval. Version changes require explicit review; runtime tools cannot expand this policy or fetch licenses.",
+  "allowedRegistry": "registry+https://github.com/rust-lang/crates.io-index",
+  "supplements": [
+    {
+      "package": "alloc-stdlib@0.2.4",
+      "declaredLicense": "BSD-3-Clause",
+      "crateSha256": "0e76a019e91224d279006ff972f1e984179a6e9feb050adba6ce8274aef23195",
+      "vcsCommit": "ae42d22078b98549e987d2f03d12df7b984fde47",
+      "license": "BSD-3-Clause",
+      "path": "native-notices/alloc-stdlib-0.2.4-LICENSE.txt",
+      "sha256": "c0c56f26d9c051cac4d200c34c84e7ae9aaa853e01a982a1df08b09931e518ae",
+      "bytes": 1483,
+      "sourceUrl": "https://raw.githubusercontent.com/dropbox/rust-alloc-no-stdlib/ae42d22078b98549e987d2f03d12df7b984fde47/LICENSE",
+      "sourceKind": "upstream-repository-at-crate-vcs-commit"
+    },
+    {
+      "package": "selectors@0.36.1",
+      "declaredLicense": "MPL-2.0",
+      "crateSha256": "c5d9c0c92a92d33f08817311cf3f2c29a3538a8240e94a6a3c622ce652d7e00c",
+      "vcsCommit": "635e1a19d02960588a00e189bd4bd5bdb150ec3d",
+      "license": "MPL-2.0",
+      "path": "native-notices/selectors-0.36.1-MPL-2.0.txt",
+      "sha256": "3f3d9e0024b1921b067d6f7f88deb4a60cbe7a78e76c64e3f1d7fc3b779b9d04",
+      "bytes": 16726,
+      "sourceUrl": "https://www.mozilla.org/media/MPL/2.0/index.txt",
+      "sourceKind": "license-steward-canonical-text-with-locked-source-header"
+    },
+    {
+      "package": "tauri-plugin@2.6.3",
+      "declaredLicense": "Apache-2.0 OR MIT",
+      "crateSha256": "74be5dd4bed9afbd145e5716b5fa2ec28cbc29c34ffa61c258c9273d896c8020",
+      "vcsCommit": "6f6ab1207bb3923c2721fbc67d2fdb1c8deb0c7a",
+      "license": "MIT",
+      "path": "native-notices/tauri-plugin-2.6.3-LICENSE-MIT.txt",
+      "sha256": "9dd42ea92cff2ede5cd477cbfcce051b2d0115c0ac7f368ee88cb545055dff1d",
+      "bytes": 1090,
+      "sourceUrl": "https://raw.githubusercontent.com/tauri-apps/tauri/6f6ab1207bb3923c2721fbc67d2fdb1c8deb0c7a/LICENSE_MIT",
+      "sourceKind": "upstream-repository-at-crate-vcs-commit"
+    },
+    {
+      "package": "unic-char-property@0.9.0",
+      "declaredLicense": "MIT/Apache-2.0",
+      "crateSha256": "a8c57a407d9b6fa02b4795eb81c5b6652060a15a7903ea981f3d723e6c0be221",
+      "vcsCommit": "5878605364af97a3358368a6eaef02104af2e016",
+      "license": "MIT",
+      "path": "native-notices/unic-0.9.0-LICENSE-MIT.txt",
+      "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3",
+      "bytes": 1023,
+      "sourceUrl": "https://raw.githubusercontent.com/open-i18n/rust-unic/5878605364af97a3358368a6eaef02104af2e016/LICENSE-MIT",
+      "sourceKind": "upstream-repository-at-crate-vcs-commit"
+    },
+    {
+      "package": "unic-char-range@0.9.0",
+      "declaredLicense": "MIT/Apache-2.0",
+      "crateSha256": "0398022d5f700414f6b899e10b8348231abf9173fa93144cbc1a43b9793c1fbc",
+      "vcsCommit": "5878605364af97a3358368a6eaef02104af2e016",
+      "license": "MIT",
+      "path": "native-notices/unic-0.9.0-LICENSE-MIT.txt",
+      "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3",
+      "bytes": 1023,
+      "sourceUrl": "https://raw.githubusercontent.com/open-i18n/rust-unic/5878605364af97a3358368a6eaef02104af2e016/LICENSE-MIT",
+      "sourceKind": "upstream-repository-at-crate-vcs-commit"
+    },
+    {
+      "package": "unic-common@0.9.0",
+      "declaredLicense": "MIT/Apache-2.0",
+      "crateSha256": "80d7ff825a6a654ee85a63e80f92f054f904f21e7d12da4e22f9834a4aaa35bc",
+      "vcsCommit": "5878605364af97a3358368a6eaef02104af2e016",
+      "license": "MIT",
+      "path": "native-notices/unic-0.9.0-LICENSE-MIT.txt",
+      "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3",
+      "bytes": 1023,
+      "sourceUrl": "https://raw.githubusercontent.com/open-i18n/rust-unic/5878605364af97a3358368a6eaef02104af2e016/LICENSE-MIT",
+      "sourceKind": "upstream-repository-at-crate-vcs-commit"
+    },
+    {
+      "package": "unic-ucd-version@0.9.0",
+      "declaredLicense": "MIT/Apache-2.0",
+      "crateSha256": "96bd2f2237fe450fcd0a1d2f5f4e91711124f7857ba2e964247776ebeeb7b0c4",
+      "vcsCommit": "5878605364af97a3358368a6eaef02104af2e016",
+      "license": "MIT",
+      "path": "native-notices/unic-0.9.0-LICENSE-MIT.txt",
+      "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3",
+      "bytes": 1023,
+      "sourceUrl": "https://raw.githubusercontent.com/open-i18n/rust-unic/5878605364af97a3358368a6eaef02104af2e016/LICENSE-MIT",
+      "sourceKind": "upstream-repository-at-crate-vcs-commit"
+    },
+    {
+      "package": "unic-char-property@0.9.0",
+      "declaredLicense": "MIT/Apache-2.0",
+      "crateSha256": "a8c57a407d9b6fa02b4795eb81c5b6652060a15a7903ea981f3d723e6c0be221",
+      "vcsCommit": "5878605364af97a3358368a6eaef02104af2e016",
+      "license": null,
+      "path": "native-notices/unic-0.9.0-COPYRIGHT.md",
+      "sha256": "f5c342c49f3ac804f3e8e7bb62a8040a44c50d47bb36902b1abd13f66a1adf8b",
+      "bytes": 608,
+      "sourceUrl": "https://raw.githubusercontent.com/open-i18n/rust-unic/5878605364af97a3358368a6eaef02104af2e016/COPYRIGHT.md",
+      "sourceKind": "upstream-repository-at-crate-vcs-commit"
+    },
+    {
+      "package": "unic-char-range@0.9.0",
+      "declaredLicense": "MIT/Apache-2.0",
+      "crateSha256": "0398022d5f700414f6b899e10b8348231abf9173fa93144cbc1a43b9793c1fbc",
+      "vcsCommit": "5878605364af97a3358368a6eaef02104af2e016",
+      "license": null,
+      "path": "native-notices/unic-0.9.0-COPYRIGHT.md",
+      "sha256": "f5c342c49f3ac804f3e8e7bb62a8040a44c50d47bb36902b1abd13f66a1adf8b",
+      "bytes": 608,
+      "sourceUrl": "https://raw.githubusercontent.com/open-i18n/rust-unic/5878605364af97a3358368a6eaef02104af2e016/COPYRIGHT.md",
+      "sourceKind": "upstream-repository-at-crate-vcs-commit"
+    },
+    {
+      "package": "unic-common@0.9.0",
+      "declaredLicense": "MIT/Apache-2.0",
+      "crateSha256": "80d7ff825a6a654ee85a63e80f92f054f904f21e7d12da4e22f9834a4aaa35bc",
+      "vcsCommit": "5878605364af97a3358368a6eaef02104af2e016",
+      "license": null,
+      "path": "native-notices/unic-0.9.0-COPYRIGHT.md",
+      "sha256": "f5c342c49f3ac804f3e8e7bb62a8040a44c50d47bb36902b1abd13f66a1adf8b",
+      "bytes": 608,
+      "sourceUrl": "https://raw.githubusercontent.com/open-i18n/rust-unic/5878605364af97a3358368a6eaef02104af2e016/COPYRIGHT.md",
+      "sourceKind": "upstream-repository-at-crate-vcs-commit"
+    },
+    {
+      "package": "unic-ucd-version@0.9.0",
+      "declaredLicense": "MIT/Apache-2.0",
+      "crateSha256": "96bd2f2237fe450fcd0a1d2f5f4e91711124f7857ba2e964247776ebeeb7b0c4",
+      "vcsCommit": "5878605364af97a3358368a6eaef02104af2e016",
+      "license": null,
+      "path": "native-notices/unic-0.9.0-COPYRIGHT.md",
+      "sha256": "f5c342c49f3ac804f3e8e7bb62a8040a44c50d47bb36902b1abd13f66a1adf8b",
+      "bytes": 608,
+      "sourceUrl": "https://raw.githubusercontent.com/open-i18n/rust-unic/5878605364af97a3358368a6eaef02104af2e016/COPYRIGHT.md",
+      "sourceKind": "upstream-repository-at-crate-vcs-commit"
+    },
+    {
+      "package": "unic-ucd-ident@0.9.0",
+      "declaredLicense": "MIT/Apache-2.0",
+      "crateSha256": "e230a37c0381caa9219d67cf063aa3a375ffed5bf541a452db16e744bdab6987",
+      "vcsCommit": "8a6ce83063d90b91ae2ce59eddb803edd393fca9",
+      "license": "MIT",
+      "path": "native-notices/unic-ucd-ident-0.9.0-LICENSE-MIT.txt",
+      "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3",
+      "bytes": 1023,
+      "sourceUrl": "https://raw.githubusercontent.com/open-i18n/rust-unic/8a6ce83063d90b91ae2ce59eddb803edd393fca9/LICENSE-MIT",
+      "sourceKind": "upstream-repository-at-crate-vcs-commit"
+    },
+    {
+      "package": "unic-ucd-ident@0.9.0",
+      "declaredLicense": "MIT/Apache-2.0",
+      "crateSha256": "e230a37c0381caa9219d67cf063aa3a375ffed5bf541a452db16e744bdab6987",
+      "vcsCommit": "8a6ce83063d90b91ae2ce59eddb803edd393fca9",
+      "license": null,
+      "path": "native-notices/unic-ucd-ident-0.9.0-COPYRIGHT.md",
+      "sha256": "f5c342c49f3ac804f3e8e7bb62a8040a44c50d47bb36902b1abd13f66a1adf8b",
+      "bytes": 608,
+      "sourceUrl": "https://raw.githubusercontent.com/open-i18n/rust-unic/8a6ce83063d90b91ae2ce59eddb803edd393fca9/COPYRIGHT.md",
+      "sourceKind": "upstream-repository-at-crate-vcs-commit"
+    },
+    {
+      "package": "webview2-com@0.38.2",
+      "declaredLicense": "MIT",
+      "crateSha256": "7130243a7a5b33c54a444e54842e6a9e133de08b5ad7b5861cd8ed9a6a5bc96a",
+      "vcsCommit": "b74dc5e2b394044bea5191052868ce7a106c202c",
+      "license": "MIT",
+      "path": "native-notices/webview2-com-0.38.2-LICENSE-MIT.txt",
+      "sha256": "0dcf41516e608bbcb6cdc5229feb7b86fe4a643b85e7df251133c93408fdac73",
+      "bytes": 1067,
+      "sourceUrl": "https://raw.githubusercontent.com/wravery/webview2-rs/b74dc5e2b394044bea5191052868ce7a106c202c/LICENSE",
+      "sourceKind": "upstream-repository-at-crate-vcs-commit"
+    },
+    {
+      "package": "webview2-com-sys@0.38.2",
+      "declaredLicense": "MIT",
+      "crateSha256": "381336cfffd772377d291702245447a5251a2ffa5bad679c99e61bc48bacbf9c",
+      "vcsCommit": "b74dc5e2b394044bea5191052868ce7a106c202c",
+      "license": "MIT",
+      "path": "native-notices/webview2-com-0.38.2-LICENSE-MIT.txt",
+      "sha256": "0dcf41516e608bbcb6cdc5229feb7b86fe4a643b85e7df251133c93408fdac73",
+      "bytes": 1067,
+      "sourceUrl": "https://raw.githubusercontent.com/wravery/webview2-rs/b74dc5e2b394044bea5191052868ce7a106c202c/LICENSE",
+      "sourceKind": "upstream-repository-at-crate-vcs-commit"
+    },
+    {
+      "package": "webview2-com-macros@0.8.1",
+      "declaredLicense": "MIT",
+      "crateSha256": "67a921c1b6914c367b2b823cd4cde6f96beec77d30a939c8199bb377cf9b9b54",
+      "vcsCommit": "dffa41a8a46d3f5565eefbff2de57d38d399f158",
+      "license": "MIT",
+      "path": "native-notices/webview2-com-macros-0.8.1-LICENSE-MIT.txt",
+      "sha256": "0dcf41516e608bbcb6cdc5229feb7b86fe4a643b85e7df251133c93408fdac73",
+      "bytes": 1067,
+      "sourceUrl": "https://raw.githubusercontent.com/wravery/webview2-rs/dffa41a8a46d3f5565eefbff2de57d38d399f158/LICENSE",
+      "sourceKind": "upstream-repository-at-crate-vcs-commit"
+    },
+    {
+      "package": "siphasher@1.0.3",
+      "declaredLicense": "MIT/Apache-2.0",
+      "crateSha256": "8ee5873ec9cce0195efcb7a4e9507a04cd49aec9c83d0389df45b1ef7ba2e649",
+      "vcsCommit": "451f67d73a772cba325728109bbfa247750ed076",
+      "license": "Apache-2.0",
+      "path": "native-notices/siphasher-1.0.3-LICENSE-APACHE.txt",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "bytes": 11358,
+      "sourceUrl": "https://www.apache.org/licenses/LICENSE-2.0.txt",
+      "sourceKind": "license-steward-canonical-text-with-locked-COPYING-copyright-and-license-notice"
+    }
+  ],
+  "nativeLibraries": [
+    {
+      "package": "webview2-com-sys@0.38.2",
+      "path": "arm64/WebView2Loader.dll",
+      "bytes": 145984,
+      "sha256": "df5816669f5123595c475d97929240d7d0e04f0bdc7dbe18af1dda42348b73a6",
+      "crateSha256": "381336cfffd772377d291702245447a5251a2ffa5bad679c99e61bc48bacbf9c",
+      "classification": "crate-build-input-copied-by-build-rs-not-approved-as-distributed-file",
+      "sdkPackage": "Microsoft.Web.WebView2",
+      "sdkVersion": "1.0.3650.58",
+      "sdkPackagePath": "build/native/arm64/WebView2Loader.dll",
+      "sdkPackageSha256": "911a472128c82ac8baa0c486c23342cc9dd6e7dc50d754e676726642ca065c60"
+    },
+    {
+      "package": "webview2-com-sys@0.38.2",
+      "path": "arm64/WebView2Loader.dll.lib",
+      "bytes": 2916,
+      "sha256": "d70271daa44507865ca0696cd1c1ede5e58e694eec74cb2d06e17dbbe205e9a2",
+      "crateSha256": "381336cfffd772377d291702245447a5251a2ffa5bad679c99e61bc48bacbf9c",
+      "classification": "crate-build-input-copied-by-build-rs-not-approved-as-distributed-file",
+      "sdkPackage": "Microsoft.Web.WebView2",
+      "sdkVersion": "1.0.3650.58",
+      "sdkPackagePath": "build/native/arm64/WebView2Loader.dll.lib",
+      "sdkPackageSha256": "911a472128c82ac8baa0c486c23342cc9dd6e7dc50d754e676726642ca065c60"
+    },
+    {
+      "package": "webview2-com-sys@0.38.2",
+      "path": "arm64/WebView2LoaderStatic.lib",
+      "bytes": 10504842,
+      "sha256": "506ffde430bee7f91f2ce1a078effb5289b7cec3b0c7283647f0842def524ab4",
+      "crateSha256": "381336cfffd772377d291702245447a5251a2ffa5bad679c99e61bc48bacbf9c",
+      "classification": "crate-build-input-copied-by-build-rs-not-approved-as-distributed-file",
+      "sdkPackage": "Microsoft.Web.WebView2",
+      "sdkVersion": "1.0.3650.58",
+      "sdkPackagePath": "build/native/arm64/WebView2LoaderStatic.lib",
+      "sdkPackageSha256": "911a472128c82ac8baa0c486c23342cc9dd6e7dc50d754e676726642ca065c60"
+    },
+    {
+      "package": "webview2-com-sys@0.38.2",
+      "path": "x64/WebView2Loader.dll",
+      "bytes": 160320,
+      "sha256": "8427b1fc58ec707813e5c0a51eb5d69397bb333250a7b891be4d3b123f1e0f1c",
+      "crateSha256": "381336cfffd772377d291702245447a5251a2ffa5bad679c99e61bc48bacbf9c",
+      "classification": "crate-build-input-copied-by-build-rs-not-approved-as-distributed-file",
+      "sdkPackage": "Microsoft.Web.WebView2",
+      "sdkVersion": "1.0.3650.58",
+      "sdkPackagePath": "build/native/x64/WebView2Loader.dll",
+      "sdkPackageSha256": "911a472128c82ac8baa0c486c23342cc9dd6e7dc50d754e676726642ca065c60"
+    },
+    {
+      "package": "webview2-com-sys@0.38.2",
+      "path": "x64/WebView2Loader.dll.lib",
+      "bytes": 2916,
+      "sha256": "bfc8ccaaa056be95243a5b66a827e5849d2bb39676fca4dcc2053796d8e15c6d",
+      "crateSha256": "381336cfffd772377d291702245447a5251a2ffa5bad679c99e61bc48bacbf9c",
+      "classification": "crate-build-input-copied-by-build-rs-not-approved-as-distributed-file",
+      "sdkPackage": "Microsoft.Web.WebView2",
+      "sdkVersion": "1.0.3650.58",
+      "sdkPackagePath": "build/native/x64/WebView2Loader.dll.lib",
+      "sdkPackageSha256": "911a472128c82ac8baa0c486c23342cc9dd6e7dc50d754e676726642ca065c60"
+    },
+    {
+      "package": "webview2-com-sys@0.38.2",
+      "path": "x64/WebView2LoaderStatic.lib",
+      "bytes": 10500016,
+      "sha256": "0659b741bde6348d4c4a6ec4ceb9af50e3d0048ed9cd3c8659bccbb61fde55ee",
+      "crateSha256": "381336cfffd772377d291702245447a5251a2ffa5bad679c99e61bc48bacbf9c",
+      "classification": "statically-linked-Windows-x64-loader",
+      "sdkPackage": "Microsoft.Web.WebView2",
+      "sdkVersion": "1.0.3650.58",
+      "sdkPackagePath": "build/native/x64/WebView2LoaderStatic.lib",
+      "sdkPackageSha256": "911a472128c82ac8baa0c486c23342cc9dd6e7dc50d754e676726642ca065c60"
+    },
+    {
+      "package": "webview2-com-sys@0.38.2",
+      "path": "x86/WebView2Loader.dll",
+      "bytes": 120904,
+      "sha256": "44ab92c2246ebfb5f98aa5726626fb44beb61543f2ef1803338af9fd295e63f0",
+      "crateSha256": "381336cfffd772377d291702245447a5251a2ffa5bad679c99e61bc48bacbf9c",
+      "classification": "crate-build-input-copied-by-build-rs-not-approved-as-distributed-file",
+      "sdkPackage": "Microsoft.Web.WebView2",
+      "sdkVersion": "1.0.3650.58",
+      "sdkPackagePath": "build/native/x86/WebView2Loader.dll",
+      "sdkPackageSha256": "911a472128c82ac8baa0c486c23342cc9dd6e7dc50d754e676726642ca065c60"
+    },
+    {
+      "package": "webview2-com-sys@0.38.2",
+      "path": "x86/WebView2Loader.dll.lib",
+      "bytes": 2998,
+      "sha256": "a3ec0ee539d58fe72391f2e89cb814f96fab721c6d8d30953d152ea95dffad49",
+      "crateSha256": "381336cfffd772377d291702245447a5251a2ffa5bad679c99e61bc48bacbf9c",
+      "classification": "crate-build-input-copied-by-build-rs-not-approved-as-distributed-file",
+      "sdkPackage": "Microsoft.Web.WebView2",
+      "sdkVersion": "1.0.3650.58",
+      "sdkPackagePath": "build/native/x86/WebView2Loader.dll.lib",
+      "sdkPackageSha256": "911a472128c82ac8baa0c486c23342cc9dd6e7dc50d754e676726642ca065c60"
+    },
+    {
+      "package": "webview2-com-sys@0.38.2",
+      "path": "x86/WebView2LoaderStatic.lib",
+      "bytes": 10464618,
+      "sha256": "6649ce9ca24e7a5693ee54178f42e0378004ce537d82d15354e6c9adb467bc16",
+      "crateSha256": "381336cfffd772377d291702245447a5251a2ffa5bad679c99e61bc48bacbf9c",
+      "classification": "crate-build-input-copied-by-build-rs-not-approved-as-distributed-file",
+      "sdkPackage": "Microsoft.Web.WebView2",
+      "sdkVersion": "1.0.3650.58",
+      "sdkPackagePath": "build/native/x86/WebView2LoaderStatic.lib",
+      "sdkPackageSha256": "911a472128c82ac8baa0c486c23342cc9dd6e7dc50d754e676726642ca065c60"
+    },
+    {
+      "package": "windows_x86_64_msvc@0.52.6",
+      "path": "lib/windows.0.52.0.lib",
+      "bytes": 5210890,
+      "sha256": "24d8cbc445955b0d48041948a3c71ce2cddb948c089b25ec7106fadd9f3efde0",
+      "crateSha256": "589f6da84c646204747d1270a2a5661ea66ed1cced2631d546fdfb155959f9ec",
+      "classification": "Windows-API-import-library-locked-crate-MIT-or-Apache-not-a-distributed-Windows-system-DLL"
+    },
+    {
+      "package": "wry@0.55.1",
+      "path": "examples/custom_protocol/wasm.wasm",
+      "bytes": 92,
+      "sha256": "2cb1a33779de77d7cc016d934f91262b0984ec695e1f8dda9ba3c33725f5ef1b",
+      "crateSha256": "186f9871daa55fd9c016578b810d149de58367113db7fb72b462d2323ce19514",
+      "classification": "unmodified-crate-example-WebAssembly-input-not-a-Windows-native-library-not-linked-or-distributed"
+    }
+  ],
+  "webview2": {
+    "packageSha256": "911a472128c82ac8baa0c486c23342cc9dd6e7dc50d754e676726642ca065c60",
+    "sourceUrl": "https://api.nuget.org/v3-flatcontainer/microsoft.web.webview2/1.0.3650.58/microsoft.web.webview2.1.0.3650.58.nupkg",
+    "version": "1.0.3650.58",
+    "officialListing": "https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3650.58",
+    "packageBytes": 8965153,
+    "files": [
+      {
+        "sha256": "df5816669f5123595c475d97929240d7d0e04f0bdc7dbe18af1dda42348b73a6",
+        "cratePath": "arm64/WebView2Loader.dll",
+        "packagePath": "build/native/arm64/WebView2Loader.dll",
+        "bytes": 145984
+      },
+      {
+        "sha256": "d70271daa44507865ca0696cd1c1ede5e58e694eec74cb2d06e17dbbe205e9a2",
+        "cratePath": "arm64/WebView2Loader.dll.lib",
+        "packagePath": "build/native/arm64/WebView2Loader.dll.lib",
+        "bytes": 2916
+      },
+      {
+        "sha256": "506ffde430bee7f91f2ce1a078effb5289b7cec3b0c7283647f0842def524ab4",
+        "cratePath": "arm64/WebView2LoaderStatic.lib",
+        "packagePath": "build/native/arm64/WebView2LoaderStatic.lib",
+        "bytes": 10504842
+      },
+      {
+        "sha256": "8427b1fc58ec707813e5c0a51eb5d69397bb333250a7b891be4d3b123f1e0f1c",
+        "cratePath": "x64/WebView2Loader.dll",
+        "packagePath": "build/native/x64/WebView2Loader.dll",
+        "bytes": 160320
+      },
+      {
+        "sha256": "bfc8ccaaa056be95243a5b66a827e5849d2bb39676fca4dcc2053796d8e15c6d",
+        "cratePath": "x64/WebView2Loader.dll.lib",
+        "packagePath": "build/native/x64/WebView2Loader.dll.lib",
+        "bytes": 2916
+      },
+      {
+        "sha256": "0659b741bde6348d4c4a6ec4ceb9af50e3d0048ed9cd3c8659bccbb61fde55ee",
+        "cratePath": "x64/WebView2LoaderStatic.lib",
+        "packagePath": "build/native/x64/WebView2LoaderStatic.lib",
+        "bytes": 10500016
+      },
+      {
+        "sha256": "44ab92c2246ebfb5f98aa5726626fb44beb61543f2ef1803338af9fd295e63f0",
+        "cratePath": "x86/WebView2Loader.dll",
+        "packagePath": "build/native/x86/WebView2Loader.dll",
+        "bytes": 120904
+      },
+      {
+        "sha256": "a3ec0ee539d58fe72391f2e89cb814f96fab721c6d8d30953d152ea95dffad49",
+        "cratePath": "x86/WebView2Loader.dll.lib",
+        "packagePath": "build/native/x86/WebView2Loader.dll.lib",
+        "bytes": 2998
+      },
+      {
+        "sha256": "6649ce9ca24e7a5693ee54178f42e0378004ce537d82d15354e6c9adb467bc16",
+        "cratePath": "x86/WebView2LoaderStatic.lib",
+        "packagePath": "build/native/x86/WebView2LoaderStatic.lib",
+        "bytes": 10464618
+      },
+      {
+        "sha256": "0af8f1b807512aae39c2ac1aa4d0cae65cabecb6fd554b8439a5162a0d6eca55",
+        "packagePath": "LICENSE.txt",
+        "path": "native-notices/Microsoft.Web.WebView2-1.0.3650.58-LICENSE.txt",
+        "bytes": 1487
+      },
+      {
+        "sha256": "7cef90215900c89711502ae3aae1fc31bca3c3c736be2264d2d3cfa8b537aaf2",
+        "packagePath": "Microsoft.Web.WebView2.nuspec",
+        "path": "native-notices/Microsoft.Web.WebView2-1.0.3650.58-Microsoft.Web.WebView2.nuspec",
+        "bytes": 1367
+      },
+      {
+        "sha256": "106423785c5b7eba0a8e61d1837f2132e9c828e20ad530f565d981c1df60dd90",
+        "packagePath": "NOTICE.txt",
+        "path": "native-notices/Microsoft.Web.WebView2-1.0.3650.58-NOTICE.txt",
+        "bytes": 3894
+      }
+    ],
+    "packageId": "Microsoft.Web.WebView2",
+    "crate": "webview2-com-sys@0.38.2",
+    "crateSha256": "381336cfffd772377d291702245447a5251a2ffa5bad679c99e61bc48bacbf9c",
+    "licenseClassification": "Microsoft SDK package LICENSE.txt is BSD-3-Clause; package third-party notices are named NOTICE.txt, not ThirdPartyNotices.txt. Preserve those exact same-version files. MIT applies separately to Rust binding code.",
+    "verification": "All 9 crate loader files were byte-hashed against same-path build/native entries in the exact official NuGet package. Download package SHA-256 is recorded; no NuGet publisher-signature verification is claimed.",
+    "retrievedOn": "2026-09-13"
+  },
+  "rustToolchain": {
+    "channel": "1.98.1",
+    "target": "x86_64-pc-windows-msvc",
+    "provenance": "Explicit hashes from the installed rustup 1.98.1 x86_64-pc-windows-msvc distribution, reviewed on 2026-09-13. Local installed-byte pinning only; not independently authenticated distribution/package signatures. Registry crate checksums do not cover these files.",
+    "licenseFiles": [
+      "share/doc/rust/COPYRIGHT-library.html",
+      "share/doc/rust/COPYRIGHT.html",
+      "share/doc/rust/licenses/Apache-2.0.txt",
+      "share/doc/rust/licenses/BSD-2-Clause.txt",
+      "share/doc/rust/licenses/CC-BY-SA-4.0.txt",
+      "share/doc/rust/licenses/GCC-exception-3.1.txt",
+      "share/doc/rust/licenses/GPL-2.0-only.txt",
+      "share/doc/rust/licenses/GPL-3.0-or-later.txt",
+      "share/doc/rust/licenses/ISC.txt",
+      "share/doc/rust/licenses/LLVM-exception.txt",
+      "share/doc/rust/licenses/MIT.txt",
+      "share/doc/rust/licenses/NCSA.txt",
+      "share/doc/rust/licenses/OFL-1.1.txt",
+      "share/doc/rust/licenses/Unicode-3.0.txt"
+    ],
+    "files": [
+      {
+        "path": "lib/rustlib/manifest-rust-std-x86_64-pc-windows-msvc",
+        "bytes": 3666,
+        "sha256": "b5f6a3bc92e88c9c7e2c496cf53bfb7d038ba5e9c79d48f3b75fab34c7fa46ea"
+      },
+      {
+        "path": "lib/rustlib/x86_64-pc-windows-msvc/lib/liballoc-e70c1e2d2d692bb9.rlib",
+        "bytes": 706020,
+        "sha256": "295df0e47c56fa3315f86911ffc6b374958f0243c62b8d05d2ed9851cf837a32"
+      },
+      {
+        "path": "lib/rustlib/x86_64-pc-windows-msvc/lib/liballoc-e70c1e2d2d692bb9.rmeta",
+        "bytes": 7501207,
+        "sha256": "bd4a8f1181be773e0664f52925a9f8820cbbdb2dba599653b898e09b386ec12f"
+      },
+      {
+        "path": "lib/rustlib/x86_64-pc-windows-msvc/lib/libcfg_if-f6cc825be93b6db6.rlib",
+        "bytes": 4348,
+        "sha256": "adf5b9d342434214101fb0107255a3ca1e4351bc615c0a603baf28fe64e6909d"
+      },
+      {
+        "path": "lib/rustlib/x86_64-pc-windows-msvc/lib/libcfg_if-f6cc825be93b6db6.rmeta",
+        "bytes": 5500,
+        "sha256": "fc1346ee3604dbc77d7a477943dde32a54921b9e110c6b59f91964ad593cac3d"
+      },
+      {
+        "path": "lib/rustlib/x86_64-pc-windows-msvc/lib/libcompiler_builtins-d2ba6b5d33df79c1.rlib",
+        "bytes": 3085520,
+        "sha256": "31f484ed29d0af592c71a5402dad113c5153a848c54d8ffb64ab7f4bf1af51bf"
+      },
+      {
+        "path": "lib/rustlib/x86_64-pc-windows-msvc/lib/libcompiler_builtins-d2ba6b5d33df79c1.rmeta",
+        "bytes": 1986531,
+        "sha256": "b778b1ee74368da018e744e654840ab873c00374efe29df2cef3a694267be6f2"
+      },
+      {
+        "path": "lib/rustlib/x86_64-pc-windows-msvc/lib/libcore-5b8de9dae852fb90.rlib",
+        "bytes": 2433012,
+        "sha256": "020e870c2676b36a49d19170265bb2fc53fa74e070edfa9bb9db99372db56522"
+      },
+      {
+        "path": "lib/rustlib/x86_64-pc-windows-msvc/lib/libcore-5b8de9dae852fb90.rmeta",
+        "bytes": 66196308,
+        "sha256": "76f466e2a0a8d6fc79689487c72a12fc5afefc9df6c92257ae1755a58ef7e7be"
+      },
+      {
+        "path": "lib/rustlib/x86_64-pc-windows-msvc/lib/libgetopts-d2d45541664c6692.rlib",
+        "bytes": 524502,
+        "sha256": "ac1093aea514791f079d09f23b115e20f425d5f41473298f3bf1ce497c97428c"
+      },
+      {
+        "path": "lib/rustlib/x86_64-pc-windows-msvc/lib/libgetopts-d2d45541664c6692.rmeta",
+        "bytes": 216931,
+        "sha256": "5c860f41a00dd119452532b131c232ed9d448c15dede8ca9863119cf465913d9"
+      },
+      {
+        "path": "lib/rustlib/x86_64-pc-windows-msvc/lib/libhashbrown-d0cff6b08e590a6f.rlib",
+        "bytes": 34676,
+        "sha256": "96197b46c6a1337eafb3ad94bc91f7a922e7574ebbc1801a7cbdcf65b89816cc"
+      },
+      {
+        "path": "lib/rustlib/x86_64-pc-windows-msvc/lib/libhashbrown-d0cff6b08e590a6f.rmeta",
+        "bytes": 1707805,
+        "sha256": "068086c340c4bb59e40f3227b290fb8f5b9814a9ad4de22180dec59d56fbe226"
+      },
+      {
+        "path": "lib/rustlib/x86_64-pc-windows-msvc/lib/libpanic_abort-91330a6e358edcc5.rlib",
+        "bytes": 9126,
+        "sha256": "5394014585283b4bdbf1351a289822819e65070dc4878956e7adf1fcade9b32d"
+      },
+      {
+        "path": "lib/rustlib/x86_64-pc-windows-msvc/lib/libpanic_abort-91330a6e358edcc5.rmeta",
+        "bytes": 2723,
+        "sha256": "2459bcad6a0ae052b6919e4a9ccd53d633bf5ef1ddc0569bd1818ea9a06ec8bb"
+      },
+      {
+        "path": "lib/rustlib/x86_64-pc-windows-msvc/lib/libpanic_unwind-d45f266e54626acb.rlib",
+        "bytes": 30144,
+        "sha256": "2ba01fc563e45f847a5d489bb19f54e86a2dc7f6c1ec55778401411484dd68de"
+      },
+      {
+        "path": "lib/rustlib/x86_64-pc-windows-msvc/lib/libpanic_unwind-d45f266e54626acb.rmeta",
+        "bytes": 19629,
+        "sha256": "e5e2656be5ca28ac1a9b16e800e4773a2144e6e0198a4b0d2b43d953e0cd35c4"
+      },
+      {
+        "path": "lib/rustlib/x86_64-pc-windows-msvc/lib/libproc_macro-7186298fd695a1a5.rlib",
+        "bytes": 3301526,
+        "sha256": "fc5e02cb9683a955a6fbff7184725db0c78fc415e4dcc3f96ba48ee20e74875a"
+      },
+      {
+        "path": "lib/rustlib/x86_64-pc-windows-msvc/lib/libproc_macro-7186298fd695a1a5.rmeta",
+        "bytes": 1148650,
+        "sha256": "b97f36899688f05bf2790f8795715f3d22f845e9beeba77ef53b79acd9b3a49c"
+      },
+      {
+        "path": "lib/rustlib/x86_64-pc-windows-msvc/lib/libprofiler_builtins-56fcd661f7d6fe38.rlib",
+        "bytes": 376540,
+        "sha256": "5bf3aa6724a208115b12b0a5b8f494873288664649af36c09fb2b8d2644c481a"
+      },
+      {
+        "path": "lib/rustlib/x86_64-pc-windows-msvc/lib/libprofiler_builtins-56fcd661f7d6fe38.rmeta",
+        "bytes": 1340,
+        "sha256": "78367523b449a5834ec46e9b1d83729ce5b59e5c85a3387ff72f4025439e3596"
+      },
+      {
+        "path": "lib/rustlib/x86_64-pc-windows-msvc/lib/librustc_demangle-0d6817d2202cd839.rlib",
+        "bytes": 218232,
+        "sha256": "80771d243a2faeb8e0baaf52c577746b815ae8354edb5e1dd76318c0f1b3862d"
+      },
+      {
+        "path": "lib/rustlib/x86_64-pc-windows-msvc/lib/librustc_demangle-0d6817d2202cd839.rmeta",
+        "bytes": 91127,
+        "sha256": "44161335936e300d1127cfdfc53a35b369f03b1fef0d95801ba7607f8bcf7db1"
+      },
+      {
+        "path": "lib/rustlib/x86_64-pc-windows-msvc/lib/librustc_literal_escaper-dd4ecc55777ebb42.rlib",
+        "bytes": 4602,
+        "sha256": "fd1366ed9f80bfdfc8f2dfc5a1aeb366a2f57a9968d1c1559ca6f0f25dd97524"
+      },
+      {
+        "path": "lib/rustlib/x86_64-pc-windows-msvc/lib/librustc_literal_escaper-dd4ecc55777ebb42.rmeta",
+        "bytes": 122766,
+        "sha256": "2c845d8cc3fefab1d1d9d22f2b6f3cb51b22bf4b9280eec66345f71252ae3b92"
+      },
+      {
+        "path": "lib/rustlib/x86_64-pc-windows-msvc/lib/librustc_std_workspace_alloc-6b150602d1d36152.rlib",
+        "bytes": 4746,
+        "sha256": "3bd4038f38bdbd8ac96b6b83c229adfe04d3845d5ee5c1e895dca173be542ac2"
+      },
+      {
+        "path": "lib/rustlib/x86_64-pc-windows-msvc/lib/librustc_std_workspace_alloc-6b150602d1d36152.rmeta",
+        "bytes": 2198,
+        "sha256": "d96a522f2714117600d4fd8424d355c2b6dda3983e9002aef679aa4269d861b0"
+      },
+      {
+        "path": "lib/rustlib/x86_64-pc-windows-msvc/lib/librustc_std_workspace_core-0958d4df46313f70.rlib",
+        "bytes": 4736,
+        "sha256": "d16f4f466be193ccf216fa63a5cd319dd6ec04a0e9c12f2a7bc5827f38f6030b"
+      },
+      {
+        "path": "lib/rustlib/x86_64-pc-windows-msvc/lib/librustc_std_workspace_core-0958d4df46313f70.rmeta",
+        "bytes": 5943,
+        "sha256": "d9b95531740e2ca750a81cd399e5a104018e41299e0c63ad9badb4b263fbfa3e"
+      },
+      {
+        "path": "lib/rustlib/x86_64-pc-windows-msvc/lib/librustc_std_workspace_std-7880561ff197d76f.rlib",
+        "bytes": 4712,
+        "sha256": "58d24589cb00d7f8f9f76e46788733308c5e8f524c9799e4d46fa760b71c178d"
+      },
+      {
+        "path": "lib/rustlib/x86_64-pc-windows-msvc/lib/librustc_std_workspace_std-7880561ff197d76f.rmeta",
+        "bytes": 6855,
+        "sha256": "066c2065c7141b174cf0db01f597c1cfd32639f15e0f9e431b2af92cb4df18a2"
+      },
+      {
+        "path": "lib/rustlib/x86_64-pc-windows-msvc/lib/libstd-44a584f44bc3dd65.rlib",
+        "bytes": 5759764,
+        "sha256": "b2269a9ae50f6ed8c16da326fe043d6b1a046399b58511605264154ca9b3c553"
+      },
+      {
+        "path": "lib/rustlib/x86_64-pc-windows-msvc/lib/libstd-44a584f44bc3dd65.rmeta",
+        "bytes": 9547137,
+        "sha256": "418ef6da6caeaedfb8c7a73c7d340373a65367522bd4b5b7f8ed31e557ee46cd"
+      },
+      {
+        "path": "lib/rustlib/x86_64-pc-windows-msvc/lib/libstd_detect-cb31305a36296f2c.rlib",
+        "bytes": 55360,
+        "sha256": "cfc3f8d8c9e5101931c42d498b8e3a4b64be40176847517722a033e0d107611f"
+      },
+      {
+        "path": "lib/rustlib/x86_64-pc-windows-msvc/lib/libstd_detect-cb31305a36296f2c.rmeta",
+        "bytes": 581642,
+        "sha256": "3bb6c32b24fe137940b9c370455b2769ec185aae3ea210263c4f5586a4d5b295"
+      },
+      {
+        "path": "lib/rustlib/x86_64-pc-windows-msvc/lib/libsysroot-523460ab676420ca.rlib",
+        "bytes": 4482,
+        "sha256": "7e7ec698c30c494e26424ddc358abc1446e4f9b99dc1dbea32118e97a5e199d5"
+      },
+      {
+        "path": "lib/rustlib/x86_64-pc-windows-msvc/lib/libsysroot-523460ab676420ca.rmeta",
+        "bytes": 1958,
+        "sha256": "ed3012862fd7c78389d48f1a84d8215e81b080226929cb3506d60206ff3e45db"
+      },
+      {
+        "path": "lib/rustlib/x86_64-pc-windows-msvc/lib/libtest-b612a6b84a3b28c3.rlib",
+        "bytes": 5413458,
+        "sha256": "b5a6434ae71e76fcd193674af171171d4435e8b1c9057d5920a05df23ae5c9a8"
+      },
+      {
+        "path": "lib/rustlib/x86_64-pc-windows-msvc/lib/libtest-b612a6b84a3b28c3.rmeta",
+        "bytes": 1038292,
+        "sha256": "a4c958b532bc8c010899ef3da3ae628700fbf540302c26b78c9df833482e3050"
+      },
+      {
+        "path": "lib/rustlib/x86_64-pc-windows-msvc/lib/libunwind-e1499329ec2a6c49.rlib",
+        "bytes": 4470,
+        "sha256": "3d5a88c7ce6d8cf3e41e178753d3dd3c95c338fb9213703a17915e6c56f5c1d1"
+      },
+      {
+        "path": "lib/rustlib/x86_64-pc-windows-msvc/lib/libunwind-e1499329ec2a6c49.rmeta",
+        "bytes": 1757,
+        "sha256": "9bd037e1e2d6fefb87561085cecdc968f9b1ad68502cedd8e4c0783cc91e9a95"
+      },
+      {
+        "path": "lib/rustlib/x86_64-pc-windows-msvc/lib/libwindows_link-d56ce6793d295ac1.rlib",
+        "bytes": 4554,
+        "sha256": "25987f1530b6ba3df71b11b82dd38ec22a85279165278905a6880dcf4cadc4fe"
+      },
+      {
+        "path": "lib/rustlib/x86_64-pc-windows-msvc/lib/libwindows_link-d56ce6793d295ac1.rmeta",
+        "bytes": 3748,
+        "sha256": "6d651273bff357e8425e2a8dcc80e26b7df08a974c947d70bb502c814ccdaf07"
+      },
+      {
+        "path": "lib/rustlib/x86_64-pc-windows-msvc/lib/std-44a584f44bc3dd65.dll",
+        "bytes": 849920,
+        "sha256": "8dd8ea258a3561a499c438b322b218af3cb2f4db1029205adc94d58fd5b0615c"
+      },
+      {
+        "path": "lib/rustlib/x86_64-pc-windows-msvc/lib/std-44a584f44bc3dd65.dll.lib",
+        "bytes": 780292,
+        "sha256": "52ea6a190d3c9910292d414e3990b544b5a3e51ad6bf18ebc3aa1025f3c7a9b3"
+      },
+      {
+        "path": "lib/rustlib/x86_64-pc-windows-msvc/lib/std-44a584f44bc3dd65.pdb",
+        "bytes": 5967872,
+        "sha256": "fe5047c7cf230c724b38f9edfb7e1a98b2baba109cea4ebb2118cd4f8f027f6d"
+      },
+      {
+        "path": "share/doc/rust/COPYRIGHT-library.html",
+        "bytes": 1512520,
+        "sha256": "68129500b616d5838629e68f55ff3aed5e096dacf60ce9eb41bbe599a563afa6"
+      },
+      {
+        "path": "share/doc/rust/COPYRIGHT.html",
+        "bytes": 15380909,
+        "sha256": "5b0c93fc4e6d4b072eaa521b1762d1e746f4c368f65e81a0e5308e2772dac85e"
+      },
+      {
+        "path": "share/doc/rust/licenses/Apache-2.0.txt",
+        "bytes": 10280,
+        "sha256": "074e6e32c86a4c0ef8b3ed25b721ca23aca83df277cd88106ef7177c354615ff"
+      },
+      {
+        "path": "share/doc/rust/licenses/BSD-2-Clause.txt",
+        "bytes": 1267,
+        "sha256": "f32fb3b417a194167cfad068223fc975ba96c5960513a10f66a3c28720aec1df"
+      },
+      {
+        "path": "share/doc/rust/licenses/CC-BY-SA-4.0.txt",
+        "bytes": 20137,
+        "sha256": "23ee78c8bae49cf08ea2f0c84945c66b987ebe4520881fb51b3dad4fb43d07c2"
+      },
+      {
+        "path": "share/doc/rust/licenses/GCC-exception-3.1.txt",
+        "bytes": 3320,
+        "sha256": "a3966c9410ef94a1efbfa9ec04e9c1994026a70623fbf0885ce36737bfba3b54"
+      },
+      {
+        "path": "share/doc/rust/licenses/GPL-2.0-only.txt",
+        "bytes": 17642,
+        "sha256": "54b212ba1f97f6948fa5486239ab505dd820b02e50cbfd296b4062c8609a70af"
+      },
+      {
+        "path": "share/doc/rust/licenses/GPL-3.0-or-later.txt",
+        "bytes": 34795,
+        "sha256": "05315fce6c35f79b8a35454828995fa26336f235895ac64557abc028f4ffcea2"
+      },
+      {
+        "path": "share/doc/rust/licenses/ISC.txt",
+        "bytes": 730,
+        "sha256": "0ff61769b238634e042ab759dddfd104a8e69d091e3600ae3410e401a6164381"
+      },
+      {
+        "path": "share/doc/rust/licenses/LLVM-exception.txt",
+        "bytes": 919,
+        "sha256": "e34c58338bd89d43e709e226610d8f32b3e3c47f4ad9a99a8dc1d4ac7842488e"
+      },
+      {
+        "path": "share/doc/rust/licenses/MIT.txt",
+        "bytes": 1078,
+        "sha256": "b85dcd3e453d05982552c52b5fc9e0bdd6d23c6f8e844b984a88af32570b0cc0"
+      },
+      {
+        "path": "share/doc/rust/licenses/NCSA.txt",
+        "bytes": 1676,
+        "sha256": "39cb0234065c92b9e6cee3830cbb52b1aa289aa8fe9ba2e66730fec5cf05c630"
+      },
+      {
+        "path": "share/doc/rust/licenses/OFL-1.1.txt",
+        "bytes": 4016,
+        "sha256": "8eea8287e5876b539670cadb82e99f9a7afddec6f6730811be1daf25d2e9bcfd"
+      },
+      {
+        "path": "share/doc/rust/licenses/Unicode-3.0.txt",
+        "bytes": 1995,
+        "sha256": "f5062c9a188d81dfe66b56db4182dcf9e4b17c0d9b0d311a8e20b3a1b075c443"
+      }
+    ]
+  },
+  "externalBoundaries": {
+    "msvcRuntime": "Requires builder inventory of exact MSVC/SDK/linker inputs and release review of licensed redistribution. No VC redistributable is included by this notice generator.",
+    "systemDlls": "Imported Windows OS DLLs are prerequisites, never copied from System32 by this generator.",
+    "webview2Runtime": "External Evergreen Runtime prerequisite; no bundled Fixed Version Runtime or installer is authorized.",
+    "steam": "No Steam SDK files, credentials, upload, or release authorization."
+  }
+}

@@ -1,0 +1,569 @@
+{
+  "schemaVersion": 1,
+  "id": "home.cleaner.light-damaged",
+  "slug": "cleaner-home-light-damaged",
+  "quality": "source-derived-development-pending-human-art-review",
+  "artApproved": false,
+  "model": "model.glb",
+  "source": "source.blend",
+  "rootNode": "asset_root",
+  "dimensions": {
+    "unit": "metre",
+    "up": "+Y",
+    "forward": "+Z",
+    "sourceUp": "+Z",
+    "sourceForward": "-Y",
+    "origin": "ground placement at 0,0,0",
+    "boundsBlender": {
+      "min": [
+        -0.147060826420784,
+        -0.1469999998807907,
+        0.0
+      ],
+      "max": [
+        0.16249997913837433,
+        0.13449999690055847,
+        0.39149999618530273
+      ]
+    },
+    "sizeBlender": [
+      0.3095608055591583,
+      0.2814999967813492,
+      0.39149999618530273
+    ],
+    "boundsGLTF": {
+      "min": [
+        -0.147060826420784,
+        0.0,
+        -0.13449999690055847
+      ],
+      "max": [
+        0.16249997913837433,
+        0.39149999618530273,
+        0.1469999998807907
+      ]
+    },
+    "modelHeight": 0.39149999618530273,
+    "originMeters": [
+      0,
+      0,
+      0
+    ],
+    "scaleBasis": "Fixed longest dimension of normal source GLTF; never recompute scale from damaged bounds"
+  },
+  "reference": {
+    "path": "reference/cleaner-home-v1.png",
+    "sha256": "005abaf9110c0dd711b293703572455f59152fdfd304d81221547e60fecfaf99",
+    "frozenSource": "docs/steam-v1/reference/s07-s08/SOURCE-RECORD.md"
+  },
+  "materials": {
+    "method": "PBR with linear Tint vertex colors; real volume meshes",
+    "externalTexturesRequired": false
+  },
+  "anchors": {
+    "entry": "entry_point",
+    "entry_inside": "entry_inside",
+    "sleep": "sleep_point",
+    "repair": "repair_point",
+    "storage": "storage_point",
+    "placement": "anchor_placement"
+  },
+  "collision": {
+    "selectionProxy": "collision_selection",
+    "usage": "Inherited empty proxies preserve compatibility only; state collision/nav/selection policy belongs to gameplay. Debris is authored static render geometry.",
+    "solidProxies": [
+      {
+        "node": "collision_floor",
+        "shape": "box",
+        "center": [
+          0,
+          0,
+          0.028
+        ],
+        "size": [
+          0.213,
+          0.191,
+          0.02
+        ]
+      },
+      {
+        "node": "collision_left_wall",
+        "shape": "box",
+        "center": [
+          -0.102,
+          0,
+          0.133
+        ],
+        "size": [
+          0.014,
+          0.192,
+          0.198
+        ]
+      },
+      {
+        "node": "collision_right_wall",
+        "shape": "box",
+        "center": [
+          0.102,
+          0,
+          0.133
+        ],
+        "size": [
+          0.014,
+          0.192,
+          0.198
+        ]
+      },
+      {
+        "node": "collision_back_wall",
+        "shape": "box",
+        "center": [
+          0,
+          0.095,
+          0.133
+        ],
+        "size": [
+          0.21,
+          0.014,
+          0.198
+        ]
+      },
+      {
+        "node": "collision_front_left",
+        "shape": "box",
+        "center": [
+          -0.089,
+          -0.097,
+          0.13
+        ],
+        "size": [
+          0.041,
+          0.015,
+          0.19
+        ]
+      },
+      {
+        "node": "collision_front_right",
+        "shape": "box",
+        "center": [
+          0.089,
+          -0.097,
+          0.13
+        ],
+        "size": [
+          0.041,
+          0.015,
+          0.19
+        ]
+      },
+      {
+        "node": "collision_front_header",
+        "shape": "box",
+        "center": [
+          0,
+          -0.097,
+          0.245
+        ],
+        "size": [
+          0.134,
+          0.015,
+          0.063
+        ]
+      }
+    ],
+    "sourceCoordinates": "Blender metres Z-up. Use exported node world matrix for runtime; source extents reorder [x,z,y] for glTF Y-up.",
+    "additionalVolumes": [
+      {
+        "node": "collision_back_wall",
+        "parameters": {
+          "role": "collision_proxy",
+          "shape": "box",
+          "size_m": [
+            0.21,
+            0.014,
+            0.198
+          ],
+          "dimensions_m": [
+            0.21,
+            0.014,
+            0.198
+          ]
+        }
+      },
+      {
+        "node": "collision_floor",
+        "parameters": {
+          "role": "collision_proxy",
+          "shape": "box",
+          "size_m": [
+            0.213,
+            0.191,
+            0.02
+          ],
+          "dimensions_m": [
+            0.213,
+            0.191,
+            0.02
+          ]
+        }
+      },
+      {
+        "node": "collision_front_header",
+        "parameters": {
+          "role": "collision_proxy",
+          "shape": "box",
+          "size_m": [
+            0.134,
+            0.015,
+            0.063
+          ],
+          "dimensions_m": [
+            0.134,
+            0.015,
+            0.063
+          ]
+        }
+      },
+      {
+        "node": "collision_front_left",
+        "parameters": {
+          "role": "collision_proxy",
+          "shape": "box",
+          "size_m": [
+            0.041,
+            0.015,
+            0.19
+          ],
+          "dimensions_m": [
+            0.041,
+            0.015,
+            0.19
+          ]
+        }
+      },
+      {
+        "node": "collision_front_right",
+        "parameters": {
+          "role": "collision_proxy",
+          "shape": "box",
+          "size_m": [
+            0.041,
+            0.015,
+            0.19
+          ],
+          "dimensions_m": [
+            0.041,
+            0.015,
+            0.19
+          ]
+        }
+      },
+      {
+        "node": "collision_left_wall",
+        "parameters": {
+          "role": "collision_proxy",
+          "shape": "box",
+          "size_m": [
+            0.014,
+            0.192,
+            0.198
+          ],
+          "dimensions_m": [
+            0.014,
+            0.192,
+            0.198
+          ]
+        }
+      },
+      {
+        "node": "collision_right_wall",
+        "parameters": {
+          "role": "collision_proxy",
+          "shape": "box",
+          "size_m": [
+            0.014,
+            0.192,
+            0.198
+          ],
+          "dimensions_m": [
+            0.014,
+            0.192,
+            0.198
+          ]
+        }
+      }
+    ]
+  },
+  "stateRig": {
+    "defaultState": "light-damaged",
+    "motions": [
+      {
+        "node": "inspection_detail",
+        "path": "rotation_euler",
+        "axis": 1,
+        "closed": 0,
+        "open": -0.045
+      }
+    ],
+    "sourceCoordinates": "Blender; resolve exported nodes for runtime glTF axes",
+    "clip": "inspection",
+    "durationSeconds": 2,
+    "states": [
+      "light-damaged"
+    ],
+    "frameRate": 30,
+    "closedFrame": 1,
+    "openFrame": 31,
+    "returnFrame": 61,
+    "clipPurpose": "Gentle inspection flex of one loose edge. Static debris stays fixed. No collapse simulation or gameplay anchor motion."
+  },
+  "preview": {
+    "reviewDIP": [
+      96,
+      120,
+      160
+    ],
+    "scaleBasis": "Per-species normal-state camera, origin, and pixel-to-metre ratio; never normalize each damaged silhouette",
+    "studioViews": [
+      "preview/three-quarter.png",
+      "preview/front.png",
+      "preview/back.png",
+      "preview/top.png"
+    ],
+    "artApproved": false,
+    "exactDIPFiles": [
+      "preview/readable-96dip-light.png",
+      "preview/readable-96dip-dark.png",
+      "preview/readable-120dip-light.png",
+      "preview/readable-120dip-dark.png",
+      "preview/readable-160dip-light.png",
+      "preview/readable-160dip-dark.png"
+    ],
+    "contactSheet": "preview/contact-sheet.png",
+    "renderRecord": "../../../../docs/steam-v1/evidence/s07-four-states/assets/render-record.json"
+  },
+  "budget": {
+    "maxTriangles": 20000,
+    "maxMaterials": 3
+  },
+  "integration": {
+    "status": "asset candidate; production and WebGL validation owned by coordinator",
+    "runtimeScale": "All four states use normal reference modelHeight and origin [0,0,0]; no state bounds normalization.",
+    "renderOnlyChildren": "Mesh nodes; empties named collision_* are proxies/metadata.",
+    "modelHeight": 0.39149999618530273,
+    "origin": [
+      0,
+      0,
+      0
+    ],
+    "normalAssetId": "home.cleaner",
+    "geometryState": "light-damaged",
+    "gameplayUsable": true,
+    "browserWebGLVerified": false,
+    "nativeGameplayVerified": false,
+    "artApproved": false,
+    "animationRuntime": "HP selects static prefab mesh; inspection clip is available for review only",
+    "browserEvidencePolicy": "Current four-state browser evidence is maintained separately by the coordinator; no inherited legacy browser approval."
+  },
+  "authoring": {
+    "id": "home.cleaner.light-damaged",
+    "name": "Cleaner workshop home light-damaged",
+    "description": "Cream timber workshop, sage shingles, coral arched door, metal chimney; frozen cleaner-home-v1.png.",
+    "anchors": {
+      "entry": "entry_point",
+      "entry_inside": "entry_inside",
+      "sleep": "sleep_point",
+      "repair": "repair_point",
+      "storage": "storage_point",
+      "placement": "anchor_placement"
+    },
+    "motions": [
+      {
+        "node": "inspection_detail",
+        "path": "rotation_euler",
+        "axis": 1,
+        "closed": 0,
+        "open": -0.045
+      }
+    ],
+    "notes": [
+      "Opened immutable normal .blend and made independent smaller roof cuts, narrow structural/door splits and minor door geometry racking. Saved newly authored light geometry only in the four-state package.",
+      "Actual 3D geometry, no reference image shaders or image billboards."
+    ],
+    "asset_id": "cleaner-home-light-damaged",
+    "runtime_id": "home.cleaner.light-damaged",
+    "category": "home",
+    "root_node": "asset_root",
+    "units": "meters",
+    "up_axis": "+Z",
+    "forward_axis": "-Y",
+    "state": "light-damaged",
+    "authored_states": [
+      "light-damaged"
+    ],
+    "deferred_states": [],
+    "triangle_budget": 20000,
+    "material_budget": 3,
+    "entrance_clearance_m": {
+      "width": 0.11,
+      "height": 0.174
+    },
+    "interaction_nodes": [
+      "entry_point",
+      "entry_inside",
+      "sleep_point",
+      "repair_point"
+    ],
+    "movable_nodes": [
+      "door_hinge",
+      "roof_root",
+      "window_hinge"
+    ],
+    "collisions": [
+      {
+        "node": "collision_floor",
+        "shape": "box",
+        "center": [
+          0,
+          0,
+          0.028
+        ],
+        "size": [
+          0.213,
+          0.191,
+          0.02
+        ]
+      },
+      {
+        "node": "collision_left_wall",
+        "shape": "box",
+        "center": [
+          -0.102,
+          0,
+          0.133
+        ],
+        "size": [
+          0.014,
+          0.192,
+          0.198
+        ]
+      },
+      {
+        "node": "collision_right_wall",
+        "shape": "box",
+        "center": [
+          0.102,
+          0,
+          0.133
+        ],
+        "size": [
+          0.014,
+          0.192,
+          0.198
+        ]
+      },
+      {
+        "node": "collision_back_wall",
+        "shape": "box",
+        "center": [
+          0,
+          0.095,
+          0.133
+        ],
+        "size": [
+          0.21,
+          0.014,
+          0.198
+        ]
+      },
+      {
+        "node": "collision_front_left",
+        "shape": "box",
+        "center": [
+          -0.089,
+          -0.097,
+          0.13
+        ],
+        "size": [
+          0.041,
+          0.015,
+          0.19
+        ]
+      },
+      {
+        "node": "collision_front_right",
+        "shape": "box",
+        "center": [
+          0.089,
+          -0.097,
+          0.13
+        ],
+        "size": [
+          0.041,
+          0.015,
+          0.19
+        ]
+      },
+      {
+        "node": "collision_front_header",
+        "shape": "box",
+        "center": [
+          0,
+          -0.097,
+          0.245
+        ],
+        "size": [
+          0.134,
+          0.015,
+          0.063
+        ]
+      }
+    ],
+    "door": {
+      "pivot": "door_hinge",
+      "axis": "z",
+      "closed_degrees": 0,
+      "open_degrees": -105,
+      "default_degrees": 0
+    },
+    "visual_basis": "Cream timber workshop, sage shingles, coral arched door, metal chimney; frozen cleaner-home-v1.png.",
+    "reference": "docs/steam-v1/reference/s07-s08/cleaner-home-v1.png",
+    "limitations": [
+      "Human art review and native DIP/contact acceptance remain pending.",
+      "Inspection flex and debris are authored; no real-time structural destruction."
+    ]
+  },
+  "sha256": {
+    "source": "e7bb612cfd53473a0c34bae485019b0dfa6b155578db7d5e29e8e6f51b063d9a",
+    "model": "132e521cc2a725dcccc04d5e78da6d288084fed35ec59b42641802f9501c1bdc"
+  },
+  "technicalValidation": "validation.json",
+  "runtimeStats": "runtime-stats.json",
+  "derivation": {
+    "normalAssetId": "home.cleaner",
+    "sourceBlend": "assets/steam-v1/s07-s08/cleaner-home/source.blend",
+    "sourceSha256": "60faebd0e82cf504a52242a86b587030da87cd128629e480b2663e2ac761a37d",
+    "inputBlend": "assets/steam-v1/s07-s08/cleaner-home/source.blend",
+    "inputSourceSha256": "60faebd0e82cf504a52242a86b587030da87cd128629e480b2663e2ac761a37d",
+    "referenceSha256": "005abaf9110c0dd711b293703572455f59152fdfd304d81221547e60fecfaf99",
+    "generator": "tools/s07-four-states/build_assets.py",
+    "model": "gpt-6-astra",
+    "reasoningEffort": "xhigh",
+    "blender": "5.2.1 LTS",
+    "method": "Opened immutable normal .blend and made independent smaller roof cuts, narrow structural/door splits and minor door geometry racking. Saved newly authored light geometry only in the four-state package.",
+    "normalModelHeight": 0.39149999618530273,
+    "normalOrigin": [
+      0,
+      0,
+      0
+    ],
+    "bytePreservingReuse": false
+  },
+  "stateSemantics": {
+    "normal": "hpPercent >= 70",
+    "light-damaged": "40 <= hpPercent < 70",
+    "heavy-damaged": "0 < hpPercent < 40",
+    "destroyed": "hpPercent <= 0",
+    "saveSchemaChange": false
+  }
+}

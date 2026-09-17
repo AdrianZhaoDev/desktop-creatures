@@ -1,0 +1,20 @@
+{
+  "sessionVersion": 1,
+  "campaign": {
+    "saveVersion": 4,
+    "profile": "local",
+    "meta": {
+      "researchPoints": 0,
+      "nodes": [],
+      "completedMissions": [],
+      "firstAttemptGranted": false,
+      "settledRunIds": [],
+      "frogUnlocked": false,
+      "appearanceId": "female"
+    },
+    "activeRun": null,
+    "recentSettlement": null,
+    "legacyCompanion": null
+  },
+  "s07Homes": null
+}

@@ -1,0 +1,14 @@
+{
+  "$schema": "../gen/schemas/desktop-schema.json",
+  "identifier": "default",
+  "description": "Minimal capability set for the click-through overlay",
+  "windows": [
+    "overlay-primary",
+    "overlay-screen-*",
+    "trash-bin",
+    "shortcut-settings", "companion-settings"
+  ],
+  "permissions": [
+    "core:default"
+  ]
+}

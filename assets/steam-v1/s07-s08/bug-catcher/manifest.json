@@ -1,0 +1,234 @@
+{
+  "schemaVersion": 1,
+  "id": "trap.catcher",
+  "slug": "bug-catcher",
+  "quality": "procedural-development-pending-human-art-review",
+  "artApproved": false,
+  "model": "model.glb",
+  "source": "source.blend",
+  "rootNode": "asset_root",
+  "dimensions": {
+    "unit": "metre",
+    "up": "+Y",
+    "forward": "+Z",
+    "sourceUp": "+Z",
+    "sourceForward": "-Y",
+    "origin": "ground placement at 0,0,0",
+    "boundsBlender": {
+      "min": [
+        -0.07052083313465118,
+        -0.07708333060145378,
+        0
+      ],
+      "max": [
+        0.07052083313465118,
+        0.05447916500270367,
+        0.15999999083578587
+      ]
+    },
+    "sizeBlender": [
+      0.14104166626930237,
+      0.13156249560415745,
+      0.15999999083578587
+    ],
+    "boundsGLTF": {
+      "min": [
+        -0.07052083313465118,
+        0,
+        -0.05447916500270367
+      ],
+      "max": [
+        0.07052083313465118,
+        0.15999999083578587,
+        0.07708333060145378
+      ]
+    }
+  },
+  "reference": {
+    "path": "reference/bug-catcher-v1.png",
+    "sha256": "2c1767ac0fcbd8e56499bc62e55a143c05c1431a9f872b3a56fd2a27a4ee94ab",
+    "frozenSource": "docs/steam-v1/reference/s07-s08/SOURCE-RECORD.md"
+  },
+  "materials": {
+    "method": "PBR with linear Tint vertex colors; real volume meshes",
+    "externalTexturesRequired": false
+  },
+  "anchors": {
+    "interaction": "interaction_anchor",
+    "collision": "collision_body",
+    "entrance": "entrance_anchor",
+    "maintenance": "maintenance_anchor",
+    "contents": "contents_root",
+    "placement": "anchor_placement"
+  },
+  "collision": {
+    "selectionProxy": "collision_selection",
+    "usage": "Non-rendering box is for picking only. Do not use for navigation or block doorway.",
+    "solidProxies": [],
+    "additionalVolumes": [
+      {
+        "node": "collision_body",
+        "parameters": {
+          "role": "collision_box",
+          "half_extents": [
+            0.07062500000000001,
+            0.05500000000000001,
+            0.07916666666666668
+          ]
+        }
+      }
+    ],
+    "sourceCoordinates": "Blender metres Z-up. Use exported node world matrix for runtime; source extents reorder [x,z,y] for glTF Y-up."
+  },
+  "stateRig": {
+    "defaultState": "normal",
+    "motions": [
+      {
+        "node": "lid_hinge",
+        "path": "rotation_euler",
+        "axis": 0,
+        "closed": 0,
+        "open": -1.7453292519943295
+      },
+      {
+        "node": "drawer_slide",
+        "path": "location",
+        "axis": 1,
+        "closed": 0,
+        "open": -0.06666666666666667
+      },
+      {
+        "node": "entry_flap_hinge",
+        "path": "rotation_euler",
+        "axis": 0,
+        "closed": 0,
+        "open": -1.1344640137963142
+      }
+    ],
+    "sourceCoordinates": "Blender; resolve exported nodes for runtime glTF axes",
+    "clip": "open_close",
+    "durationSeconds": 2,
+    "states": [
+      "closed",
+      "open"
+    ],
+    "frameRate": 30,
+    "closedFrame": 1,
+    "openFrame": 31,
+    "returnFrame": 61
+  },
+  "preview": {
+    "reviewDIP": [
+      96,
+      120,
+      160
+    ],
+    "scaleBasis": "longest screen-projected dimension at devicePixelRatio=1; use HTML gallery for exact CSS DIP",
+    "exactDIPFiles": [
+      "preview/readable-96dip.png",
+      "preview/readable-120dip.png",
+      "preview/readable-160dip.png"
+    ],
+    "contactSheet": "preview/contact-sheet.jpg",
+    "readabilitySheet": "preview/readability.jpg"
+  },
+  "budget": {
+    "maxTriangles": 10000,
+    "maxMaterials": 3
+  },
+  "integration": {
+    "status": "asset-only; not loaded by gameplay",
+    "runtimeScale": "Adapt metre bounds to display size; existing S06 actors use arbitrary units.",
+    "renderOnlyChildren": "Mesh nodes; empties named collision_* are proxies/metadata."
+  },
+  "authoring": {
+    "root": "asset_root",
+    "asset_id": "bug-catcher",
+    "label": "Bug catcher",
+    "dimensions_m": [
+      0.14104166666666668,
+      0.13145833333333334,
+      0.16
+    ],
+    "animations": [
+      "open_lid",
+      "service_drawer",
+      "open_entry_flap"
+    ],
+    "movable_nodes": [
+      "lid_hinge",
+      "drawer_slide",
+      "entry_flap_hinge",
+      "contents_root"
+    ],
+    "states": {
+      "empty": {
+        "contents_root.visible": false
+      },
+      "working": {
+        "contents_root.visible": true
+      },
+      "full": {
+        "contents_root.visible": true
+      },
+      "maintenance": {
+        "drawer_slide.location_y": -0.06666666666666667
+      }
+    },
+    "reference_features": [
+      "cream_round_box",
+      "mint_vented_lid",
+      "coral_latches",
+      "real_round_entry",
+      "clear_two_leaf_gate",
+      "side_inspection_window",
+      "transparent_lower_drawer",
+      "three_counter_lights"
+    ],
+    "id": "trap.catcher",
+    "name": "Bug catcher",
+    "description": "Editable original trap modeled from the frozen bug-catcher-v1.png reference.",
+    "anchors": {
+      "interaction": "interaction_anchor",
+      "collision": "collision_body",
+      "entrance": "entrance_anchor",
+      "maintenance": "maintenance_anchor",
+      "contents": "contents_root",
+      "placement": "anchor_placement"
+    },
+    "motions": [
+      {
+        "node": "lid_hinge",
+        "path": "rotation_euler",
+        "axis": 0,
+        "closed": 0,
+        "open": -1.7453292519943295
+      },
+      {
+        "node": "drawer_slide",
+        "path": "location",
+        "axis": 1,
+        "closed": 0,
+        "open": -0.06666666666666667
+      },
+      {
+        "node": "entry_flap_hinge",
+        "path": "rotation_euler",
+        "axis": 0,
+        "closed": 0,
+        "open": -1.1344640137963142
+      }
+    ],
+    "notes": [
+      "Frozen PNG is the only appearance baseline; 08/11 supply usage constraints only.",
+      "All visible parts are modeled geometry with shared vertex colors.",
+      "Animation creation and GLB export are owned by the batch exporter."
+    ]
+  },
+  "sha256": {
+    "model": "de81b44f08d57ac5630cbe46eec118af18fc2070ecc7e6705509d1590e3a1aaa",
+    "source": "ac9573a564d68abc9d4186917759eb8e98d83c24a45e8800f1827387b8163a81"
+  },
+  "technicalValidation": "validation.json",
+  "runtimeStats": "runtime-stats.json"
+}

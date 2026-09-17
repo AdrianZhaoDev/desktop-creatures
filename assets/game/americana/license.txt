@@ -1,0 +1,6 @@
+SPDX-License-Identifier: CC0-1.0
+Original Desktop Creatures procedural geometry, animation, vertex colors, sounds and previews, created with Codex, 2026.
+To the extent rights exist, project contributors dedicate these original assets to the public domain under CC0 1.0 Universal. Where waiver is ineffective, use, modification and redistribution, including commercial use, are permitted without royalties or attribution. No warranty.
+https://creativecommons.org/publicdomain/zero/1.0/legalcode
+No third-party model, photograph, sound recording or texture is included. Blender and Three.js retain their separate software licenses.
+These are procedural semi-realistic game interpretations, not scientific reconstructions or final photorealistic artwork.

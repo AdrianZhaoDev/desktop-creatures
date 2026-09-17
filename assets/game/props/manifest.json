@@ -1,0 +1,502 @@
+{
+  "schemaVersion": 2,
+  "assetKind": "props",
+  "id": "game.props",
+  "licenseFile": "license.txt",
+  "foods": [
+    {
+      "id": "food.01",
+      "name": "饼干碎屑",
+      "tier": 1,
+      "quality": 1,
+      "model": "food-01-full.glb",
+      "states": {
+        "full": "food-01-full.glb",
+        "half": "food-01-half.glb",
+        "residue": "food-01-residue.glb"
+      },
+      "preview": "food-01.png",
+      "bodyLengthModel": 0.7,
+      "bodyLengthDip": 29,
+      "feedingPoints": [
+        [
+          0,
+          0.05,
+          -0.22
+        ],
+        [
+          0.22,
+          0.05,
+          0
+        ],
+        [
+          -0.22,
+          0.05,
+          0
+        ]
+      ]
+    },
+    {
+      "id": "food.02",
+      "name": "米饭粒",
+      "tier": 2,
+      "quality": 2,
+      "model": "food-02-full.glb",
+      "states": {
+        "full": "food-02-full.glb",
+        "half": "food-02-half.glb",
+        "residue": "food-02-residue.glb"
+      },
+      "preview": "food-02.png",
+      "bodyLengthModel": 0.7,
+      "bodyLengthDip": 32,
+      "feedingPoints": [
+        [
+          0,
+          0.05,
+          -0.22
+        ],
+        [
+          0.22,
+          0.05,
+          0
+        ],
+        [
+          -0.22,
+          0.05,
+          0
+        ]
+      ]
+    },
+    {
+      "id": "food.03",
+      "name": "面包边",
+      "tier": 3,
+      "quality": 3,
+      "model": "food-03-full.glb",
+      "states": {
+        "full": "food-03-full.glb",
+        "half": "food-03-half.glb",
+        "residue": "food-03-residue.glb"
+      },
+      "preview": "food-03.png",
+      "bodyLengthModel": 0.7,
+      "bodyLengthDip": 35,
+      "feedingPoints": [
+        [
+          0,
+          0.05,
+          -0.22
+        ],
+        [
+          0.22,
+          0.05,
+          0
+        ],
+        [
+          -0.22,
+          0.05,
+          0
+        ]
+      ]
+    },
+    {
+      "id": "food.04",
+      "name": "薯条残段",
+      "tier": 4,
+      "quality": 4,
+      "model": "food-04-full.glb",
+      "states": {
+        "full": "food-04-full.glb",
+        "half": "food-04-half.glb",
+        "residue": "food-04-residue.glb"
+      },
+      "preview": "food-04.png",
+      "bodyLengthModel": 0.7,
+      "bodyLengthDip": 38,
+      "feedingPoints": [
+        [
+          0,
+          0.05,
+          -0.22
+        ],
+        [
+          0.22,
+          0.05,
+          0
+        ],
+        [
+          -0.22,
+          0.05,
+          0
+        ]
+      ]
+    },
+    {
+      "id": "food.05",
+      "name": "苹果核",
+      "tier": 5,
+      "quality": 5,
+      "model": "food-05-full.glb",
+      "states": {
+        "full": "food-05-full.glb",
+        "half": "food-05-half.glb",
+        "residue": "food-05-residue.glb"
+      },
+      "preview": "food-05.png",
+      "bodyLengthModel": 0.7,
+      "bodyLengthDip": 41,
+      "feedingPoints": [
+        [
+          0,
+          0.05,
+          -0.22
+        ],
+        [
+          0.22,
+          0.05,
+          0
+        ],
+        [
+          -0.22,
+          0.05,
+          0
+        ]
+      ]
+    },
+    {
+      "id": "food.06",
+      "name": "香蕉皮",
+      "tier": 6,
+      "quality": 6,
+      "model": "food-06-full.glb",
+      "states": {
+        "full": "food-06-full.glb",
+        "half": "food-06-half.glb",
+        "residue": "food-06-residue.glb"
+      },
+      "preview": "food-06.png",
+      "bodyLengthModel": 0.7,
+      "bodyLengthDip": 44,
+      "feedingPoints": [
+        [
+          0,
+          0.05,
+          -0.22
+        ],
+        [
+          0.22,
+          0.05,
+          0
+        ],
+        [
+          -0.22,
+          0.05,
+          0
+        ]
+      ]
+    },
+    {
+      "id": "food.07",
+      "name": "剩饭团",
+      "tier": 7,
+      "quality": 7,
+      "model": "food-07-full.glb",
+      "states": {
+        "full": "food-07-full.glb",
+        "half": "food-07-half.glb",
+        "residue": "food-07-residue.glb"
+      },
+      "preview": "food-07.png",
+      "bodyLengthModel": 0.7,
+      "bodyLengthDip": 47,
+      "feedingPoints": [
+        [
+          0,
+          0.05,
+          -0.22
+        ],
+        [
+          0.22,
+          0.05,
+          0
+        ],
+        [
+          -0.22,
+          0.05,
+          0
+        ]
+      ]
+    },
+    {
+      "id": "food.08",
+      "name": "披萨边",
+      "tier": 8,
+      "quality": 8,
+      "model": "food-08-full.glb",
+      "states": {
+        "full": "food-08-full.glb",
+        "half": "food-08-half.glb",
+        "residue": "food-08-residue.glb"
+      },
+      "preview": "food-08.png",
+      "bodyLengthModel": 0.7,
+      "bodyLengthDip": 50,
+      "feedingPoints": [
+        [
+          0,
+          0.05,
+          -0.22
+        ],
+        [
+          0.22,
+          0.05,
+          0
+        ],
+        [
+          -0.22,
+          0.05,
+          0
+        ]
+      ]
+    },
+    {
+      "id": "food.09",
+      "name": "汉堡残块",
+      "tier": 9,
+      "quality": 9,
+      "model": "food-09-full.glb",
+      "states": {
+        "full": "food-09-full.glb",
+        "half": "food-09-half.glb",
+        "residue": "food-09-residue.glb"
+      },
+      "preview": "food-09.png",
+      "bodyLengthModel": 0.7,
+      "bodyLengthDip": 53,
+      "feedingPoints": [
+        [
+          0,
+          0.05,
+          -0.22
+        ],
+        [
+          0.22,
+          0.05,
+          0
+        ],
+        [
+          -0.22,
+          0.05,
+          0
+        ]
+      ]
+    },
+    {
+      "id": "food.10",
+      "name": "混合剩食堆",
+      "tier": 10,
+      "quality": 10,
+      "model": "food-10-full.glb",
+      "states": {
+        "full": "food-10-full.glb",
+        "half": "food-10-half.glb",
+        "residue": "food-10-residue.glb"
+      },
+      "preview": "food-10.png",
+      "bodyLengthModel": 0.7,
+      "bodyLengthDip": 56,
+      "feedingPoints": [
+        [
+          0,
+          0.05,
+          -0.22
+        ],
+        [
+          0.22,
+          0.05,
+          0
+        ],
+        [
+          -0.22,
+          0.05,
+          0
+        ]
+      ]
+    },
+    {
+      "id": "food.11",
+      "name": "鱼骨",
+      "quality": 7,
+      "tier": 7,
+      "model": "food-11-full.glb",
+      "states": {
+        "full": "food-11-full.glb",
+        "half": "food-11-half.glb",
+        "residue": "food-11-residue.glb"
+      },
+      "preview": "food-11.png",
+      "bodyLengthModel": 0.7,
+      "bodyLengthDip": 53,
+      "feedingPoints": [
+        [
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "id": "food.12",
+      "name": "鸡骨",
+      "quality": 8,
+      "tier": 8,
+      "model": "food-12-full.glb",
+      "states": {
+        "full": "food-12-full.glb",
+        "half": "food-12-half.glb",
+        "residue": "food-12-residue.glb"
+      },
+      "preview": "food-12.png",
+      "bodyLengthModel": 0.7,
+      "bodyLengthDip": 56,
+      "feedingPoints": [
+        [
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "id": "food.13",
+      "name": "橘子皮",
+      "quality": 5,
+      "tier": 5,
+      "model": "food-13-full.glb",
+      "states": {
+        "full": "food-13-full.glb",
+        "half": "food-13-half.glb",
+        "residue": "food-13-residue.glb"
+      },
+      "preview": "food-13.png",
+      "bodyLengthModel": 0.7,
+      "bodyLengthDip": 47,
+      "feedingPoints": [
+        [
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "id": "food.14",
+      "name": "蛋壳",
+      "quality": 3,
+      "tier": 3,
+      "model": "food-14-full.glb",
+      "states": {
+        "full": "food-14-full.glb",
+        "half": "food-14-half.glb",
+        "residue": "food-14-residue.glb"
+      },
+      "preview": "food-14.png",
+      "bodyLengthModel": 0.7,
+      "bodyLengthDip": 41,
+      "feedingPoints": [
+        [
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "id": "food.15",
+      "name": "沾食物的包装纸",
+      "quality": 9,
+      "tier": 9,
+      "model": "food-15-full.glb",
+      "states": {
+        "full": "food-15-full.glb",
+        "half": "food-15-half.glb",
+        "residue": "food-15-residue.glb"
+      },
+      "preview": "food-15.png",
+      "bodyLengthModel": 0.7,
+      "bodyLengthDip": 59,
+      "feedingPoints": [
+        [
+          0,
+          0,
+          0
+        ]
+      ]
+    }
+  ],
+  "bin": {
+    "model": "bin.glb",
+    "preview": "bin-preview.png",
+    "bodyLengthDip": 106,
+    "bodyLengthModel": 1.02,
+    "clips": {
+      "idle": "BinIdle",
+      "open": "BinOpen",
+      "receive": "BinReceive",
+      "close": "BinClose"
+    },
+    "sockets": {
+      "intake": [
+        0,
+        0.9,
+        0
+      ]
+    },
+    "actions": {
+      "idle": {
+        "clip": "BinIdle",
+        "loop": true,
+        "clampWhenFinished": false,
+        "playbackRateRange": [
+          1,
+          1
+        ]
+      },
+      "open": {
+        "clip": "BinOpen",
+        "loop": false,
+        "clampWhenFinished": true,
+        "playbackRateRange": [
+          1,
+          1
+        ]
+      },
+      "receive": {
+        "clip": "BinReceive",
+        "loop": false,
+        "clampWhenFinished": true,
+        "playbackRateRange": [
+          1,
+          1
+        ]
+      },
+      "close": {
+        "clip": "BinClose",
+        "loop": false,
+        "clampWhenFinished": true,
+        "playbackRateRange": [
+          1,
+          1
+        ]
+      }
+    },
+    "dragIn": {
+      "duration": 0.65,
+      "scaleAtEnd": 1,
+      "deleteEvent": "nativeRecycleSucceeded",
+      "description": "Actual entity model follows a 3D path into the hollow bin, occluded by the rim. On failure the world entity returns to its grab origin."
+    }
+  },
+  "artRevision": 2
+}

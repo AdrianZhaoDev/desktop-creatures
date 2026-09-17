@@ -1,0 +1,2 @@
+# Candidate policies pin raw file bytes; keep Git from rewriting line endings.
+* -text

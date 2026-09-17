@@ -1,0 +1,50 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+.steam-candidate-*/
+.steam-content-*/
+coverage
+/.art-build/
+docs/themed-companion-evidence/*.blend1
+assets/companions/blender-source/*.blend1
+*.local
+
+# Local environment files (keep examples/templates tracked)
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+# OS-generated files
+Thumbs.db
+Desktop.ini
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Local candidate builds and generated evidence (existing staged files still
+# require an explicit publication review; ignore rules do not unstage them).
+/.local-native-*/
+/.local-tools/
+/.steam-native-*/
+/output/
+/artifacts/
+/src-tauri/target/
+*.blend1

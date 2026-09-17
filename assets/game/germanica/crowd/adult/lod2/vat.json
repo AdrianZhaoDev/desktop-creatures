@@ -1,0 +1,135 @@
+{
+  "schemaVersion": 1,
+  "id": "lod2",
+  "generatedBy": "bake-game-vat.mjs v2 / Three.js 0.186.0",
+  "textureEncoding": "float32-rgba-le",
+  "coordinateSpace": "gltf-scene",
+  "sourceModel": "../../../adult/lod2.glb",
+  "sourceModelHash": "190b3941be9fc0a66bde7071c658d3079f8d8b59a33c5268283596c536a1acad",
+  "mesh": "mesh.json",
+  "meshHash": "1e7645defed8f5e56e839c2680195b033727c3e191a0bacad8701d5f8ea2a6b4",
+  "vertexCount": 504,
+  "textureWidth": 512,
+  "textureHeight": 274,
+  "rowsPerFrame": 1,
+  "totalFrames": 274,
+  "clips": [
+    {
+      "name": "FeedLoop",
+      "startFrame": 0,
+      "frameCount": 24,
+      "duration": 1,
+      "fps": 24,
+      "loop": true,
+      "storage": "frames",
+      "sampling": "endpoint-excluded"
+    },
+    {
+      "name": "HideLoop",
+      "startFrame": 24,
+      "frameCount": 1,
+      "duration": 1,
+      "fps": 1,
+      "loop": true,
+      "storage": "pose",
+      "sampling": "endpoint-excluded"
+    },
+    {
+      "name": "Idle",
+      "startFrame": 25,
+      "frameCount": 16,
+      "duration": 2,
+      "fps": 8,
+      "loop": true,
+      "storage": "frames",
+      "sampling": "endpoint-excluded"
+    },
+    {
+      "name": "MatingLoop",
+      "startFrame": 41,
+      "frameCount": 96,
+      "duration": 4,
+      "fps": 24,
+      "loop": true,
+      "storage": "frames",
+      "sampling": "endpoint-excluded"
+    },
+    {
+      "name": "Oviposit",
+      "startFrame": 137,
+      "frameCount": 73,
+      "duration": 3,
+      "fps": 24,
+      "loop": false,
+      "storage": "frames",
+      "sampling": "endpoint-inclusive"
+    },
+    {
+      "name": "Run",
+      "startFrame": 210,
+      "frameCount": 15,
+      "duration": 0.4166666567325592,
+      "fps": 36.000000858306905,
+      "loop": true,
+      "storage": "frames",
+      "sampling": "endpoint-excluded"
+    },
+    {
+      "name": "SleepLoop",
+      "startFrame": 225,
+      "frameCount": 1,
+      "duration": 2,
+      "fps": 0.5,
+      "loop": true,
+      "storage": "pose",
+      "sampling": "endpoint-excluded"
+    },
+    {
+      "name": "Walk",
+      "startFrame": 226,
+      "frameCount": 19,
+      "duration": 0.7916666865348816,
+      "fps": 23.999999397679396,
+      "loop": true,
+      "storage": "frames",
+      "sampling": "endpoint-excluded"
+    },
+    {
+      "name": "WalkSlow",
+      "startFrame": 245,
+      "frameCount": 29,
+      "duration": 1.2083333730697632,
+      "fps": 23.999999210752314,
+      "loop": true,
+      "storage": "frames",
+      "sampling": "endpoint-excluded"
+    }
+  ],
+  "loopSeamError": 2.384185791015625e-7,
+  "normalLoopSeamError": 1.1920928955078125e-7,
+  "position": {
+    "file": "vat-position.bin",
+    "byteLength": 2244608,
+    "sha256": "9a69c869007823eaec9997a736852b898d0fca87fda5e5dfeb54c02b8e8017ad"
+  },
+  "normal": {
+    "file": "vat-normal.bin",
+    "byteLength": 2244608,
+    "sha256": "eff027e07d55da2d16acf3b26bec7ab881bd9a02af4f32bd60fbde31b6a8732f"
+  },
+  "bounds": {
+    "min": [
+      -1.2075726985931396,
+      -0.2363315224647522,
+      -2.3085343837738037
+    ],
+    "max": [
+      1.2063937187194824,
+      0.7669456601142883,
+      1.3605897426605225
+    ]
+  },
+  "rootMotion": false,
+  "sampling": "Loop clips use uniform endpoint-excluded samples; non-loop clips include both endpoints; pose storage has one frame",
+  "lookup": "RGBA32F nearest, no mipmaps; manual frame interpolation and normalized normals"
+}

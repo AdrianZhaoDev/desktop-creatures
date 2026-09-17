@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "id": "steam-v1.s07-s09-damage-and-demo-nest",
+  "quality": "development-pending-human-art-review",
+  "assetCount": 5,
+  "assets": [
+    {
+      "id": "home.cleaner.damaged",
+      "slug": "cleaner-home-damaged",
+      "manifest": "cleaner-home-damaged/manifest.json",
+      "model": "cleaner-home-damaged/model.glb",
+      "source": "cleaner-home-damaged/source.blend",
+      "triangles": 15728,
+      "materials": 3,
+      "primitives": 12,
+      "glbBytes": 1295552,
+      "sha256": {
+        "model": "5040af36549d1ecca0f75c143a9a252047335d8952c172a14e89b41daddc6529",
+        "source": "9a669a5f9b0b7ee2446e460e0c8628ffb4f35b2c2f21b2036373d41dc8505c9f"
+      },
+      "artApproved": false,
+      "developmentPlaceholder": false
+    },
+    {
+      "id": "home.cleaner.destroyed",
+      "slug": "cleaner-home-destroyed",
+      "manifest": "cleaner-home-destroyed/manifest.json",
+      "model": "cleaner-home-destroyed/model.glb",
+      "source": "cleaner-home-destroyed/source.blend",
+      "triangles": 17954,
+      "materials": 3,
+      "primitives": 14,
+      "glbBytes": 1475868,
+      "sha256": {
+        "model": "9f1d801caa7e141ef5273aa0aa62743ff8bde460a77c5ce57992909d98101324",
+        "source": "1fa7902010e7d6d9cf008e53f9962c8bbba5b34584e43b2e3803f17acf0d2b5c"
+      },
+      "artApproved": false,
+      "developmentPlaceholder": false
+    },
+    {
+      "id": "home.frog.damaged",
+      "slug": "frog-home-damaged",
+      "manifest": "frog-home-damaged/manifest.json",
+      "model": "frog-home-damaged/model.glb",
+      "source": "frog-home-damaged/source.blend",
+      "triangles": 17161,
+      "materials": 2,
+      "primitives": 7,
+      "glbBytes": 1117764,
+      "sha256": {
+        "model": "7b85f807d78841d3e7789ed3329c484a6762f790e4547113140d9972d946f74a",
+        "source": "46221c9a78f39c821296e1e95227b7fa228d54bd6cf2b9c36dcf0f7598ddd403"
+      },
+      "artApproved": false,
+      "developmentPlaceholder": false
+    },
+    {
+      "id": "home.frog.destroyed",
+      "slug": "frog-home-destroyed",
+      "manifest": "frog-home-destroyed/manifest.json",
+      "model": "frog-home-destroyed/model.glb",
+      "source": "frog-home-destroyed/source.blend",
+      "triangles": 18524,
+      "materials": 1,
+      "primitives": 7,
+      "glbBytes": 1192580,
+      "sha256": {
+        "model": "63a81f2a61a62204a13f5053cef32004e7e78305218e480f0faa6127b926b63b",
+        "source": "c56bdf5c9771383f544b38e6be05665e01a92418dae8f148c7e1abb4ea42c78a"
+      },
+      "artApproved": false,
+      "developmentPlaceholder": false
+    },
+    {
+      "id": "nest.demo",
+      "slug": "demo-main-nest",
+      "manifest": "demo-main-nest/manifest.json",
+      "model": "demo-main-nest/model.glb",
+      "source": "demo-main-nest/source.blend",
+      "triangles": 13956,
+      "materials": 3,
+      "primitives": 5,
+      "glbBytes": 725176,
+      "sha256": {
+        "model": "aa3921424ea84be86102e00277f7e6e08c18bb7f0b746e1cbe1db6574483dcd4",
+        "source": "da2d6dcd010eaadf92c42aefd2a85f33c96b6d13e1e0f2e7ab2ae403d509b66b"
+      },
+      "artApproved": false,
+      "developmentPlaceholder": false
+    }
+  ],
+  "totals": {
+    "triangles": 83323,
+    "glbBytes": 5806940
+  },
+  "sourceTool": "Blender 5.2.1 LTS + Python; Three.js GLTFLoader verification",
+  "modelConfiguration": {
+    "assetAuthoring": "gpt-6-astra",
+    "reasoningEffort": "xhigh"
+  },
+  "artApproved": false,
+  "nativeGameplayVerified": false,
+  "scope": "S07/S09/S12 four authored damaged/destroyed house meshes and one S09 Demo nest; no S14 expansion"
+}

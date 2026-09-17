@@ -1,0 +1,400 @@
+{
+  "schemaVersion": 1,
+  "time": {
+    "initialQuietSeconds": 30,
+    "simulationHz": 30,
+    "decisionHz": 10,
+    "maximumContaminationRate": 2,
+    "pollutionAccelerationDivisor": 12,
+    "timeScale": 1
+  },
+  "campaignStages": [
+    {
+      "id": "litter",
+      "name": "零星垃圾",
+      "thresholdMinutes": 0,
+      "maximumQuality": 3,
+      "garbageCap": 8,
+      "eggCap": 0,
+      "roachCap": 0,
+      "garbageIntervalSeconds": [
+        75,
+        150
+      ],
+      "eggIntervalSeconds": null
+    },
+    {
+      "id": "ootheca",
+      "name": "卵鞘潜伏",
+      "thresholdMinutes": 30,
+      "maximumQuality": 5,
+      "garbageCap": 12,
+      "eggCap": 12,
+      "roachCap": 0,
+      "garbageIntervalSeconds": [
+        60,
+        120
+      ],
+      "eggIntervalSeconds": [
+        720,
+        1200
+      ]
+    },
+    {
+      "id": "nymph",
+      "name": "若虫活动",
+      "thresholdMinutes": 75,
+      "maximumQuality": 7,
+      "garbageCap": 18,
+      "eggCap": 24,
+      "roachCap": 40,
+      "garbageIntervalSeconds": [
+        45,
+        100
+      ],
+      "eggIntervalSeconds": [
+        480,
+        900
+      ]
+    },
+    {
+      "id": "colony",
+      "name": "成虫群落",
+      "thresholdMinutes": 150,
+      "maximumQuality": 9,
+      "garbageCap": 26,
+      "eggCap": 40,
+      "roachCap": 100,
+      "garbageIntervalSeconds": [
+        35,
+        80
+      ],
+      "eggIntervalSeconds": [
+        360,
+        720
+      ]
+    },
+    {
+      "id": "outbreak",
+      "name": "巨大爆发",
+      "thresholdMinutes": 240,
+      "maximumQuality": 10,
+      "garbageCap": 40,
+      "eggCap": 60,
+      "roachCap": 200,
+      "garbageIntervalSeconds": [
+        25,
+        60
+      ],
+      "eggIntervalSeconds": [
+        240,
+        600
+      ]
+    }
+  ],
+  "garbageQualities": [
+    {
+      "id": "q1",
+      "quality": 1,
+      "name": "饼干碎屑",
+      "sizeDip": 10,
+      "spawnWeight": 34,
+      "spoilSeconds": 120,
+      "nutrition": 1,
+      "pollutionWeight": 1,
+      "color": "#d8a84e"
+    },
+    {
+      "id": "q2",
+      "quality": 2,
+      "name": "米饭粒",
+      "sizeDip": 14,
+      "spawnWeight": 26,
+      "spoilSeconds": 150,
+      "nutrition": 1.2,
+      "pollutionWeight": 1.2,
+      "color": "#eee2bd"
+    },
+    {
+      "id": "q3",
+      "quality": 3,
+      "name": "面包边",
+      "sizeDip": 20,
+      "spawnWeight": 18,
+      "spoilSeconds": 180,
+      "nutrition": 1.6,
+      "pollutionWeight": 1.5,
+      "color": "#b96f2f"
+    },
+    {
+      "id": "q4",
+      "quality": 4,
+      "name": "薯条残段",
+      "sizeDip": 26,
+      "spawnWeight": 12,
+      "spoilSeconds": 240,
+      "nutrition": 2.2,
+      "pollutionWeight": 2,
+      "color": "#f5b52b"
+    },
+    {
+      "id": "q5",
+      "quality": 5,
+      "name": "苹果核",
+      "sizeDip": 34,
+      "spawnWeight": 8,
+      "spoilSeconds": 300,
+      "nutrition": 3,
+      "pollutionWeight": 2.6,
+      "color": "#b94136"
+    },
+    {
+      "id": "q6",
+      "quality": 6,
+      "name": "香蕉皮",
+      "sizeDip": 42,
+      "spawnWeight": 5,
+      "spoilSeconds": 360,
+      "nutrition": 4,
+      "pollutionWeight": 3.4,
+      "color": "#f0ca2e"
+    },
+    {
+      "id": "q7",
+      "quality": 7,
+      "name": "剩饭团",
+      "sizeDip": 50,
+      "spawnWeight": 3,
+      "spoilSeconds": 420,
+      "nutrition": 5.5,
+      "pollutionWeight": 4.3,
+      "color": "#e7d3a4"
+    },
+    {
+      "id": "q8",
+      "quality": 8,
+      "name": "披萨边",
+      "sizeDip": 60,
+      "spawnWeight": 1.5,
+      "spoilSeconds": 540,
+      "nutrition": 7.5,
+      "pollutionWeight": 5.5,
+      "color": "#d47032"
+    },
+    {
+      "id": "q9",
+      "quality": 9,
+      "name": "汉堡残块",
+      "sizeDip": 72,
+      "spawnWeight": 0.7,
+      "spoilSeconds": 720,
+      "nutrition": 10,
+      "pollutionWeight": 7,
+      "color": "#8d4b2c"
+    },
+    {
+      "id": "q10",
+      "quality": 10,
+      "name": "混合剩食堆",
+      "sizeDip": 86,
+      "spawnWeight": 0.3,
+      "spoilSeconds": 900,
+      "nutrition": 14,
+      "pollutionWeight": 9,
+      "color": "#794231"
+    }
+  ],
+  "species": [
+    {
+      "id": "german",
+      "name": "德国小蠊",
+      "scientificName": "Blattella germanica",
+      "adultLengthDip": 52,
+      "rarity": "common",
+      "finalWeight": 45,
+      "unlockStage": 2,
+      "eggSeconds": 720,
+      "growthMultiplier": 0.8,
+      "speedDipPerSecond": [
+        65,
+        115
+      ],
+      "fleeSpeedDipPerSecond": 240,
+      "threatRadiusDip": 105,
+      "reproductionCooldownSeconds": [
+        1200,
+        1800
+      ],
+      "broodSize": [
+        3,
+        6
+      ],
+      "habitat": "warm-low"
+    },
+    {
+      "id": "brown-banded",
+      "name": "棕带蜚蠊",
+      "scientificName": "Supella longipalpa",
+      "adultLengthDip": 55,
+      "rarity": "uncommon",
+      "finalWeight": 22,
+      "unlockStage": 2,
+      "eggSeconds": 960,
+      "growthMultiplier": 1,
+      "speedDipPerSecond": [
+        55,
+        100
+      ],
+      "fleeSpeedDipPerSecond": 190,
+      "threatRadiusDip": 110,
+      "reproductionCooldownSeconds": [
+        1500,
+        2100
+      ],
+      "broodSize": [
+        2,
+        4
+      ],
+      "habitat": "warm-high"
+    },
+    {
+      "id": "oriental",
+      "name": "东方蜚蠊",
+      "scientificName": "Blatta orientalis",
+      "adultLengthDip": 74,
+      "rarity": "rare",
+      "finalWeight": 16,
+      "unlockStage": 3,
+      "eggSeconds": 1320,
+      "growthMultiplier": 1.25,
+      "speedDipPerSecond": [
+        30,
+        58
+      ],
+      "fleeSpeedDipPerSecond": 105,
+      "threatRadiusDip": 95,
+      "reproductionCooldownSeconds": [
+        1800,
+        2400
+      ],
+      "broodSize": [
+        2,
+        4
+      ],
+      "habitat": "damp-low"
+    },
+    {
+      "id": "american",
+      "name": "美洲大蠊",
+      "scientificName": "Periplaneta americana",
+      "adultLengthDip": 88,
+      "rarity": "epic",
+      "finalWeight": 14,
+      "unlockStage": 4,
+      "eggSeconds": 1500,
+      "growthMultiplier": 1.4,
+      "speedDipPerSecond": [
+        60,
+        110
+      ],
+      "fleeSpeedDipPerSecond": 220,
+      "threatRadiusDip": 135,
+      "reproductionCooldownSeconds": [
+        2100,
+        2700
+      ],
+      "broodSize": [
+        2,
+        4
+      ],
+      "habitat": "damp-edge"
+    },
+    {
+      "id": "hisser",
+      "name": "马达加斯加发声蜚蠊",
+      "scientificName": "Gromphadorhina portentosa",
+      "adultLengthDip": 105,
+      "rarity": "legendary",
+      "finalWeight": 3,
+      "unlockStage": 5,
+      "eggSeconds": 1800,
+      "growthMultiplier": 1.8,
+      "speedDipPerSecond": [
+        35,
+        70
+      ],
+      "fleeSpeedDipPerSecond": 125,
+      "threatRadiusDip": 145,
+      "reproductionCooldownSeconds": [
+        2400,
+        3300
+      ],
+      "broodSize": [
+        3,
+        5
+      ],
+      "habitat": "fruit-edge",
+      "liveBirth": true,
+      "liveBirthGestationSeconds": 1800
+    }
+  ],
+  "growthStages": [
+    {
+      "id": "egg",
+      "formId": "ootheca",
+      "scale": 1,
+      "minimumAgeSeconds": 0,
+      "requiredNutrition": 0
+    },
+    {
+      "id": "newborn",
+      "formId": "nymph-early",
+      "scale": 0.2,
+      "minimumAgeSeconds": 300,
+      "requiredNutrition": 0.5
+    },
+    {
+      "id": "small",
+      "formId": "nymph-early",
+      "scale": 0.38,
+      "minimumAgeSeconds": 600,
+      "requiredNutrition": 2
+    },
+    {
+      "id": "medium",
+      "formId": "nymph-late",
+      "scale": 0.65,
+      "minimumAgeSeconds": 1200,
+      "requiredNutrition": 5
+    },
+    {
+      "id": "large",
+      "formId": "adult",
+      "scale": 1,
+      "minimumAgeSeconds": 0,
+      "requiredNutrition": 0
+    },
+    {
+      "id": "giant",
+      "formId": "adult",
+      "scale": 1.65,
+      "minimumAgeSeconds": 2700,
+      "requiredNutrition": 12
+    }
+  ],
+  "giant": {
+    "chance": 0.08,
+    "maximumCount": 12
+  },
+  "interaction": {
+    "pointerSampleHz": 30,
+    "predictionMilliseconds": 180,
+    "regionStaleMilliseconds": 250
+  },
+  "audio": {
+    "enabled": true,
+    "hisserVolume": 0.2,
+    "entityCooldownSeconds": 30,
+    "globalCooldownSeconds": 5
+  }
+}

@@ -1,0 +1,178 @@
+{
+  "sessionVersion": 1,
+  "campaign": {
+    "saveVersion": 4,
+    "profile": "local",
+    "meta": {
+      "researchPoints": 0,
+      "nodes": [],
+      "completedMissions": [],
+      "firstAttemptGranted": false,
+      "settledRunIds": [],
+      "frogUnlocked": false,
+      "appearanceId": "female"
+    },
+    "activeRun": {
+      "runId": "native-fixture",
+      "missionId": "demo-1",
+      "phase": "running",
+      "pauseReasons": [],
+      "tick": 0,
+      "ecology": {
+        "stage": 1,
+        "seconds": 0,
+        "pollution": 0,
+        "density": 0,
+        "peakDensity": 0,
+        "seed": 7,
+        "nextId": 1,
+        "spawnRemaining": 20,
+        "nestSpawned": false,
+        "nestDestroyed": false,
+        "cycleVersion": 2,
+        "openingSpawned": false
+      },
+      "inventory": {
+        "objects": {},
+        "containers": {
+          "world": {
+            "id": "world",
+            "kind": "world",
+            "capacity": 9007199254740991,
+            "sealed": false
+          },
+          "playerBag": {
+            "id": "playerBag",
+            "kind": "playerBag",
+            "capacity": 8,
+            "sealed": true
+          },
+          "cleanerPack": {
+            "id": "cleanerPack",
+            "kind": "cleanerPack",
+            "capacity": 6,
+            "sealed": true
+          },
+          "frogPouch": {
+            "id": "frogPouch",
+            "kind": "frogPouch",
+            "capacity": 4,
+            "sealed": true
+          },
+          "disposed": {
+            "id": "disposed",
+            "kind": "disposed",
+            "capacity": 9007199254740991,
+            "sealed": true
+          },
+          "home.cleaner": {
+            "id": "home.cleaner",
+            "kind": "house",
+            "capacity": 9007199254740991,
+            "sealed": true
+          },
+          "home.frog": {
+            "id": "home.frog",
+            "kind": "house",
+            "capacity": 9007199254740991,
+            "sealed": true
+          }
+        },
+        "commands": {}
+      },
+      "economy": {
+        "parts": 20,
+        "events": [],
+        "purchases": {}
+      },
+      "upgrades": {
+        "levels": {}
+      },
+      "researchNodes": [],
+      "actors": [
+        {
+          "id": "actor.cleaner",
+          "archetype": "cleaner",
+          "inventoryId": "cleanerPack",
+          "houseId": "home.cleaner",
+          "atHome": false,
+          "pose": {
+            "x": 0.35,
+            "y": 1,
+            "vx": 0,
+            "vy": 0,
+            "stamina": 100,
+            "appearanceId": "female",
+            "activity": "idle",
+            "motion": "walking",
+            "taskId": null
+          }
+        },
+        {
+          "id": "actor.frog",
+          "archetype": "frog",
+          "inventoryId": "frogPouch",
+          "houseId": "home.frog",
+          "atHome": false,
+          "pose": {
+            "x": 0.65,
+            "y": 1,
+            "vx": 0,
+            "vy": 0,
+            "stamina": 100,
+            "appearanceId": "frog",
+            "activity": "idle",
+            "motion": "walking",
+            "taskId": null
+          }
+        }
+      ],
+      "houses": [
+        {
+          "id": "home.cleaner",
+          "x": 0.35,
+          "y": 1,
+          "hp": 1000,
+          "maxHp": 1000,
+          "repaired": false,
+          "locked": false
+        },
+        {
+          "id": "home.frog",
+          "x": 0.65,
+          "y": 1,
+          "hp": 1000,
+          "maxHp": 1000,
+          "repaired": false,
+          "locked": false
+        }
+      ],
+      "traps": [],
+      "trapSlots": 3,
+      "retreatSeconds": 0,
+      "pressureSeconds": 0,
+      "victorySeconds": 0,
+      "swatter": {
+        "active": false,
+        "gestureId": "",
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 0,
+          "y": 0
+        },
+        "path": [],
+        "hitIds": [],
+        "cooldown": 0,
+        "heat": 0,
+        "overheated": false
+      },
+      "frogUnlocked": false
+    },
+    "recentSettlement": null,
+    "legacyCompanion": null
+  },
+  "s07Homes": null
+}

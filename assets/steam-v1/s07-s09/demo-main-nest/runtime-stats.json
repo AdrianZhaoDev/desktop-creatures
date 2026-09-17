@@ -1,0 +1,55 @@
+{
+  "source": "Real GLB decode + installed Three.js GLTFLoader",
+  "triangles": 13956,
+  "vertices": 8198,
+  "primitives": 5,
+  "meshCount": 5,
+  "materialCount": 3,
+  "glbBytes": 725176,
+  "textureCount": 4,
+  "dimensionsGLTF": {
+    "unit": "metre",
+    "size": [
+      0.21525584161281586,
+      0.11989372968673706,
+      0.2040855884552002
+    ],
+    "min": [
+      -0.10762792080640793,
+      0,
+      -0.11404279619455338
+    ],
+    "max": [
+      0.10762792080640793,
+      0.11989372968673706,
+      0.09004279226064682
+    ]
+  },
+  "animations": [
+    {
+      "name": "destroy",
+      "duration": 1.5,
+      "tracks": 6,
+      "loop": false,
+      "continuous": true
+    },
+    {
+      "name": "idle",
+      "duration": 2,
+      "tracks": 1,
+      "loop": true,
+      "continuous": true
+    },
+    {
+      "name": "pulse",
+      "duration": 1.2000000476837158,
+      "tracks": 5,
+      "loop": true,
+      "continuous": true
+    }
+  ],
+  "sha256": {
+    "model": "aa3921424ea84be86102e00277f7e6e08c18bb7f0b746e1cbe1db6574483dcd4",
+    "source": "da2d6dcd010eaadf92c42aefd2a85f33c96b6d13e1e0f2e7ab2ae403d509b66b"
+  }
+}

@@ -1,0 +1,273 @@
+{
+  "schemaVersion": 1,
+  "id": "aid.ladder",
+  "slug": "folding-ladder",
+  "quality": "procedural-development-pending-human-art-review",
+  "artApproved": false,
+  "model": "model.glb",
+  "source": "source.blend",
+  "rootNode": "asset_root",
+  "dimensions": {
+    "unit": "metre",
+    "up": "+Y",
+    "forward": "+Z",
+    "sourceUp": "+Z",
+    "sourceForward": "-Y",
+    "origin": "ground placement at 0,0,0",
+    "boundsBlender": {
+      "min": [
+        -0.07600000314414501,
+        -0.09039999917149544,
+        0
+      ],
+      "max": [
+        0.07600000873208046,
+        0.09000000357627869,
+        0.28300000727176666
+      ]
+    },
+    "sizeBlender": [
+      0.15200001187622547,
+      0.18040000274777412,
+      0.28300000727176666
+    ],
+    "boundsGLTF": {
+      "min": [
+        -0.07600000314414501,
+        0,
+        -0.09000000357627869
+      ],
+      "max": [
+        0.07600000873208046,
+        0.28300000727176666,
+        0.09039999917149544
+      ]
+    }
+  },
+  "reference": {
+    "path": "reference/folding-ladder-v1.png",
+    "sha256": "1d44ecf872ace6c5b24defd745ec3216bb091d332a8165a3e55e5acdaea15324",
+    "frozenSource": "docs/steam-v1/reference/s07-s08/SOURCE-RECORD.md"
+  },
+  "materials": {
+    "method": "PBR with linear Tint vertex colors; real volume meshes",
+    "externalTexturesRequired": false
+  },
+  "anchors": {
+    "rung1": "anchor_rung_1",
+    "rung2": "anchor_rung_2",
+    "rung3": "anchor_rung_3",
+    "placement": "anchor_placement",
+    "grip": "anchor_grip",
+    "climbBottom": "anchor_climb_bottom",
+    "climbTop": "anchor_climb_top"
+  },
+  "collision": {
+    "selectionProxy": "collision_selection",
+    "usage": "Non-rendering box is for picking only. Do not use for navigation or block doorway.",
+    "solidProxies": [],
+    "sourceCoordinates": "Blender metres Z-up. Use exported node world matrix for runtime; source extents reorder [x,z,y] for glTF Y-up.",
+    "additionalVolumes": []
+  },
+  "stateRig": {
+    "defaultState": "deployed",
+    "motions": [
+      {
+        "node": "rear_hinge",
+        "path": "rotation_euler",
+        "axis": 0,
+        "closed": 0.0,
+        "open": -0.5235987755982988
+      },
+      {
+        "node": "folding_assembly",
+        "path": "location",
+        "axis": 2,
+        "closed": 0,
+        "open": 0.05
+      },
+      {
+        "node": "step_hinge_1",
+        "path": "rotation_euler",
+        "axis": 0,
+        "closed": 0.0,
+        "open": 1.3788101090755203
+      },
+      {
+        "node": "step_hinge_2",
+        "path": "rotation_euler",
+        "axis": 0,
+        "closed": 0.0,
+        "open": 1.3788101090755203
+      },
+      {
+        "node": "step_hinge_3",
+        "path": "rotation_euler",
+        "axis": 0,
+        "closed": 0.0,
+        "open": 1.3788101090755203
+      },
+      {
+        "node": "spreader_front_n1",
+        "path": "rotation_euler",
+        "axis": 0,
+        "closed": 0.0,
+        "open": 1.3788101090755203
+      },
+      {
+        "node": "spreader_rear_n1",
+        "path": "rotation_euler",
+        "axis": 0,
+        "closed": 0.0,
+        "open": -1.4660765716752369
+      },
+      {
+        "node": "spreader_front_1",
+        "path": "rotation_euler",
+        "axis": 0,
+        "closed": 0.0,
+        "open": 1.3788101090755203
+      },
+      {
+        "node": "spreader_rear_1",
+        "path": "rotation_euler",
+        "axis": 0,
+        "closed": 0.0,
+        "open": -1.4660765716752369
+      }
+    ],
+    "sourceCoordinates": "Blender; resolve exported nodes for runtime glTF axes",
+    "clip": "fold_unfold",
+    "durationSeconds": 2,
+    "states": [
+      "deployed",
+      "folded"
+    ],
+    "frameRate": 30,
+    "closedFrame": 1,
+    "openFrame": 31,
+    "returnFrame": 61
+  },
+  "preview": {
+    "reviewDIP": [
+      96,
+      120,
+      160
+    ],
+    "scaleBasis": "longest screen-projected dimension at devicePixelRatio=1; use HTML gallery for exact CSS DIP",
+    "exactDIPFiles": [
+      "preview/readable-96dip.png",
+      "preview/readable-120dip.png",
+      "preview/readable-160dip.png"
+    ],
+    "contactSheet": "preview/contact-sheet.jpg",
+    "readabilitySheet": "preview/readability.jpg"
+  },
+  "budget": {
+    "maxTriangles": 10000,
+    "maxMaterials": 3
+  },
+  "integration": {
+    "status": "asset-only; not loaded by gameplay",
+    "runtimeScale": "Adapt metre bounds to display size; existing S06 actors use arbitrary units.",
+    "renderOnlyChildren": "Mesh nodes; empties named collision_* are proxies/metadata."
+  },
+  "authoring": {
+    "id": "aid.ladder",
+    "name": "Folding ladder",
+    "description": "Mint metal A-frame, three cream treads, coral safety feet and hinge locks.",
+    "anchors": {
+      "rung1": "anchor_rung_1",
+      "rung2": "anchor_rung_2",
+      "rung3": "anchor_rung_3",
+      "placement": "anchor_placement",
+      "grip": "anchor_grip",
+      "climbBottom": "anchor_climb_bottom",
+      "climbTop": "anchor_climb_top"
+    },
+    "motions": [
+      {
+        "node": "rear_hinge",
+        "path": "rotation_euler",
+        "axis": 0,
+        "closed": 0.0,
+        "open": -0.5235987755982988
+      },
+      {
+        "node": "folding_assembly",
+        "path": "location",
+        "axis": 2,
+        "closed": 0,
+        "open": 0.05
+      },
+      {
+        "node": "step_hinge_1",
+        "path": "rotation_euler",
+        "axis": 0,
+        "closed": 0.0,
+        "open": 1.3788101090755203
+      },
+      {
+        "node": "step_hinge_2",
+        "path": "rotation_euler",
+        "axis": 0,
+        "closed": 0.0,
+        "open": 1.3788101090755203
+      },
+      {
+        "node": "step_hinge_3",
+        "path": "rotation_euler",
+        "axis": 0,
+        "closed": 0.0,
+        "open": 1.3788101090755203
+      },
+      {
+        "node": "spreader_front_n1",
+        "path": "rotation_euler",
+        "axis": 0,
+        "closed": 0.0,
+        "open": 1.3788101090755203
+      },
+      {
+        "node": "spreader_rear_n1",
+        "path": "rotation_euler",
+        "axis": 0,
+        "closed": 0.0,
+        "open": -1.4660765716752369
+      },
+      {
+        "node": "spreader_front_1",
+        "path": "rotation_euler",
+        "axis": 0,
+        "closed": 0.0,
+        "open": 1.3788101090755203
+      },
+      {
+        "node": "spreader_rear_1",
+        "path": "rotation_euler",
+        "axis": 0,
+        "closed": 0.0,
+        "open": -1.4660765716752369
+      }
+    ],
+    "defaultState": "deployed",
+    "transitionName": "fold_unfold",
+    "stateLabels": [
+      "deployed",
+      "folded"
+    ],
+    "notes": [
+      "PNG controls cream treads; source record now agrees.",
+      "Metre dimensions describe miniature prop; map dimensions to DIP in the adapter.",
+      "Spreader stowage is a simplified articulated visual mechanism; not a mechanical linkage simulation.",
+      "The assembly lifts 50mm during its folding transport gesture, with stationary asset_root at placement ground. This keeps rear feet above ground without separating the shared hinge.",
+      "Only deployed state supplies climb anchors. Disable climb colliders during fold/transport."
+    ]
+  },
+  "sha256": {
+    "model": "6f901f1678a25c776d69f4d19ff8ebbf11873be27ca31e617a6889977818d31d",
+    "source": "f33fca56267efb55a9c62887167972db1a51fc4f26a190c7b63f15d7d19cddc7"
+  },
+  "technicalValidation": "validation.json",
+  "runtimeStats": "runtime-stats.json"
+}

@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 1,
+  "id": "actor.cleaner.female",
+  "quality": "procedural-development-pending-art-review",
+  "model": "model.glb",
+  "source": "source.blend",
+  "rootNode": "ActorRoot",
+  "heightDIP": 120,
+  "previewHeightsDIP": [
+    96,
+    120,
+    160
+  ],
+  "dimensions": {
+    "height": 4.419973373413086,
+    "units": "arbitrary modeling units; scale by heightDIP/height",
+    "origin": "foot sole midpoint",
+    "up": "+Y",
+    "forward": "+Z",
+    "anatomicalLeft": "+X"
+  },
+  "reference": {
+    "path": "../../../docs/steam-v1/reference/cleaner-female-v2.png",
+    "sha256": "00ec97ac3cc01b328ad11a26050b64a76369e24a73711b1fd6ec041b4ca03003"
+  },
+  "animations": {
+    "idle": {
+      "clip": "idle",
+      "duration": 2.4,
+      "loop": true,
+      "rootMotion": false
+    },
+    "walk": {
+      "clip": "walk",
+      "duration": 0.9,
+      "loop": true,
+      "rootMotion": false
+    },
+    "jump_start": {
+      "clip": "jump_start",
+      "duration": 0.2,
+      "loop": false,
+      "rootMotion": false
+    },
+    "jump_air": {
+      "clip": "jump_air",
+      "duration": 0.8,
+      "loop": true,
+      "rootMotion": false
+    },
+    "land": {
+      "clip": "land",
+      "duration": 0.3,
+      "loop": false,
+      "rootMotion": false
+    },
+    "climb": {
+      "clip": "climb",
+      "duration": 1.2,
+      "loop": true,
+      "rootMotion": false
+    },
+    "clean": {
+      "clip": "clean",
+      "duration": 1.2,
+      "loop": true,
+      "rootMotion": false
+    },
+    "carry": {
+      "clip": "carry",
+      "duration": 1.1,
+      "loop": true,
+      "rootMotion": false
+    }
+  },
+  "sockets": {
+    "leftHand": "LeftHandSocket",
+    "rightHand": "RightHandSocket",
+    "tool": "ToolSocket",
+    "bag": "BagSocket",
+    "backpack": "BackpackSocket",
+    "leftFoot": "LeftFootSocket",
+    "rightFoot": "RightFootSocket"
+  },
+  "attachments": {
+    "clean": {
+      "model": "tool-broom.glb",
+      "socket": "ToolSocket",
+      "source": "tool-broom-source.blend",
+      "revision": "broom-v2-readable-96dip",
+      "sha256": "4ddf5c98a8639dae33377d76e0c1929b9741d17196f5927f73cedc8893d7a604",
+      "sourceSHA256": "1e8f1a2e5dff16d12ad828f7fa0832053845627e708baa8364d042a482ef4e43",
+      "readability": {
+        "minimumReviewHeightDIP": 96,
+        "shaftDiameterModelUnits": 0.094,
+        "brushWidthModelUnits": 0.72,
+        "contrast": "charcoal shaft/head, cream highlight/collars/bristles, coral grip/head band",
+        "contactLocalZ": -1.92,
+        "artApproved": false
+      }
+    },
+    "carry": {
+      "model": "carry-bag.glb",
+      "socket": "BagSocket",
+      "source": "carry-bag-source.blend"
+    }
+  },
+  "events": {
+    "clean": [
+      {
+        "name": "sweep",
+        "time": 0.6,
+        "authority": "visual-only; simulation completes after 1.2 seconds"
+      }
+    ],
+    "jump_start": [
+      {
+        "name": "takeoff",
+        "time": 0.2,
+        "authority": "visual-only"
+      }
+    ],
+    "walk": [
+      {
+        "name": "footstep",
+        "time": 0.0
+      },
+      {
+        "name": "footstep",
+        "time": 0.45
+      }
+    ]
+  },
+  "sharedRig": "s06-cleaner-v1",
+  "sharedMovementProfile": "cleaner; gameplay integration is owned by parent",
+  "knownLimitations": [
+    "Procedural geometry and analytic skinning, not final hand-authored art.",
+    "IK pose sampling is not runtime terrain contact; simulation must place Root and align feet/hands.",
+    "Skirt designed with clearance and safety shorts; intersection sweep and user review still required.",
+    "Preview renders are evidence only; runtime source is the GLB, never a sprite.",
+    "No production gameplay integration or Windows overlay validation in this asset-only task."
+  ]
+}

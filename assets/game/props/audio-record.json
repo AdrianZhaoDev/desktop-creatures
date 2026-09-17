@@ -1,0 +1,52 @@
+{
+  "license": "CC0-1.0",
+  "source": "Original deterministic filtered noise and decaying tones",
+  "generator": "tools/generate-game-audio.mjs",
+  "effects": [
+    {
+      "name": "open",
+      "duration": 0.18,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.08666609497269659,
+      "rms": 0.019461948269807697,
+      "sha256": "87445153d8f78bdae406a42d2f16dd0c0b3a6069b534009d09a86a058e109cfe"
+    },
+    {
+      "name": "close",
+      "duration": 0.14,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.08377288568717693,
+      "rms": 0.0187305705826251,
+      "sha256": "fe9adc44d65f74003124724cf5a9c93d96e17ba68547c30d949b3d690f328978"
+    },
+    {
+      "name": "garbage",
+      "duration": 0.28,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.08948776240075651,
+      "rms": 0.01902306230136356,
+      "sha256": "41b380717e0829cc0f231a837b6ad29760b3f0bdc02880d4f13dbc6b2fec0338"
+    },
+    {
+      "name": "egg",
+      "duration": 0.23,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.12963132471607275,
+      "rms": 0.019375050552664894,
+      "sha256": "27c9ccf0108757299792c37093547c2290ec841ac12cc382f51125ef6a1dc8c0"
+    },
+    {
+      "name": "roach",
+      "duration": 0.3,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.09178778795580742,
+      "rms": 0.018817847761458922,
+      "sha256": "4fca1c871262dd17e091939be9fdf00d06cea24ded8fe6b120b2092be8345336"
+    }
+  ]
+}

@@ -1,0 +1,967 @@
+{
+  "schemaVersion": 1,
+  "releaseReady": false,
+  "description": "Local candidate using the original S06 cleaner instead of the restricted R19 derivative. Exact runtime files; no recursive publicDir copy. Public source and asset rights review remains required.",
+  "files": [
+    {
+      "source": "assets/game/americana/adult/lod1.glb",
+      "path": "game/americana/adult/lod1.glb",
+      "sha256": "5529fe9850ed88c06bce2232834d5435f9800ed84398ea3b58697c0bdec76512"
+    },
+    {
+      "source": "assets/game/americana/adult/model.glb",
+      "path": "game/americana/adult/model.glb",
+      "sha256": "e17f054130b822983f3c4d4f3ac1200f72edfc3945d7882367611c5a9945c0a6"
+    },
+    {
+      "source": "assets/game/americana/early/lod1.glb",
+      "path": "game/americana/early/lod1.glb",
+      "sha256": "60e7f86f5097777affd9505ff47de0c93f8a7461c3cc196a1963b84b02dbb5b9"
+    },
+    {
+      "source": "assets/game/americana/early/model.glb",
+      "path": "game/americana/early/model.glb",
+      "sha256": "56d6c8a042ad08e944dd4c1504799a9748489801855d195f9663d95e6ed848bf"
+    },
+    {
+      "source": "assets/game/americana/egg/lod1.glb",
+      "path": "game/americana/egg/lod1.glb",
+      "sha256": "70055a33e13ca5265270157c0a62ed6e2ea77b46f2b31ea68850b6ed3ceb0b06"
+    },
+    {
+      "source": "assets/game/americana/egg/model.glb",
+      "path": "game/americana/egg/model.glb",
+      "sha256": "f1c7f7451efd64205565e13348aa48ca5fa2e2943220d040f9653290eb1f9f46"
+    },
+    {
+      "source": "assets/game/americana/late/lod1.glb",
+      "path": "game/americana/late/lod1.glb",
+      "sha256": "3fa626ec0571859722767e2f588f894b53ec70e09de4a836a08eb21db105f8fb"
+    },
+    {
+      "source": "assets/game/americana/late/model.glb",
+      "path": "game/americana/late/model.glb",
+      "sha256": "e03acc293d056ee33bc129ccc364dd527fb519d0a13245e37ab10d0fcee8ed80"
+    },
+    {
+      "source": "assets/game/brownbanded/adult/lod1.glb",
+      "path": "game/brownbanded/adult/lod1.glb",
+      "sha256": "66f9b3cd491ef4b4d312ab66f77842f18319a99f547ba5fc87061469aa67cfe5"
+    },
+    {
+      "source": "assets/game/brownbanded/adult/model.glb",
+      "path": "game/brownbanded/adult/model.glb",
+      "sha256": "9afbfb2f47884a30d86bb38532fcf379e0babea9e1d126e03149535e26226db4"
+    },
+    {
+      "source": "assets/game/brownbanded/early/lod1.glb",
+      "path": "game/brownbanded/early/lod1.glb",
+      "sha256": "312478f31eea7b5893133aa5b135ae25823faa9ebc6251afb9dd05be5430fcf7"
+    },
+    {
+      "source": "assets/game/brownbanded/early/model.glb",
+      "path": "game/brownbanded/early/model.glb",
+      "sha256": "e20f6702fee2bd393d6ba927d0449fd518efd6c35cd5ea3e6593cbbcf8314079"
+    },
+    {
+      "source": "assets/game/brownbanded/egg/lod1.glb",
+      "path": "game/brownbanded/egg/lod1.glb",
+      "sha256": "8cfc11a72855654d2436c68a3f1823d1fd44bf11eb9a7ac8a9c8dadeb6a8f09a"
+    },
+    {
+      "source": "assets/game/brownbanded/egg/model.glb",
+      "path": "game/brownbanded/egg/model.glb",
+      "sha256": "8c9e1240c2d4a4da16c128c1129e3c8e48f9cdb08e29f5980112637d13adeee6"
+    },
+    {
+      "source": "assets/game/brownbanded/late/lod1.glb",
+      "path": "game/brownbanded/late/lod1.glb",
+      "sha256": "de502107abbd39ab4fb92ca1b6a58d5c7b1b853d4f2e840ddfef540a7cb1e3d7"
+    },
+    {
+      "source": "assets/game/brownbanded/late/model.glb",
+      "path": "game/brownbanded/late/model.glb",
+      "sha256": "3a2f90571e67870af7d750e783edb8701b63fdcb7e88bd1ac6f8c81f91654da3"
+    },
+    {
+      "source": "assets/game/germanica/adult/lod1.glb",
+      "path": "game/germanica/adult/lod1.glb",
+      "sha256": "73145911488fc8946ea905cc4d16bce70aff1191407acaff060d78bf7f44df2a"
+    },
+    {
+      "source": "assets/game/germanica/adult/lod2.glb",
+      "path": "game/germanica/adult/lod2.glb",
+      "sha256": "190b3941be9fc0a66bde7071c658d3079f8d8b59a33c5268283596c536a1acad"
+    },
+    {
+      "source": "assets/game/germanica/adult/model.glb",
+      "path": "game/germanica/adult/model.glb",
+      "sha256": "602bc1990e3ec34cf43b7ab8d8cb5040b477e9d3260014453064c6cee19ec60e"
+    },
+    {
+      "source": "assets/game/germanica/crowd/adult/lod1/mesh.bin",
+      "path": "game/germanica/crowd/adult/lod1/mesh.bin",
+      "sha256": "ad5d44a5317e7b8f1969e5b5d64856474803513c1c61a53eae0267760ca8bef3"
+    },
+    {
+      "source": "assets/game/germanica/crowd/adult/lod1/mesh.json",
+      "path": "game/germanica/crowd/adult/lod1/mesh.json",
+      "sha256": "845e1b73972423452b97f36fad65fd30e4d2a4b5ff9fffdc1f331c5e9c520a17"
+    },
+    {
+      "source": "assets/game/germanica/crowd/adult/lod1/vat-normal.bin",
+      "path": "game/germanica/crowd/adult/lod1/vat-normal.bin",
+      "sha256": "f6986adcb13883e60212929894c6f032c0a59d60e20f9671233576c3ab919a4b"
+    },
+    {
+      "source": "assets/game/germanica/crowd/adult/lod1/vat-position.bin",
+      "path": "game/germanica/crowd/adult/lod1/vat-position.bin",
+      "sha256": "8e05b18d6f62ed841ccc273eeb2ef393383224a53c987734052b9af2841b8f4d"
+    },
+    {
+      "source": "assets/game/germanica/crowd/adult/lod1/vat.json",
+      "path": "game/germanica/crowd/adult/lod1/vat.json",
+      "sha256": "d192f45a21b6252ff5839288602ceeb38feabba320cc73ecb0a935a77e7d7927"
+    },
+    {
+      "source": "assets/game/germanica/crowd/adult/lod2/mesh.bin",
+      "path": "game/germanica/crowd/adult/lod2/mesh.bin",
+      "sha256": "1e7645defed8f5e56e839c2680195b033727c3e191a0bacad8701d5f8ea2a6b4"
+    },
+    {
+      "source": "assets/game/germanica/crowd/adult/lod2/mesh.json",
+      "path": "game/germanica/crowd/adult/lod2/mesh.json",
+      "sha256": "482cb48d7c7457301201a538f0c28e58fa32950e1e1e4c0c4da25a569d687491"
+    },
+    {
+      "source": "assets/game/germanica/crowd/adult/lod2/vat-normal.bin",
+      "path": "game/germanica/crowd/adult/lod2/vat-normal.bin",
+      "sha256": "eff027e07d55da2d16acf3b26bec7ab881bd9a02af4f32bd60fbde31b6a8732f"
+    },
+    {
+      "source": "assets/game/germanica/crowd/adult/lod2/vat-position.bin",
+      "path": "game/germanica/crowd/adult/lod2/vat-position.bin",
+      "sha256": "9a69c869007823eaec9997a736852b898d0fca87fda5e5dfeb54c02b8e8017ad"
+    },
+    {
+      "source": "assets/game/germanica/crowd/adult/lod2/vat.json",
+      "path": "game/germanica/crowd/adult/lod2/vat.json",
+      "sha256": "59df700b0b7e0ea6fdef1330c2701d1e9a18430f308f00fa67b413a87bb274ac"
+    },
+    {
+      "source": "assets/game/germanica/crowd/adult/vat.json",
+      "path": "game/germanica/crowd/adult/vat.json",
+      "sha256": "e9f9de7a2dea3df829e3352f28647a4ac961a8386b0596df1d6a0d9f02602bb3"
+    },
+    {
+      "source": "assets/game/germanica/early/lod1.glb",
+      "path": "game/germanica/early/lod1.glb",
+      "sha256": "0d338698d77912cc41ca6f00fc0f64f18df23e28c7d94718bb41c384404f07db"
+    },
+    {
+      "source": "assets/game/germanica/early/model.glb",
+      "path": "game/germanica/early/model.glb",
+      "sha256": "b56acc327cd4c2e3040c5f7331fe905803cc44afc44d56437f932e7c7a4bf533"
+    },
+    {
+      "source": "assets/game/germanica/egg/lod1.glb",
+      "path": "game/germanica/egg/lod1.glb",
+      "sha256": "fe9ef42b212a8b12a4edcd2dd2152b86de0ee165ce2dfadd2df6aaccb31fc578"
+    },
+    {
+      "source": "assets/game/germanica/egg/model.glb",
+      "path": "game/germanica/egg/model.glb",
+      "sha256": "7a5104a81f1a88f927aa600002199b84c1e7cbe92a1b8d77d0fe4dd6bdcab93e"
+    },
+    {
+      "source": "assets/game/germanica/late/lod1.glb",
+      "path": "game/germanica/late/lod1.glb",
+      "sha256": "07ff6e8e4900495b514b9d01ae59210af8a3961ed2078c81fd9eb2c2702a1d79"
+    },
+    {
+      "source": "assets/game/germanica/late/model.glb",
+      "path": "game/germanica/late/model.glb",
+      "sha256": "d52d5ff1c379248b6b954e378eaa2d04eb610fb449c45e7b1a118ce73f637255"
+    },
+    {
+      "source": "assets/game/hissing/adult/lod1.glb",
+      "path": "game/hissing/adult/lod1.glb",
+      "sha256": "192324aeb46eb239083fa134082b22e3d8b9ce88af418878e325524c99e9c959"
+    },
+    {
+      "source": "assets/game/hissing/adult/model.glb",
+      "path": "game/hissing/adult/model.glb",
+      "sha256": "2c2903056d90c49c0e9253b9c30da76da1631a7337771084eb1c362966891cce"
+    },
+    {
+      "source": "assets/game/hissing/early/lod1.glb",
+      "path": "game/hissing/early/lod1.glb",
+      "sha256": "85eeb554932786602459b0e5fe7f2562631fe248df0add7c3bf96d4bfc9b55f4"
+    },
+    {
+      "source": "assets/game/hissing/early/model.glb",
+      "path": "game/hissing/early/model.glb",
+      "sha256": "e26994995675b00e482d2ec2b7aecfe3762ec0512215d00916f4d3929d99426a"
+    },
+    {
+      "source": "assets/game/hissing/egg/lod1.glb",
+      "path": "game/hissing/egg/lod1.glb",
+      "sha256": "8be58073149f4a9cb00f5990698e01907aac3022c6d7ab483bb04687b135d890"
+    },
+    {
+      "source": "assets/game/hissing/egg/model.glb",
+      "path": "game/hissing/egg/model.glb",
+      "sha256": "e01d4feddad474417b7eafd25fd262adf05363be9b90860c6cfd6a4ce59ed30e"
+    },
+    {
+      "source": "assets/game/hissing/late/lod1.glb",
+      "path": "game/hissing/late/lod1.glb",
+      "sha256": "f341a2830cc715c183385fa655fcb4ea718368a08ee614aa849e284518877181"
+    },
+    {
+      "source": "assets/game/hissing/late/model.glb",
+      "path": "game/hissing/late/model.glb",
+      "sha256": "cd1707204727748722660b74f1608b423e653076a70d7600313369b26ed17bb5"
+    },
+    {
+      "source": "assets/game/orientalis/adult/lod1.glb",
+      "path": "game/orientalis/adult/lod1.glb",
+      "sha256": "b95609e4d8a7ac4d296132d2c6ee753d7a0f179684a80dd0b265a1ab02a6bf6e"
+    },
+    {
+      "source": "assets/game/orientalis/adult/model.glb",
+      "path": "game/orientalis/adult/model.glb",
+      "sha256": "e9d20bedff9d8ffb5555169467e68b4a607ee4bc198af57bd5b3d36b552e815b"
+    },
+    {
+      "source": "assets/game/orientalis/early/lod1.glb",
+      "path": "game/orientalis/early/lod1.glb",
+      "sha256": "74aae8549d3c268de9ea1e7f0ab355166635b56610a880ff5d59f615f5fbae4a"
+    },
+    {
+      "source": "assets/game/orientalis/early/model.glb",
+      "path": "game/orientalis/early/model.glb",
+      "sha256": "fe1358b83f98f93b396e53f82e20993b6b579dd00cd2becff84bc872987fde2c"
+    },
+    {
+      "source": "assets/game/orientalis/egg/lod1.glb",
+      "path": "game/orientalis/egg/lod1.glb",
+      "sha256": "79b2aaeb5da58c930cf1b3a443fb7ad7050bd9ae82a288ba2422322444d777fb"
+    },
+    {
+      "source": "assets/game/orientalis/egg/model.glb",
+      "path": "game/orientalis/egg/model.glb",
+      "sha256": "04cd9195bc2d574833e5753c92099b9dec94a3671a2c1c52dd1d186085a1892d"
+    },
+    {
+      "source": "assets/game/orientalis/late/lod1.glb",
+      "path": "game/orientalis/late/lod1.glb",
+      "sha256": "f7d2c306e6f9c72b23ba34925d29a60596f7a4a1a9915120464b7feac3247b50"
+    },
+    {
+      "source": "assets/game/orientalis/late/model.glb",
+      "path": "game/orientalis/late/model.glb",
+      "sha256": "58fd5cf9a2ada113b45659bf9af9e92a54b846f67dc8a69bda11179f8a512246"
+    },
+    {
+      "source": "assets/game/props/bin-cat.glb",
+      "path": "game/props/bin-cat.glb",
+      "sha256": "857899593664321b0859fe8f588a695c9b8491fe420febae2196bfb340b81bbf"
+    },
+    {
+      "source": "assets/game/props/bin.glb",
+      "path": "game/props/bin.glb",
+      "sha256": "357da368b33cc3b518de5646ac8c33ffd3ace106846ae275d7b8e78bbfafa365"
+    },
+    {
+      "source": "assets/game/props/cat-bin-close.wav",
+      "path": "game/props/cat-bin-close.wav",
+      "sha256": "ad55b4b0cc12a3bb8226022178e97a70314fed0cd40bb225981fd53510ee405d"
+    },
+    {
+      "source": "assets/game/props/cat-bin-open.wav",
+      "path": "game/props/cat-bin-open.wav",
+      "sha256": "e028cf8827ad1c846c01865b4fad8e38e2a66b8b2926f88ebe6f2bf4daa11279"
+    },
+    {
+      "source": "assets/game/props/cat-bin-receive.wav",
+      "path": "game/props/cat-bin-receive.wav",
+      "sha256": "b5415aacd107d968b8d464438b6d9e02c325657b9e13b5db3c6ac0d00cf53231"
+    },
+    {
+      "source": "assets/game/props/close.wav",
+      "path": "game/props/close.wav",
+      "sha256": "fe9adc44d65f74003124724cf5a9c93d96e17ba68547c30d949b3d690f328978"
+    },
+    {
+      "source": "assets/game/props/egg.wav",
+      "path": "game/props/egg.wav",
+      "sha256": "27c9ccf0108757299792c37093547c2290ec841ac12cc382f51125ef6a1dc8c0"
+    },
+    {
+      "source": "assets/game/props/food-01-full.glb",
+      "path": "game/props/food-01-full.glb",
+      "sha256": "b03137f16a8265600dc699ad101b6980db89ec32b968f3161a4afc916e329a3d"
+    },
+    {
+      "source": "assets/game/props/food-01-half.glb",
+      "path": "game/props/food-01-half.glb",
+      "sha256": "d0edb5ffd2107139c0c3c966e1d47c366ff46379c5c8d9f2149f227eb8a7c718"
+    },
+    {
+      "source": "assets/game/props/food-01-residue.glb",
+      "path": "game/props/food-01-residue.glb",
+      "sha256": "849855f25695160b980a26c5c7a93498737241dbe609dde70b7871f5af67d3f2"
+    },
+    {
+      "source": "assets/game/props/food-02-full.glb",
+      "path": "game/props/food-02-full.glb",
+      "sha256": "2e673cf8ff78d6c51c0af859a60cc33154791d3f16cfd00dd04917538344a0dd"
+    },
+    {
+      "source": "assets/game/props/food-02-half.glb",
+      "path": "game/props/food-02-half.glb",
+      "sha256": "ba64a6774635b50b4507f11637fd81fc1cab091cc31af0bba90fd7a9e6cf9543"
+    },
+    {
+      "source": "assets/game/props/food-02-residue.glb",
+      "path": "game/props/food-02-residue.glb",
+      "sha256": "b2a6728a1e1b1d869cc30e886ecd7df9bf0c9b885a53c0fd5af33fac9f42f870"
+    },
+    {
+      "source": "assets/game/props/food-03-full.glb",
+      "path": "game/props/food-03-full.glb",
+      "sha256": "6098c1d14038443d3341f5f626851066d9f9b52f19e3333c7bb190870776d945"
+    },
+    {
+      "source": "assets/game/props/food-03-half.glb",
+      "path": "game/props/food-03-half.glb",
+      "sha256": "0bf0f95d4965845b43323d638fa5a9f6beed073a3b2dfae505662a67eec1b74d"
+    },
+    {
+      "source": "assets/game/props/food-03-residue.glb",
+      "path": "game/props/food-03-residue.glb",
+      "sha256": "6dac74b15981386a2c0b416992d7f133270520ad912604566564df11f585c1a6"
+    },
+    {
+      "source": "assets/game/props/food-04-full.glb",
+      "path": "game/props/food-04-full.glb",
+      "sha256": "ed4e6428eae81c63ac9d8d720cc5efd80eca8b67fb2b1e0b864a82c5dd79cfe4"
+    },
+    {
+      "source": "assets/game/props/food-04-half.glb",
+      "path": "game/props/food-04-half.glb",
+      "sha256": "c2cf42bfaed1f952b3e5797f7267ce7b67f6ece684430fff7294bb86801aa3ff"
+    },
+    {
+      "source": "assets/game/props/food-04-residue.glb",
+      "path": "game/props/food-04-residue.glb",
+      "sha256": "3b624327b3e238c2ed5ca5d17467eefd2e4cc682a80c7e1bfb8c87abb3ad8c71"
+    },
+    {
+      "source": "assets/game/props/food-05-full.glb",
+      "path": "game/props/food-05-full.glb",
+      "sha256": "535915eaddfce84d875e0dc849ad5a7dbaf6539fc81485b7ecfa6eb93ee86d83"
+    },
+    {
+      "source": "assets/game/props/food-05-half.glb",
+      "path": "game/props/food-05-half.glb",
+      "sha256": "6710f1ee397dd3f68f7ae42c34951596b2f47c4f3f5ba7d0492448537248b11a"
+    },
+    {
+      "source": "assets/game/props/food-05-residue.glb",
+      "path": "game/props/food-05-residue.glb",
+      "sha256": "697da128ab3156dd4cc8f5b8631d7586a85efb835750a02b30ebfd41878bd2fd"
+    },
+    {
+      "source": "assets/game/props/food-06-full.glb",
+      "path": "game/props/food-06-full.glb",
+      "sha256": "a54def4f9d5a4b0a8f1afee0750d136a800f00e497b175e9ffeccacab5f0116a"
+    },
+    {
+      "source": "assets/game/props/food-06-half.glb",
+      "path": "game/props/food-06-half.glb",
+      "sha256": "c26975138bb0b719fd8a65ac2cc7625658d7d115f43f671be2b07e79e9fe7d2e"
+    },
+    {
+      "source": "assets/game/props/food-06-residue.glb",
+      "path": "game/props/food-06-residue.glb",
+      "sha256": "4a7afabf165a4e4701c98c1edb486e76e782bd8e59591f4cc75a0dda6ffa1f2b"
+    },
+    {
+      "source": "assets/game/props/food-07-full.glb",
+      "path": "game/props/food-07-full.glb",
+      "sha256": "35b1f4a3c053f082633954d067fd0be9d67222c427ec69a4dd3f674ec170697a"
+    },
+    {
+      "source": "assets/game/props/food-07-half.glb",
+      "path": "game/props/food-07-half.glb",
+      "sha256": "cb753cab66c8172220f52b6e3fef2a5efd0ee03e865906382a4ed72d748dade9"
+    },
+    {
+      "source": "assets/game/props/food-07-residue.glb",
+      "path": "game/props/food-07-residue.glb",
+      "sha256": "ba303c9a14a194a2d9d4301ffcba8fc6c0df9208596f0f342bbb38bd1dda5b70"
+    },
+    {
+      "source": "assets/game/props/food-08-full.glb",
+      "path": "game/props/food-08-full.glb",
+      "sha256": "c60f0667749ef254c9ade2b229dc47977d04be6e2e46850ec1c9b05717cdaa01"
+    },
+    {
+      "source": "assets/game/props/food-08-half.glb",
+      "path": "game/props/food-08-half.glb",
+      "sha256": "78567544831ad92fe2adf4b8f5edd5cba346ab226cc13072d7046623ff0c5516"
+    },
+    {
+      "source": "assets/game/props/food-08-residue.glb",
+      "path": "game/props/food-08-residue.glb",
+      "sha256": "eda99dc8f4783a8af4be02f5e88e9246549c29205c11799595fd8f040a19ca94"
+    },
+    {
+      "source": "assets/game/props/food-09-full.glb",
+      "path": "game/props/food-09-full.glb",
+      "sha256": "6de91202d379cc5be1753d0abbb0a776d3e479364c69dcb383f62c5c494dc782"
+    },
+    {
+      "source": "assets/game/props/food-09-half.glb",
+      "path": "game/props/food-09-half.glb",
+      "sha256": "78658991832cc92ca3fa01b1ac2b93b0942968d1cb2a24879ad9f517f1340219"
+    },
+    {
+      "source": "assets/game/props/food-09-residue.glb",
+      "path": "game/props/food-09-residue.glb",
+      "sha256": "5f618c31f85798505b11db7d8e5c7761a2d1077b6bcbde76ee14e79deec93708"
+    },
+    {
+      "source": "assets/game/props/food-10-full.glb",
+      "path": "game/props/food-10-full.glb",
+      "sha256": "52cb17d02ea67501714eefede8f9d4efb50928c5d8f427d08d4f4faf81a5d024"
+    },
+    {
+      "source": "assets/game/props/food-10-half.glb",
+      "path": "game/props/food-10-half.glb",
+      "sha256": "c717cacfa7f71d6bf3f10aa35eaaaac24de335d69a82f070c025fe68cdb7ee2d"
+    },
+    {
+      "source": "assets/game/props/food-10-residue.glb",
+      "path": "game/props/food-10-residue.glb",
+      "sha256": "37d7f44a8dda9c52e188141f2958a883a5127189fae7b66dd7dcde2ee78ce251"
+    },
+    {
+      "source": "assets/game/props/food-11-full.glb",
+      "path": "game/props/food-11-full.glb",
+      "sha256": "d11f19adbecefd0aebc3a9cd197330719276dda1cfcb084ba754cd5e968cea6c"
+    },
+    {
+      "source": "assets/game/props/food-11-half.glb",
+      "path": "game/props/food-11-half.glb",
+      "sha256": "b5c3593e4687c9b48e6d2a7d3b4e9b9e0d799dc6c2195f1e33739de29aae520a"
+    },
+    {
+      "source": "assets/game/props/food-11-residue.glb",
+      "path": "game/props/food-11-residue.glb",
+      "sha256": "2b25439121a4c963cf3fb99b398de86de9990ac57607004f66a3eebcce5ef3bf"
+    },
+    {
+      "source": "assets/game/props/food-12-full.glb",
+      "path": "game/props/food-12-full.glb",
+      "sha256": "92dfe655107da78f777d520a97b68394a05dcfa3c09b56ef67f8f0967d930c38"
+    },
+    {
+      "source": "assets/game/props/food-12-half.glb",
+      "path": "game/props/food-12-half.glb",
+      "sha256": "856ff03d2840eeb19b97fc70bf689979a4bfe853f215b7a0959901dfa49543a6"
+    },
+    {
+      "source": "assets/game/props/food-12-residue.glb",
+      "path": "game/props/food-12-residue.glb",
+      "sha256": "9973089f1cd62441d7dc5983e0827bc16cde2b85e84eb8d05f1352fccf4e5e39"
+    },
+    {
+      "source": "assets/game/props/food-13-full.glb",
+      "path": "game/props/food-13-full.glb",
+      "sha256": "f1699fe50de426c43e06c4988ae3fb727ba83561e460f0883b96b04656ffeb25"
+    },
+    {
+      "source": "assets/game/props/food-13-half.glb",
+      "path": "game/props/food-13-half.glb",
+      "sha256": "5a00bee19ca0735f8291fd423c752030654ca4ccae411f7fa8cd99f371f27c8c"
+    },
+    {
+      "source": "assets/game/props/food-13-residue.glb",
+      "path": "game/props/food-13-residue.glb",
+      "sha256": "0bb88ca7663d8e16e18835ccdca7b7290f504cf3a6b0832271e2773f743511ae"
+    },
+    {
+      "source": "assets/game/props/food-14-full.glb",
+      "path": "game/props/food-14-full.glb",
+      "sha256": "e98e480a5d53bf0a9bd59d60901a1e05e41bda5065b4b433738a61a94a3c3480"
+    },
+    {
+      "source": "assets/game/props/food-14-half.glb",
+      "path": "game/props/food-14-half.glb",
+      "sha256": "3255309b37df38577f4e8fcb09ba364640cecbe065c5cd3d84005944eac80de2"
+    },
+    {
+      "source": "assets/game/props/food-14-residue.glb",
+      "path": "game/props/food-14-residue.glb",
+      "sha256": "fbf3de9dfb4a462d9a98a3182fa1daf7f153d524fbf842d9e4278db7e5e367d7"
+    },
+    {
+      "source": "assets/game/props/food-15-full.glb",
+      "path": "game/props/food-15-full.glb",
+      "sha256": "74a3d35d51e720ffa0507b8105d610d7afcf519d657554999b773bb20421a9a2"
+    },
+    {
+      "source": "assets/game/props/food-15-half.glb",
+      "path": "game/props/food-15-half.glb",
+      "sha256": "80c08b141b250497db32461f13f9633885ebdcdf3018c61d804718077033e28c"
+    },
+    {
+      "source": "assets/game/props/food-15-residue.glb",
+      "path": "game/props/food-15-residue.glb",
+      "sha256": "31354f3022a90c7d3f9574872e4e2811179a3d0af9d3519b518410afc65dc1d9"
+    },
+    {
+      "source": "assets/game/props/garbage.wav",
+      "path": "game/props/garbage.wav",
+      "sha256": "41b380717e0829cc0f231a837b6ad29760b3f0bdc02880d4f13dbc6b2fec0338"
+    },
+    {
+      "source": "assets/game/props/open.wav",
+      "path": "game/props/open.wav",
+      "sha256": "87445153d8f78bdae406a42d2f16dd0c0b3a6069b534009d09a86a058e109cfe"
+    },
+    {
+      "source": "assets/game/props/roach.wav",
+      "path": "game/props/roach.wav",
+      "sha256": "4fca1c871262dd17e091939be9fdf00d06cea24ded8fe6b120b2092be8345336"
+    },
+    {
+      "source": "assets/s06/cleaner-female/carry-bag.glb",
+      "path": "s06/cleaner-female/carry-bag.glb",
+      "sha256": "d5082eea0644d83db4654e0fb5e800405caa3bacd94e08228b9617049ac569cc"
+    },
+    {
+      "source": "assets/s06/cleaner-female/model.glb",
+      "path": "s06/cleaner-female/model.glb",
+      "sha256": "c14bfb0247dda833e3da9698e73c0cee35a46dbf6ea40d66839a9d816cb48b3f"
+    },
+    {
+      "source": "assets/s06/cleaner-female/tool-broom.glb",
+      "path": "s06/cleaner-female/tool-broom.glb",
+      "sha256": "4ddf5c98a8639dae33377d76e0c1929b9741d17196f5927f73cedc8893d7a604"
+    },
+    {
+      "source": "assets/s06/cleaner-male/carry-bag.glb",
+      "path": "s06/cleaner-male/carry-bag.glb",
+      "sha256": "635b678b8dfe062823b26234a3f0e4dcb5ef2a9ddea9eadfb24c5f58bd9d6dad"
+    },
+    {
+      "source": "assets/s06/cleaner-male/model.glb",
+      "path": "s06/cleaner-male/model.glb",
+      "sha256": "f3fc5159274b1a0b789197440d7a9e034420c537a23ecf516576f1aa8fe361d6"
+    },
+    {
+      "source": "assets/s06/cleaner-male/tool-broom.glb",
+      "path": "s06/cleaner-male/tool-broom.glb",
+      "sha256": "4ddf5c98a8639dae33377d76e0c1929b9741d17196f5927f73cedc8893d7a604"
+    },
+    {
+      "source": "assets/s06/frog/model.glb",
+      "path": "s06/frog/model.glb",
+      "sha256": "10a1d7ab9f51b71cd0f246ffeb724343417d8e5f29f8b7c4b2d12f92feb9e13f"
+    },
+    {
+      "source": "assets/steam-v1/s07-four-states/cleaner-home-heavy-damaged/model.glb",
+      "path": "steam-v1/s07-four-states/cleaner-home-heavy-damaged/model.glb",
+      "sha256": "5040af36549d1ecca0f75c143a9a252047335d8952c172a14e89b41daddc6529"
+    },
+    {
+      "source": "assets/steam-v1/s07-four-states/cleaner-home-light-damaged/model.glb",
+      "path": "steam-v1/s07-four-states/cleaner-home-light-damaged/model.glb",
+      "sha256": "132e521cc2a725dcccc04d5e78da6d288084fed35ec59b42641802f9501c1bdc"
+    },
+    {
+      "source": "assets/steam-v1/s07-four-states/frog-home-heavy-damaged/model.glb",
+      "path": "steam-v1/s07-four-states/frog-home-heavy-damaged/model.glb",
+      "sha256": "7b85f807d78841d3e7789ed3329c484a6762f790e4547113140d9972d946f74a"
+    },
+    {
+      "source": "assets/steam-v1/s07-four-states/frog-home-light-damaged/model.glb",
+      "path": "steam-v1/s07-four-states/frog-home-light-damaged/model.glb",
+      "sha256": "dfefbf20a7483424e4813f4c5bbe67009693bf708672b329cceba0775655a403"
+    },
+    {
+      "source": "assets/steam-v1/s07-s08/bait-station/model.glb",
+      "path": "steam-v1/s07-s08/bait-station/model.glb",
+      "sha256": "811174ef572357d0756e0440968b7a4237b8b438c7161b5db65c7b96d79a83c5"
+    },
+    {
+      "source": "assets/steam-v1/s07-s08/bug-catcher/model.glb",
+      "path": "steam-v1/s07-s08/bug-catcher/model.glb",
+      "sha256": "de81b44f08d57ac5630cbe46eec118af18fc2070ecc7e6705509d1590e3a1aaa"
+    },
+    {
+      "source": "assets/steam-v1/s07-s08/cleaner-home/model.glb",
+      "path": "steam-v1/s07-s08/cleaner-home/model.glb",
+      "sha256": "c510d41af0b022ff5b11790f8764e30608beeef72db3b1c28c6f350a8eb923f6"
+    },
+    {
+      "source": "assets/steam-v1/s07-s08/collection-bag/model.glb",
+      "path": "steam-v1/s07-s08/collection-bag/model.glb",
+      "sha256": "308512a43b05bb91dd7a0a32e68128a2f6f687da151b7dcbe53165386f3b3302"
+    },
+    {
+      "source": "assets/steam-v1/s07-s08/electric-swatter/model.glb",
+      "path": "steam-v1/s07-s08/electric-swatter/model.glb",
+      "sha256": "c9b1661ba799e1f87f8ece61762478f935e55fa25e6a246cc64aa821564bc060"
+    },
+    {
+      "source": "assets/steam-v1/s07-s08/folding-ladder/model.glb",
+      "path": "steam-v1/s07-s08/folding-ladder/model.glb",
+      "sha256": "6f901f1678a25c776d69f4d19ff8ebbf11873be27ca31e617a6889977818d31d"
+    },
+    {
+      "source": "assets/steam-v1/s07-s08/frog-home/model.glb",
+      "path": "steam-v1/s07-s08/frog-home/model.glb",
+      "sha256": "f53eab8eef55a0ba3fbf58d0bcd1ebf58a078c01d347e3afd5080ebae6cdd8f1"
+    },
+    {
+      "source": "assets/steam-v1/s07-s08/glue-pad/model.glb",
+      "path": "steam-v1/s07-s08/glue-pad/model.glb",
+      "sha256": "58610b7a389c998b28c3e854fa1b6a3cc0f9acb4b0c7429a8655dcf59b7357df"
+    },
+    {
+      "source": "assets/steam-v1/s07-s08/repair-kit/model.glb",
+      "path": "steam-v1/s07-s08/repair-kit/model.glb",
+      "sha256": "95e929c3f2eb6d015789c47ef0ba79f10f6820c85f279b7886b1fd34ce4576dc"
+    },
+    {
+      "source": "assets/steam-v1/s07-s09/cleaner-home-damaged/model.glb",
+      "path": "steam-v1/s07-s09/cleaner-home-damaged/model.glb",
+      "sha256": "5040af36549d1ecca0f75c143a9a252047335d8952c172a14e89b41daddc6529"
+    },
+    {
+      "source": "assets/steam-v1/s07-s09/cleaner-home-destroyed/model.glb",
+      "path": "steam-v1/s07-s09/cleaner-home-destroyed/model.glb",
+      "sha256": "9f1d801caa7e141ef5273aa0aa62743ff8bde460a77c5ce57992909d98101324"
+    },
+    {
+      "source": "assets/steam-v1/s07-s09/demo-main-nest/model.glb",
+      "path": "steam-v1/s07-s09/demo-main-nest/model.glb",
+      "sha256": "aa3921424ea84be86102e00277f7e6e08c18bb7f0b746e1cbe1db6574483dcd4"
+    },
+    {
+      "source": "assets/steam-v1/s07-s09/frog-home-damaged/model.glb",
+      "path": "steam-v1/s07-s09/frog-home-damaged/model.glb",
+      "sha256": "7b85f807d78841d3e7789ed3329c484a6762f790e4547113140d9972d946f74a"
+    },
+    {
+      "source": "assets/steam-v1/s07-s09/frog-home-destroyed/model.glb",
+      "path": "steam-v1/s07-s09/frog-home-destroyed/model.glb",
+      "sha256": "63a81f2a61a62204a13f5053cef32004e7e78305218e480f0faa6127b926b63b"
+    }
+  ],
+  "notices": [
+    {
+      "source": "ASSETS-LICENSE.md",
+      "sha256": "10b10652e9443b4a278c5c6c48a28e051ecbf0fcc71851596738b22274100481"
+    },
+    {
+      "source": "assets/game/americana/license.txt",
+      "sha256": "da7f4dcce8d432f9bddc4c153f2e30b81e25243bd6936b8bcc0a4a973f5b8b1d"
+    },
+    {
+      "source": "assets/game/brownbanded/license.txt",
+      "sha256": "da7f4dcce8d432f9bddc4c153f2e30b81e25243bd6936b8bcc0a4a973f5b8b1d"
+    },
+    {
+      "source": "assets/game/germanica/license.txt",
+      "sha256": "da7f4dcce8d432f9bddc4c153f2e30b81e25243bd6936b8bcc0a4a973f5b8b1d"
+    },
+    {
+      "source": "assets/game/hissing/license.txt",
+      "sha256": "da7f4dcce8d432f9bddc4c153f2e30b81e25243bd6936b8bcc0a4a973f5b8b1d"
+    },
+    {
+      "source": "assets/game/license.txt",
+      "sha256": "da7f4dcce8d432f9bddc4c153f2e30b81e25243bd6936b8bcc0a4a973f5b8b1d"
+    },
+    {
+      "source": "assets/game/orientalis/license.txt",
+      "sha256": "da7f4dcce8d432f9bddc4c153f2e30b81e25243bd6936b8bcc0a4a973f5b8b1d"
+    },
+    {
+      "source": "assets/game/props/audio-record.json",
+      "sha256": "16c1a61c0d1c2d9dcefcc69886a94d655d83fc298bc1e1b295fd6ff82ca7617a"
+    },
+    {
+      "source": "assets/game/props/license.txt",
+      "sha256": "da7f4dcce8d432f9bddc4c153f2e30b81e25243bd6936b8bcc0a4a973f5b8b1d"
+    },
+    {
+      "source": "assets/s06/cleaner-female/license.txt",
+      "sha256": "505f1e043c8ed2bf9310c0dd2720fb9ee3944abaddf42c7a7981cd6cb10dc80e"
+    },
+    {
+      "source": "assets/s06/cleaner-female/source-record.md",
+      "sha256": "62331f64da734359ebb9393a8efc3743d983fb8ccfbaa71ddf28c45411ced959"
+    },
+    {
+      "source": "assets/s06/cleaner-male/license.txt",
+      "sha256": "505f1e043c8ed2bf9310c0dd2720fb9ee3944abaddf42c7a7981cd6cb10dc80e"
+    },
+    {
+      "source": "assets/s06/frog/license.txt",
+      "sha256": "a438255c6bccd3f870c0da3a3a42278157d44e1f7218a9a06be10cc983b0f758"
+    },
+    {
+      "source": "assets/steam-v1/s07-four-states/cleaner-home-heavy-damaged/license.txt",
+      "sha256": "77f352896ea31988682e2b1eb49a63f17716de28ba6faaad849da2e8c9a8b4c3"
+    },
+    {
+      "source": "assets/steam-v1/s07-four-states/cleaner-home-light-damaged/license.txt",
+      "sha256": "77f352896ea31988682e2b1eb49a63f17716de28ba6faaad849da2e8c9a8b4c3"
+    },
+    {
+      "source": "assets/steam-v1/s07-four-states/frog-home-heavy-damaged/license.txt",
+      "sha256": "77f352896ea31988682e2b1eb49a63f17716de28ba6faaad849da2e8c9a8b4c3"
+    },
+    {
+      "source": "assets/steam-v1/s07-four-states/frog-home-light-damaged/license.txt",
+      "sha256": "77f352896ea31988682e2b1eb49a63f17716de28ba6faaad849da2e8c9a8b4c3"
+    },
+    {
+      "source": "assets/steam-v1/s07-s08/bait-station/license.txt",
+      "sha256": "744fbcb5996e47caf67383984b424b261ea1b689ddf38cee1b4ce76753bd8f13"
+    },
+    {
+      "source": "assets/steam-v1/s07-s08/bug-catcher/license.txt",
+      "sha256": "744fbcb5996e47caf67383984b424b261ea1b689ddf38cee1b4ce76753bd8f13"
+    },
+    {
+      "source": "assets/steam-v1/s07-s08/cleaner-home/license.txt",
+      "sha256": "744fbcb5996e47caf67383984b424b261ea1b689ddf38cee1b4ce76753bd8f13"
+    },
+    {
+      "source": "assets/steam-v1/s07-s08/collection-bag/license.txt",
+      "sha256": "744fbcb5996e47caf67383984b424b261ea1b689ddf38cee1b4ce76753bd8f13"
+    },
+    {
+      "source": "assets/steam-v1/s07-s08/electric-swatter/license.txt",
+      "sha256": "744fbcb5996e47caf67383984b424b261ea1b689ddf38cee1b4ce76753bd8f13"
+    },
+    {
+      "source": "assets/steam-v1/s07-s08/folding-ladder/license.txt",
+      "sha256": "744fbcb5996e47caf67383984b424b261ea1b689ddf38cee1b4ce76753bd8f13"
+    },
+    {
+      "source": "assets/steam-v1/s07-s08/frog-home/license.txt",
+      "sha256": "744fbcb5996e47caf67383984b424b261ea1b689ddf38cee1b4ce76753bd8f13"
+    },
+    {
+      "source": "assets/steam-v1/s07-s08/glue-pad/license.txt",
+      "sha256": "744fbcb5996e47caf67383984b424b261ea1b689ddf38cee1b4ce76753bd8f13"
+    },
+    {
+      "source": "assets/steam-v1/s07-s08/repair-kit/license.txt",
+      "sha256": "744fbcb5996e47caf67383984b424b261ea1b689ddf38cee1b4ce76753bd8f13"
+    },
+    {
+      "source": "assets/steam-v1/s07-s09/cleaner-home-damaged/license.txt",
+      "sha256": "81151189603036aa11d05ba3540cd3a613739be40f14eff77429a5fbe78865a3"
+    },
+    {
+      "source": "assets/steam-v1/s07-s09/cleaner-home-destroyed/license.txt",
+      "sha256": "81151189603036aa11d05ba3540cd3a613739be40f14eff77429a5fbe78865a3"
+    },
+    {
+      "source": "assets/steam-v1/s07-s09/demo-main-nest/license.txt",
+      "sha256": "62a2afbc965d72b41303873ff976d516f7711bcf28a398bd26284113ad7708f5"
+    },
+    {
+      "source": "assets/steam-v1/s07-s09/frog-home-damaged/license.txt",
+      "sha256": "81151189603036aa11d05ba3540cd3a613739be40f14eff77429a5fbe78865a3"
+    },
+    {
+      "source": "assets/steam-v1/s07-s09/frog-home-destroyed/license.txt",
+      "sha256": "81151189603036aa11d05ba3540cd3a613739be40f14eff77429a5fbe78865a3"
+    },
+    {
+      "source": "docs/licenses.md",
+      "sha256": "e1ab1aae470ba7096e08b422e5e868d7420d787e8b1152b43d9fc5f19a6e2eb6"
+    },
+    {
+      "source": "LICENSE",
+      "sha256": "8acae2377a77bf2e3ef6e9498c17f55d278356597689a3b2ae014c15988e73d3"
+    },
+    {
+      "source": "node_modules/@tauri-apps/api/LICENSE_APACHE-2.0",
+      "sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594"
+    },
+    {
+      "source": "node_modules/@tauri-apps/api/LICENSE_MIT",
+      "sha256": "9dd42ea92cff2ede5cd477cbfcce051b2d0115c0ac7f368ee88cb545055dff1d"
+    },
+    {
+      "source": "node_modules/three/LICENSE",
+      "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc"
+    },
+    {
+      "source": "release/steam/notices/tslib.txt",
+      "sha256": "3f06dfe52dae5fa68a5b518c9892d54d91b1d36a8e29518c6f8ca6ec762983a0"
+    }
+  ],
+  "inputs": [
+    "assets/game/americana/manifest.json",
+    "assets/game/brownbanded/manifest.json",
+    "assets/game/germanica/manifest.json",
+    "assets/game/hissing/manifest.json",
+    "assets/game/orientalis/manifest.json",
+    "assets/game/props/manifest.json",
+    "assets/s06/cleaner-female/manifest.json",
+    "assets/s06/cleaner-male/manifest.json",
+    "assets/s06/frog/manifest.json",
+    "assets/steam-v1/s07-four-states/cleaner-home-heavy-damaged/manifest.json",
+    "assets/steam-v1/s07-four-states/cleaner-home-heavy-damaged/runtime-stats.json",
+    "assets/steam-v1/s07-four-states/cleaner-home-light-damaged/manifest.json",
+    "assets/steam-v1/s07-four-states/cleaner-home-light-damaged/runtime-stats.json",
+    "assets/steam-v1/s07-four-states/frog-home-heavy-damaged/manifest.json",
+    "assets/steam-v1/s07-four-states/frog-home-heavy-damaged/runtime-stats.json",
+    "assets/steam-v1/s07-four-states/frog-home-light-damaged/manifest.json",
+    "assets/steam-v1/s07-four-states/frog-home-light-damaged/runtime-stats.json",
+    "assets/steam-v1/s07-four-states/manifest.json",
+    "assets/steam-v1/s07-s08/bait-station/manifest.json",
+    "assets/steam-v1/s07-s08/bait-station/runtime-stats.json",
+    "assets/steam-v1/s07-s08/bug-catcher/manifest.json",
+    "assets/steam-v1/s07-s08/bug-catcher/runtime-stats.json",
+    "assets/steam-v1/s07-s08/cleaner-home/manifest.json",
+    "assets/steam-v1/s07-s08/cleaner-home/runtime-stats.json",
+    "assets/steam-v1/s07-s08/collection-bag/manifest.json",
+    "assets/steam-v1/s07-s08/collection-bag/runtime-stats.json",
+    "assets/steam-v1/s07-s08/electric-swatter/manifest.json",
+    "assets/steam-v1/s07-s08/electric-swatter/runtime-stats.json",
+    "assets/steam-v1/s07-s08/folding-ladder/manifest.json",
+    "assets/steam-v1/s07-s08/folding-ladder/runtime-stats.json",
+    "assets/steam-v1/s07-s08/frog-home/manifest.json",
+    "assets/steam-v1/s07-s08/frog-home/runtime-stats.json",
+    "assets/steam-v1/s07-s08/glue-pad/manifest.json",
+    "assets/steam-v1/s07-s08/glue-pad/runtime-stats.json",
+    "assets/steam-v1/s07-s08/manifest.json",
+    "assets/steam-v1/s07-s08/repair-kit/manifest.json",
+    "assets/steam-v1/s07-s08/repair-kit/runtime-stats.json",
+    "assets/steam-v1/s07-s09/cleaner-home-damaged/manifest.json",
+    "assets/steam-v1/s07-s09/cleaner-home-damaged/runtime-stats.json",
+    "assets/steam-v1/s07-s09/cleaner-home-destroyed/manifest.json",
+    "assets/steam-v1/s07-s09/cleaner-home-destroyed/runtime-stats.json",
+    "assets/steam-v1/s07-s09/demo-main-nest/manifest.json",
+    "assets/steam-v1/s07-s09/demo-main-nest/runtime-stats.json",
+    "assets/steam-v1/s07-s09/frog-home-damaged/manifest.json",
+    "assets/steam-v1/s07-s09/frog-home-damaged/runtime-stats.json",
+    "assets/steam-v1/s07-s09/frog-home-destroyed/manifest.json",
+    "assets/steam-v1/s07-s09/frog-home-destroyed/runtime-stats.json",
+    "assets/steam-v1/s07-s09/manifest.json",
+    "index.html",
+    "package-lock.json",
+    "package.json",
+    "release/steam/entry.ts",
+    "shortcuts.html",
+    "src-tauri/Cargo.lock",
+    "src/campaign/actor-state.ts",
+    "src/campaign/agent-coordinator.ts",
+    "src/campaign/agent-runtime/driver.ts",
+    "src/campaign/agent-runtime/ecology-placement.ts",
+    "src/campaign/agent-runtime/geometry.ts",
+    "src/campaign/agent-runtime/session-hook.ts",
+    "src/campaign/app/boot.ts",
+    "src/campaign/app/display-controls.css",
+    "src/campaign/app/display-controls.ts",
+    "src/campaign/app/display-move.ts",
+    "src/campaign/app/input.ts",
+    "src/campaign/app/interface-mode.ts",
+    "src/campaign/app/occlusion.ts",
+    "src/campaign/app/placement.ts",
+    "src/campaign/app/ports.ts",
+    "src/campaign/app/practice-input.ts",
+    "src/campaign/app/runtime.css",
+    "src/campaign/app/runtime.ts",
+    "src/campaign/app/support-export.ts",
+    "src/campaign/application/campaign-application.ts",
+    "src/campaign/audio/director.ts",
+    "src/campaign/audio/event-mapping.ts",
+    "src/campaign/audio/types.ts",
+    "src/campaign/audio/web-audio.ts",
+    "src/campaign/campaign-cloud-v1.ts",
+    "src/campaign/campaign-controller.ts",
+    "src/campaign/campaign-history.ts",
+    "src/campaign/campaign-save-v4.ts",
+    "src/campaign/campaign-session-v4.ts",
+    "src/campaign/campaign-settings.ts",
+    "src/campaign/combat-ecology.ts",
+    "src/campaign/ecology-cycle-types.ts",
+    "src/campaign/ecology-cycle.ts",
+    "src/campaign/economy.ts",
+    "src/campaign/home-interaction.ts",
+    "src/campaign/homes.ts",
+    "src/campaign/i18n.ts",
+    "src/campaign/integration/hit-handles.ts",
+    "src/campaign/integration/s07-domain-adapter.ts",
+    "src/campaign/inventory.ts",
+    "src/campaign/movement.ts",
+    "src/campaign/native/bridge.ts",
+    "src/campaign/native/tauri-host.ts",
+    "src/campaign/native/types.ts",
+    "src/campaign/native/validation.ts",
+    "src/campaign/navigation.ts",
+    "src/campaign/physics.ts",
+    "src/campaign/rendering/campaign-renderer.ts",
+    "src/campaign/rendering/crowd.ts",
+    "src/campaign/rendering/mapping.ts",
+    "src/campaign/rendering/model-visual.ts",
+    "src/campaign/rendering/resources.ts",
+    "src/campaign/rendering/vat-source.ts",
+    "src/campaign/rendering/visual-feedback.ts",
+    "src/campaign/rendering/visual-rig.ts",
+    "src/campaign/research.ts",
+    "src/campaign/role-abilities.ts",
+    "src/campaign/screen-boundaries.ts",
+    "src/campaign/support-bundle.ts",
+    "src/campaign/surface.ts",
+    "src/campaign/tool-system.ts",
+    "src/campaign/tutorial.ts",
+    "src/campaign/ui/campaign-lobby.ts",
+    "src/campaign/ui/campaign-ui.css",
+    "src/campaign/ui/campaign-ui.ts",
+    "src/campaign/ui/command-dispatch.ts",
+    "src/campaign/ui/copy.ts",
+    "src/campaign/ui/display-options.ts",
+    "src/campaign/ui/model.ts",
+    "src/companion/types.ts",
+    "src/game/audio.ts",
+    "src/game/types.ts",
+    "src/game/vat.ts",
+    "src/shortcuts/main.ts",
+    "src/shortcuts/style.css",
+    "src/styles.css",
+    "src/trash/bin-controller.ts",
+    "src/trash/bin-motion.ts",
+    "src/trash/cat-bin-audio.ts",
+    "src/trash/main.ts",
+    "src/trash/trash.css",
+    "trash.html",
+    "tsconfig.json"
+  ],
+  "dependencyModules": [
+    "node_modules/@tauri-apps/api/core.js",
+    "node_modules/@tauri-apps/api/event.js",
+    "node_modules/@tauri-apps/api/external/tslib/tslib.es6.js",
+    "node_modules/three/build/three.core.js",
+    "node_modules/three/build/three.module.js",
+    "node_modules/three/examples/jsm/environments/RoomEnvironment.js",
+    "node_modules/three/examples/jsm/loaders/GLTFLoader.js",
+    "node_modules/three/examples/jsm/utils/BufferGeometryUtils.js",
+    "node_modules/three/examples/jsm/utils/SkeletonUtils.js"
+  ]
+}

@@ -1,0 +1,48 @@
+:root {
+  color: #f5ead7;
+  background: transparent;
+  font-family: "Segoe UI Variable", "Segoe UI", sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+html,
+body,
+#overlay-root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  background: transparent !important;
+}
+
+body {
+  pointer-events: none;
+  user-select: none;
+}
+
+#creature-canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+}
+
+#status {
+  position: fixed;
+  left: 16px;
+  bottom: 16px;
+  padding: 7px 11px;
+  border: 1px solid rgb(255 255 255 / 18%);
+  border-radius: 8px;
+  color: #f5ead7;
+  background: rgb(20 14 9 / 72%);
+  box-shadow: 0 6px 24px rgb(0 0 0 / 20%);
+  font-size: 12px;
+  line-height: 1;
+}
+
+#status:empty {
+  display: none;
+}
+
