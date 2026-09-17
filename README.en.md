@@ -12,9 +12,9 @@ Download `Desktop-Creatures-v1.1.0-preview.1-Windows-x64.zip` from the [Releases
 
 ## Actual gameplay visuals
 
-![Dense Desktop Creatures scene with insects, litter, cleaner, frog, and houses](docs/screenshots/gameplay-dense.gif)
+![Full Codex desktop screenshot with animated insects, litter, cleaner, frog, and houses overlaid](docs/screenshots/gameplay-dense.gif)
 
-Recorded from the public game's real renderer and assets. This dense demonstration state has 72 insects, 28 pieces of litter, two characters, and two houses. It uses a prepared state and sped-up playback for presentation, so it is not the default opening scene. The menu is closed and the background is a neutral demonstration color.
+The GIF preserves the project owner's full Codex desktop screenshot (conversation, GitHub page, and taskbar) and overlays animation captured from the public game's real renderer. It is not a live recording of the Codex window. The dense prepared state contains 72 insects, 28 pieces of litter, two characters, and two houses; playback is sped up and does not represent the default opening scene. The game menu is closed. [Screenshot and GIF rights notice](docs/screenshots/NOTICE.md).
 
 ## Build and run
 
